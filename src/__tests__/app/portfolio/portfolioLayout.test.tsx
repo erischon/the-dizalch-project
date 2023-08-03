@@ -5,10 +5,11 @@ import PortfolioLayout from "@/app/(portfolio)/layout";
 import PortfolioPage from "@/app/(portfolio)/(routes)/page";
 
 import { TAGLINE } from "@/lib/constants";
+import { seoData } from "@/app/(portfolio)/layout";
 
-describe("Given I am a ", async () => {
+describe("Given I am a guest", async () => {
   describe("When I am on the Portfolio page", () => {
-    it("Should render my tagline", async () => {
+    it("Should render a tagline", async () => {
       // Arrange
       render(
         <PortfolioLayout>
@@ -51,6 +52,23 @@ describe("Given I am a ", async () => {
 
       // Assert
       expect(renderedFooter).toBeInTheDocument();
+    });
+
+    it("Should have metadata", async () => {
+      // Arrange
+      render(
+        <PortfolioLayout>
+          <PortfolioPage />
+        </PortfolioLayout>
+      );
+
+      const meta = screen.getByText(`content="${seoData.description}"`);
+
+      console.log("====== meta", meta);
+      // Act
+
+      // Assert
+      expect(meta).toBe(seoData.description);
     });
   });
 });
