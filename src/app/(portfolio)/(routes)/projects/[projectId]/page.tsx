@@ -1,24 +1,37 @@
-import { getSortedProjectsData, getProjectData } from "@/lib/projects";
-import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
-export function generateStaticParams() {
-  const projects = getSortedProjectsData();
+import { getProjectsMeta, getProjectByName } from "@/lib/projects";
+import {
+  GITHUB_REPO_URL,
+  PROJECTS_FOLDER_NAME,
+  PROJECTS_IMAGES_FOLDER_NAME,
+} from "@/lib/constants";
 
-  return projects.map((project) => ({
-    projectId: project.id,
-  }));
-}
+export const revalidate = 0;
 
-export function generateMetadata({
-  params,
-}: {
-  params: { projectId: string };
-}) {
-  const projects = getSortedProjectsData();
-  const { projectId } = params;
+type Props = {
+  params: {
+    projectId: string;
+  };
+};
 
-  const project = projects.find((project) => project.id === projectId);
+// export async function generateStaticParams() {
+//   const projects = await getProjectsMeta(); // deduped!
+
+//   if (!projects) return [];
+
+//   return projects.map((project) => ({
+//     projectId: project.id,
+//   }));
+// }
+
+/**
+ * @description Generates the metadata for the page
+ * @version 1.0.0
+ */
+export async function generateMetadata({ params: { projectId } }: Props) {
+  const project = await getProjectByName(`${projectId}.mdx`); // deduped!
 
   if (!project) {
     return {
@@ -27,36 +40,82 @@ export function generateMetadata({
   }
 
   return {
-    title: project.title,
+    title: project.meta.title,
   };
 }
 
-/**
- * @description Displays a project
- * @version 1.0.0
- */
-export default async function Project({
-  params,
-}: {
-  params: { projectId: string };
-}) {
-  const projects = getSortedProjectsData();
-  const { projectId } = params;
+export default async function Project({ params: { projectId } }: Props) {
+  const project = await getProjectByName(`${projectId}.mdx`); // deduped!
 
-  if (!projects.find((project) => project.id === projectId)) notFound();
+  console.log(project);
 
-  const { title, contentHtml } = await getProjectData(projectId);
+  const { meta, content } = project;
+
+  const tags = meta.tags.map((tag, i) => (
+    <Link key={i} href={`/tags/${tag}`} className="py-2 px-4 bg-teal-200">
+      <div className="text-semibold">{tag}</div>
+    </Link>
+  ));
 
   return (
-    <main className="px-6 prose prose-xl prose-slate dark:prose-invert mx-auto">
-      <h1 className="text-3xl mt-4 mb-0">{title}</h1>
-      <p className="mt-0"></p>
-      <article>
-        <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
-        <p>
-          <Link href="/">← Back to home</Link>
-        </p>
-      </article>
-    </main>
+    <>
+      <section className="flex flex-col-reverse border border-gray-200 shadow-md p-4 w-full sm:grid sm:grid-cols-12">
+        <div className="mt-4 sm:col-span-5">
+          <div className="">
+            <p className="text-xl font-bold mb-2">{meta.title}</p>
+            {meta.type ? (
+              <p className="flex items-baseline gap-4">
+                <span className="text-xs">Type</span>
+                <span className="text-md font-medium">{meta.type}</span>
+              </p>
+            ) : null}
+            {meta.role ? (
+              <p className="flex items-baseline gap-4">
+                <span className="text-xs">Rôle</span>
+                <span className="text-md font-medium">{meta.role}</span>
+              </p>
+            ) : null}
+            {meta.lastUpdated ? (
+              <p className="flex items-baseline gap-4">
+                <span className="text-xs">Dernière mise à jour</span>
+                <span className="text-md font-medium">{meta.lastUpdated}</span>
+              </p>
+            ) : null}
+          </div>
+        </div>
+
+        <div className="relative w-full h-[200px] sm:col-span-7">
+          <Image
+            src={`${GITHUB_REPO_URL}/${PROJECTS_FOLDER_NAME}/${PROJECTS_IMAGES_FOLDER_NAME}/${meta.image}.webp`}
+            alt={meta.title}
+            fill
+            className="object-cover w-full h-full object-top shadow-sm"
+          />
+        </div>
+
+        {/* <div className="links">
+          <a href={meta.liveUrl} target="_blank">
+            <img src={""} alt="Live" />
+          </a>
+          <a href={meta.codeUrl} target="_blank">
+            <img src={""} alt="Code" />
+          </a>
+        </div> */}
+      </section>
+
+      <div className="flex border-l-4 border-teal-200 pl-4 mt-6">
+        <p>{meta.description}</p>
+      </div>
+
+      <div className="mt-6">
+        <div className="flex flex-wrap gap-1">{tags}</div>
+      </div>
+
+      <article className="my-8">{content}</article>
+
+      <p className="mb-10">
+        <Link href="/">← Back to home</Link>
+      </p>
+    </>
   );
 }

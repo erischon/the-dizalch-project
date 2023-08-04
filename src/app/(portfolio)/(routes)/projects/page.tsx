@@ -6,9 +6,9 @@ import Projects from "@/components/projects";
  */
 const ProjectsPage = () => {
   return (
-    <>
+    <div className="">
       <Projects />
-    </>
+    </div>
   );
 };
 

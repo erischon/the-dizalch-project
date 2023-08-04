@@ -1,7 +1,13 @@
 import Link from "next/link";
 
+import {
+  GITHUB_REPO_URL,
+  PROJECTS_FOLDER_NAME,
+  PROJECTS_IMAGES_FOLDER_NAME,
+} from "../lib/constants";
+
 type Props = {
-  project: Partial<Project>;
+  project: ProjectMeta;
 };
 
 /**
@@ -16,12 +22,12 @@ export default function ProjectCard({ project }: Props) {
       <Link href={`/projects/${id}`}>
         <article className="flex justify-center items-center w-full h-[175px] cursor-pointer shadow-md">
           <div
-            className="relative w-full h-full rounded-md bg-cover bg-center"
+            className="relative w-full h-full bg-cover bg-center"
             style={{
-              backgroundImage: `url(/images/projects/${image}.webp)`,
+              backgroundImage: `url(${GITHUB_REPO_URL}/${PROJECTS_FOLDER_NAME}/${PROJECTS_IMAGES_FOLDER_NAME}/${image}.webp)`,
             }}
           >
-            <h2 className="absolute bottom-0 right-0 w-[60%] pr-1 text-sm text-right color-black opacity-90 bg-orange-400">
+            <h2 className="absolute bottom-0 right-0 w-[max-content] py-2 px-8 text-md text-right color-black opacity-90 bg-teal-400 font-semibold">
               {title}
             </h2>
           </div>

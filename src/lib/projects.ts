@@ -1,64 +1,122 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import { remark } from "remark";
-import html from "remark-html";
+import { compileMDX } from "next-mdx-remote/rsc";
 
-const projectsDirectory = path.join(process.cwd(), "projects");
+type Filetree = {
+  tree: [
+    {
+      path: string;
+    }
+  ];
+};
 
 /**
- * @description Get sorted projects data
+ * @description Project metadata
  * @version 1.0.0
  */
-export function getSortedProjectsData() {
-  // Get file names under /porjects
-  const fileNames = fs.readdirSync(projectsDirectory);
-  const allPorjectsData = fileNames.map((fileName) => {
-    // Remove ".md" from file name to get id
-    const id = fileName.replace(/\.md$/, "");
+export async function getProjectByName(
+  fileName: string
+): Promise<Project | undefined> {
+  //  Fetches the raw MDX file from GitHub
+  const res = await fetch(
+    `https://raw.githubusercontent.com/erischon/docs/master/projects/${fileName}`,
+    {
+      headers: {
+        Accept: "application/vnd.github+json",
+        Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+        "X-GitHub-Api-Version": "2022-11-28",
+      },
+    }
+  );
 
-    // Read markdown file as string
-    const fullPath = path.join(projectsDirectory, fileName);
-    const fileContents = fs.readFileSync(fullPath, "utf8");
+  if (!res.ok) return undefined;
 
-    // Use gray-matter to parse the porject metadata section
-    const matterResult = matter(fileContents);
+  // Converts the raw MDX to a string
+  const rawMDX = await res.text();
 
-    const project: Partial<Project> = {
-      id,
-      title: matterResult.data.title,
-    };
+  if (rawMDX === "404: Not Found") return undefined;
 
-    // Combine the data with the id
-    return project;
+  // Compiles the MDX to JSX
+  const { frontmatter, content } = await compileMDX<{
+    title: string;
+    date: string;
+    lastUpdated: string;
+    description: string;
+    type: string;
+    liveUrl: string;
+    codeUrl: string;
+    caseStudyUrl: string;
+    role: string;
+    featured: boolean;
+    image: string;
+    tags: string[];
+  }>({
+    source: rawMDX,
+    options: {
+      parseFrontmatter: true,
+    },
   });
 
-  return allPorjectsData;
+  // Converts the file name to the project ID
+  const id = fileName.replace(/\.mdx$/, "");
+
+  const ProjectObj: Project = {
+    meta: {
+      id,
+      title: frontmatter.title,
+      date: frontmatter.date,
+      tags: frontmatter.tags,
+      lastUpdated: frontmatter.lastUpdated,
+      description: frontmatter.description,
+      type: frontmatter.type,
+      liveUrl: frontmatter.liveUrl,
+      codeUrl: frontmatter.codeUrl,
+      caseStudyUrl: frontmatter.caseStudyUrl,
+      role: frontmatter.role,
+      featured: frontmatter.featured,
+      image: frontmatter.image,
+    },
+    content,
+  };
+
+  return ProjectObj;
 }
 
 /**
- * @description Get all projects data
+ * @description Fetches all projects from the GitHub repo and returns an array of project metadata
  * @version 1.0.0
  */
-export async function getProjectData(id: string) {
-  const fullPath = path.join(projectsDirectory, `${id}.md`);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
+export async function getProjectsMeta(): Promise<ProjectMeta[] | undefined> {
+  // Fetches the file tree from GitHub
+  const res = await fetch(
+    "https://api.github.com/repos/erischon/docs/git/trees/master?recursive=1",
+    {
+      headers: {
+        Accept: "application/vnd.github+json",
+        Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+        "X-GitHub-Api-Version": "2022-11-28",
+      },
+    }
+  );
 
-  // Use gray-matter to parse the porject metadata section
-  const matterResult = matter(fileContents);
+  if (!res.ok) return undefined;
 
-  const processedContent = await remark()
-    .use(html)
-    .process(matterResult.content);
+  // Converts the file tree to a JSON object
+  const repoFiletree: Filetree = await res.json();
 
-  const contentHtml = processedContent.toString();
+  const filesArray = repoFiletree.tree
+    .map((obj) => obj.path.replace("projects/", ""))
+    .filter((path) => path.endsWith(".mdx"));
 
-  const projectWithHTML: Partial<Project> & { contentHtml: string } = {
-    id,
-    title: matterResult.data.title,
-    contentHtml,
-  };
+  const projects: ProjectMeta[] = [];
 
-  // Combine the data with the id
-  return projectWithHTML;
+  for (const file of filesArray) {
+    const project = await getProjectByName(file);
+
+    if (project) {
+      const { meta } = project;
+      projects.push(meta);
+    }
+  }
+
+  // return projects.sort((a, b) => (a.date < b.date ? 1 : -1));
+  return projects;
 }
