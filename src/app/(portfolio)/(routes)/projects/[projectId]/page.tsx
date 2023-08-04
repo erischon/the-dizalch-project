@@ -48,6 +48,7 @@ export default async function Project({ params: { projectId } }: Props) {
   const project = await getProjectByName(`${projectId}.mdx`); // deduped!
 
   console.log(project);
+  if (!project) return null;
 
   const { meta, content } = project;
 
