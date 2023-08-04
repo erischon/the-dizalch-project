@@ -13,7 +13,7 @@ export default function ProjectCard({ project }: Props) {
 
   return (
     <>
-      <Link href={`/posts/${id}`}>
+      <Link href={`/projects/${id}`}>
         <article className="flex justify-center items-center w-full h-[175px] cursor-pointer shadow-md">
           <div
             className="relative w-full h-full rounded-md bg-cover bg-center"
