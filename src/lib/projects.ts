@@ -77,6 +77,8 @@ export async function getProjectByName(
     content,
   };
 
+  console.log("======", ProjectObj.content);
+
   return ProjectObj;
 }
 
