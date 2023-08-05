@@ -37,7 +37,7 @@ export async function getProjectByName(
   // Compiles the MDX to JSX
   const { frontmatter, content } = await compileMDX<{
     title: string;
-    date: string;
+    creationDate: string;
     lastUpdated: string;
     description: string;
     type: string;
@@ -62,7 +62,7 @@ export async function getProjectByName(
     meta: {
       id,
       title: frontmatter.title,
-      date: frontmatter.date,
+      creationDate: frontmatter.creationDate,
       tags: frontmatter.tags,
       lastUpdated: frontmatter.lastUpdated,
       description: frontmatter.description,

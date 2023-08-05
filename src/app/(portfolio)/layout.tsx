@@ -44,15 +44,15 @@ export const metadata: Metadata = {
 const PortfolioLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex flex-col w-full h-screen justify-between">
-      <header className="flex justify-between items-center px-4">
+      <header className="flex justify-between items-center px-4 lg:px-8">
         <Navbar />
       </header>
 
-      <main className="flex flex-col flex-grow px-4 w-full max-w-3xl mx-auto">
+      <main className="flex flex-col flex-grow w-full max-w-3xl px-4 mx-auto">
         {children}
       </main>
 
-      <footer className="bg-stone-900 px-4">
+      <footer className="bg-stone-900 px-4 lg:px-8">
         <Footer />
       </footer>
     </div>

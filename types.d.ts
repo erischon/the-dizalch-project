@@ -1,7 +1,7 @@
 type ProjectMeta = {
   id: string;
   title: string;
-  date: string;
+  creationDate: string;
   lastUpdated: string;
   description: string;
   type: string;

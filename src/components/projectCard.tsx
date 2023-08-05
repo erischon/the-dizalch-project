@@ -11,7 +11,7 @@ type Props = {
 };
 
 /**
- * @description Displays a project
+ * @description Displays a project as a card
  * @version 1.0.0
  */
 export default function ProjectCard({ project }: Props) {
@@ -19,18 +19,18 @@ export default function ProjectCard({ project }: Props) {
 
   return (
     <>
-      <Link href={`/projects/${id}`}>
-        <article className="flex justify-center items-center w-full h-[175px] cursor-pointer shadow-md">
+      <Link href={`/projects/${id}`} className="">
+        <article className="flex justify-center items-center w-full h-[175px] cursor-pointer shadow-md group overflow-hidden relative">
           <div
-            className="relative w-full h-full bg-cover bg-center"
+            className="relative w-full h-full bg-cover bg-center transition-transform duration-200 group-hover:scale-105"
             style={{
               backgroundImage: `url(${GITHUB_REPO_URL}/${PROJECTS_FOLDER_NAME}/${PROJECTS_IMAGES_FOLDER_NAME}/${image}.webp)`,
             }}
-          >
-            <h2 className="absolute bottom-0 right-0 w-[max-content] py-2 px-8 text-md text-right color-black opacity-90 bg-teal-400 font-semibold">
-              {title}
-            </h2>
-          </div>
+          ></div>
+
+          <h2 className="absolute top-0 left-0 w-[max-content] py-2 px-8 text-md md:text-lg text-white opacity-90 bg-teal-500 font-semibold">
+            {title}
+          </h2>
         </article>
       </Link>
     </>

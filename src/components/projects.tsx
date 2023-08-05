@@ -1,4 +1,5 @@
 import { getProjectsMeta } from "@/lib/projects";
+
 import ProjectCard from "@/components/projectCard";
 
 /**
@@ -9,17 +10,19 @@ export default async function Projects() {
   const projects = await getProjectsMeta();
 
   if (!projects) {
-    return <p className="text-center">No posts found.</p>;
+    return <p className="text-center">No projects found.</p>;
   }
 
   return (
-    <section className="mt-6 mx-auto">
-      <div className="mb-4">
-        <h2 className="text-4xl font-semibold">Projects</h2>
-        <p className="">La liste des projets</p>
+    <section className="my-8 mx-auto">
+      <div className="mb-8">
+        <h2 className="text-2xl sm:text-4xl font-semibold mb-1">Projects</h2>
+        <p className="text-gray-500 text-sm sm:text-md">
+          La liste des différents projets
+        </p>
       </div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+      <div className="grid sm:grid-cols-2 gap-3">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
