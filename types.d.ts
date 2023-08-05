@@ -8,6 +8,7 @@ type ProjectMeta = {
   liveUrl: string;
   codeUrl: string;
   caseStudyUrl: string;
+  client: string;
   role: string;
   featured: boolean;
   image: string;

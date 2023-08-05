@@ -44,6 +44,7 @@ export async function getProjectByName(
     liveUrl: string;
     codeUrl: string;
     caseStudyUrl: string;
+    client: string;
     role: string;
     featured: boolean;
     image: string;
@@ -70,14 +71,13 @@ export async function getProjectByName(
       liveUrl: frontmatter.liveUrl,
       codeUrl: frontmatter.codeUrl,
       caseStudyUrl: frontmatter.caseStudyUrl,
+      client: frontmatter.client,
       role: frontmatter.role,
       featured: frontmatter.featured,
       image: frontmatter.image,
     },
     content,
   };
-
-  console.log("======", ProjectObj.content);
 
   return ProjectObj;
 }
@@ -121,4 +121,25 @@ export async function getProjectsMeta(): Promise<ProjectMeta[] | undefined> {
 
   // return projects.sort((a, b) => (a.date < b.date ? 1 : -1));
   return projects;
+}
+
+/**
+ * @description Fetches projects by client from the GitHub repo and returns an array of project metadata
+ * @version 1.0.0
+ */
+export async function getProjectsByClient(
+  client: string
+): Promise<Project | undefined> {
+  // get the projects list
+  const projects = await getProjectsMeta();
+
+  if (!projects) return undefined;
+
+  // filter project by client
+  const filteredProjects: any = projects.filter((project) => {
+    return project.client === client;
+  });
+
+  // return the projects
+  return filteredProjects;
 }
