@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
 
 /**
@@ -14,17 +12,29 @@ const Footer = () => {
       </div>
 
       <div className="flex gap-2">
-        <Link href="https://www.linkedin.com/in/ericschonhofen/">
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/ericschonhofen/"
+          rel="noopener noreferrer"
+        >
           <BsLinkedin className="text-3xl inline-block mr-2 text-teal-300 hover:text-gray-300" />
-        </Link>
+        </a>
 
-        <Link href="https://github.com/erischon">
+        <a
+          target="_blank"
+          href="https://github.com/erischon"
+          rel="noopener noreferrer"
+        >
           <BsGithub className="text-3xl inline-block mr-2 text-teal-300 hover:text-gray-300" />
-        </Link>
+        </a>
 
-        <Link href="https://twitter.com/erischon">
+        <a
+          target="_blank"
+          href="https://twitter.com/erischon"
+          rel="noopener noreferrer"
+        >
           <BsTwitter className="text-3xl inline-block mr-2 text-teal-300 hover:text-gray-300" />
-        </Link>
+        </a>
       </div>
     </div>
   );

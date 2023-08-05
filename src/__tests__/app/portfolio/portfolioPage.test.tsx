@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 
-import PortfolioPage from "@/app/(portfolio)/(routes)/page";
+import PortfolioPage from "@/app/(portfolio)/page";
 
 import { TAGLINE } from "@/lib/constants";
 

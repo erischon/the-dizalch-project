@@ -2,6 +2,7 @@ import { Metadata } from "next";
 
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import Brand from "@/components/brand";
 
 export const seoData = {
   title: "The Dizalch Project",
@@ -45,12 +46,11 @@ const PortfolioLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex flex-col w-full h-screen justify-between">
       <header className="flex justify-between items-center px-4 lg:px-8">
+        <Brand />
         <Navbar />
       </header>
 
-      <main className="flex flex-col flex-grow w-full max-w-3xl px-4 mx-auto">
-        {children}
-      </main>
+      <main className="px-4 lg:px-8">{children}</main>
 
       <footer className="bg-stone-900 px-4 lg:px-8">
         <Footer />
