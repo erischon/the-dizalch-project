@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { getProjectsByClient } from "@/lib/projects";
 
 interface ClientsProps {
@@ -27,8 +29,20 @@ const ProjectsByClient = async ({ clients }: ClientsProps) => {
   return (
     <div className="">
       {projectsByClients.map((obj: any) => (
-        <div key={obj.clientName}>
-          {obj.clientName} {obj.projects.map((project: any) => project.title)}
+        <div key={obj.clientName} className="my-4">
+          <div className="text-xs text-gray-500">{obj.clientName}</div>
+
+          <div className="flex gap-4 items-center">
+            {obj.projects.map((project: any) => (
+              <Link
+                key={project.title}
+                href={`/projects/${project.id}`}
+                className="p-1 shadow-md"
+              >
+                <div>{project.title}</div>
+              </Link>
+            ))}
+          </div>
         </div>
       ))}
     </div>

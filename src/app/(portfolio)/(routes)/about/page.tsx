@@ -35,7 +35,7 @@ const AboutPage = () => {
 
       <h2 className="font-semibold text-2xl my-4">Expérience</h2>
 
-      <article className="border border-gray-200 shadow-md p-8">
+      <article className="border border-gray-200 shadow-md p-8 my-8">
         <p className="text-xs text-gray-500">Janv 2022 - aujourd'hui</p>
 
         <div className="flex flex-col sm:flex-row justify-between gap-2 text-xl font-semibold mb-2">
@@ -44,13 +44,9 @@ const AboutPage = () => {
         </div>
 
         <div className="">
-          <ProjectsByClient clients={["OpenClassrooms", "Terre d'avance"]} />
-        </div>
-
-        <div className="technos">
-          <span className="technos-title">Stack principal :</span>
-
-          <div className="techs">techs</div>
+          <ProjectsByClient
+            clients={["OpenClassrooms", "Terre d'avance", "Eri Schön"]}
+          />
         </div>
       </article>
     </section>
