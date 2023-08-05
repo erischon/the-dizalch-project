@@ -50,7 +50,7 @@ const PortfolioLayout = ({ children }: { children: React.ReactNode }) => {
         <Navbar />
       </header>
 
-      <main className="px-4 lg:px-8">{children}</main>
+      <main className="px-4 lg:px-8 flex-grow">{children}</main>
 
       <footer className="bg-stone-900 px-4 lg:px-8">
         <Footer />
