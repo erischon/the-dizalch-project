@@ -48,7 +48,9 @@ const PortfolioLayout = ({ children }: { children: React.ReactNode }) => {
         <Navbar />
       </header>
 
-      <main className="flex flex-col flex-grow px-4">{children}</main>
+      <main className="flex flex-col flex-grow px-4 w-full max-w-3xl mx-auto">
+        {children}
+      </main>
 
       <footer className="bg-stone-900 px-4">
         <Footer />

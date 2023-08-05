@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import { BsGithub, BsLink45Deg } from "react-icons/bs";
+
 import { getProjectsMeta, getProjectByName } from "@/lib/projects";
 import {
   GITHUB_REPO_URL,
@@ -61,27 +63,46 @@ export default async function Project({ params: { projectId } }: Props) {
   return (
     <>
       <section className="flex flex-col-reverse border border-gray-200 shadow-md p-4 w-full sm:grid sm:grid-cols-12">
-        <div className="mt-4 sm:col-span-5">
+        <div className="mt-4 sm:col-span-5 flex flex-col justify-between">
           <div className="">
-            <p className="text-xl font-bold mb-2">{meta.title}</p>
+            <p className="text-xl font-bold mb-2 text-gray-500">{meta.title}</p>
             {meta.type ? (
               <p className="flex items-baseline gap-4">
-                <span className="text-xs">Type</span>
+                <span className="text-xs text-gray-500">Type</span>
                 <span className="text-md font-medium">{meta.type}</span>
               </p>
             ) : null}
             {meta.role ? (
               <p className="flex items-baseline gap-4">
-                <span className="text-xs">Rôle</span>
+                <span className="text-xs text-gray-500">Rôle</span>
                 <span className="text-md font-medium">{meta.role}</span>
               </p>
             ) : null}
             {meta.lastUpdated ? (
               <p className="flex items-baseline gap-4">
-                <span className="text-xs">Dernière mise à jour</span>
+                <span className="text-xs text-gray-500">
+                  Dernière mise à jour
+                </span>
                 <span className="text-md font-medium">{meta.lastUpdated}</span>
               </p>
             ) : null}
+          </div>
+
+          <div className="flex gap-4">
+            <Link
+              href={meta.liveUrl}
+              target="_blank"
+              className="border-2 border-teal-500 rounded-md w-14 h-14 flex justify-center items-center hover:bg-teal-500 hover:text-white"
+            >
+              <BsLink45Deg className="text-3xl" />
+            </Link>
+            <Link
+              href={meta.codeUrl}
+              target="_blank"
+              className="border-2 border-teal-500 rounded-md w-14 h-14 flex justify-center items-center hover:bg-teal-500 hover:text-white"
+            >
+              <BsGithub className="text-2xl" />
+            </Link>
           </div>
         </div>
 
@@ -93,15 +114,6 @@ export default async function Project({ params: { projectId } }: Props) {
             className="object-cover w-full h-full object-top shadow-sm"
           />
         </div>
-
-        {/* <div className="links">
-          <a href={meta.liveUrl} target="_blank">
-            <img src={""} alt="Live" />
-          </a>
-          <a href={meta.codeUrl} target="_blank">
-            <img src={""} alt="Code" />
-          </a>
-        </div> */}
       </section>
 
       <div className="flex border-l-4 border-teal-200 pl-4 mt-6">
@@ -112,7 +124,13 @@ export default async function Project({ params: { projectId } }: Props) {
         <div className="flex flex-wrap gap-1">{tags}</div>
       </div>
 
-      <article className="my-8">{content}</article>
+      <div className="my-8">
+        <h2 className="text-2xl font-semibold text-gray-500">L'étude de cas</h2>
+
+        <article className="w-full my-8 mx-auto prose sm:prose-lg prose-pre:m-4 prose-pre:p-4 prose-p:m-0 prose-teal">
+          {content}
+        </article>
+      </div>
 
       <p className="mb-10">
         <Link href="/">← Back to home</Link>

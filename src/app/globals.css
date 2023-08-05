@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root,
-body {
-  /* background-color: black; */
+@layer components {
+  .mdx-content {
+    @apply prose max-w-3xl mx-auto;
+  }
+
+  .mdx-content > pre {
+    @apply my-4 p-4;
+  }
+
+  .mdx-content > pre > code {
+    @apply block;
+  }
 }
