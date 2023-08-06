@@ -11,7 +11,9 @@ const AboutPage = () => {
     <>
       <section className="">
         <article>
-          <h2 className="font-semibold text-2xl mt-8 mb-4 sm:mb-0">About</h2>
+          <h2 className="font-semibold text-2xl mt-8 mb-4 sm:mb-0 title">
+            About
+          </h2>
 
           <div className="sm:grid sm:grid-cols-12 items-center">
             <div className="col-span-8">
