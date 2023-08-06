@@ -19,6 +19,7 @@ export async function getProjectByName(
   const res = await fetch(
     `https://raw.githubusercontent.com/erischon/docs/master/projects/${fileName}`,
     {
+      next: { revalidate: 10 },
       headers: {
         Accept: "application/vnd.github+json",
         Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
@@ -91,6 +92,7 @@ export async function getProjectsMeta(): Promise<ProjectMeta[] | undefined> {
   const res = await fetch(
     "https://api.github.com/repos/erischon/docs/git/trees/master?recursive=1",
     {
+      next: { revalidate: 10 },
       headers: {
         Accept: "application/vnd.github+json",
         Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
@@ -132,6 +134,8 @@ export async function getProjectsByClient(
 ): Promise<Project | undefined> {
   // get the projects list
   const projects = await getProjectsMeta();
+
+  console.log("====== list of all projects", projects);
 
   if (!projects) return undefined;
 

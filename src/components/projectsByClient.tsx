@@ -42,7 +42,7 @@ const ProjectsByClient = async ({ clients }: ClientsProps) => {
             Pour {obj.clientName}
           </div>
 
-          <div className="flex gap-4 items-center">
+          <div className="flex flex-wrap gap-4 items-center">
             {obj.projects.map((project: any) => (
               <Link
                 key={project.title}
