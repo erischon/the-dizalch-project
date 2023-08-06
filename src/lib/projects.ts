@@ -135,8 +135,6 @@ export async function getProjectsByClient(
   // get the projects list
   const projects = await getProjectsMeta();
 
-  console.log("====== list of all projects", projects);
-
   if (!projects) return undefined;
 
   // filter project by client

@@ -17,15 +17,15 @@ const Experience = () => {
         </div>
 
         <div className="">
-          <ProjectsByClient
-            clients={[
-              "Terre d'avance",
-              "Butterflai",
-              "b-Sharpe",
-              "Eri Schön",
-              "OpenClassrooms",
-            ]}
-          />
+          <div className="flex gap-6">
+            <ProjectsByClient clients={["Terre d'avance"]} />
+
+            <ProjectsByClient clients={["Butterflai"]} />
+
+            <ProjectsByClient clients={["b-Sharpe"]} />
+          </div>
+
+          <ProjectsByClient clients={["Eri Schön", "OpenClassrooms"]} />
         </div>
       </article>
 
