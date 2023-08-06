@@ -5,8 +5,8 @@ import ProjectsByClient from "@/components/projectsByClient";
  */
 const Experience = () => {
   return (
-    <section className="my-8">
-      <h2 className="font-semibold text-2xl my-4">Expérience</h2>
+    <section className="my-10">
+      <h2 className="font-semibold text-2xl my-4 title">Expérience</h2>
 
       <article className="border border-gray-200 shadow-md p-8 my-8">
         <p className="text-xs text-gray-500">Juillet 2020 - aujourd'hui</p>

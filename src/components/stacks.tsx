@@ -6,8 +6,8 @@ import { stacks } from "@/lib/skills";
  */
 const Stacks = () => {
   return (
-    <section className="my-8">
-      <h2 className="font-semibold text-2xl my-4">Stacks</h2>
+    <section className="my-10">
+      <h2 className="font-semibold text-2xl my-4 title">Stacks</h2>
 
       <article className="flex flex-wrap gap-2">
         {stacks.map((stack) => (
