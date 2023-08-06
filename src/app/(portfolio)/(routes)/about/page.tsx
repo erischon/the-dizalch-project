@@ -1,4 +1,5 @@
 import Experience from "@/components/experience";
+import Stacks from "@/components/stacks";
 import Image from "next/image";
 
 /**
@@ -34,6 +35,8 @@ const AboutPage = () => {
           </div>
         </article>
       </section>
+
+      <Stacks />
 
       <Experience />
     </>

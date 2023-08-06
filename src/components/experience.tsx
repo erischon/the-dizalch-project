@@ -5,7 +5,7 @@ import ProjectsByClient from "@/components/projectsByClient";
  */
 const Experience = () => {
   return (
-    <section>
+    <section className="my-8">
       <h2 className="font-semibold text-2xl my-4">Expérience</h2>
 
       <article className="border border-gray-200 shadow-md p-8 my-8">
