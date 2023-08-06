@@ -6,6 +6,10 @@ interface ClientsProps {
   clients: string[];
 }
 
+/**
+ * @description Get a list of projects by client
+ * @version 1.0.0
+ */
 const getpProjectsByClients = async (clients: any) => {
   const projectsByClients: any = [];
 
@@ -23,6 +27,10 @@ const getpProjectsByClients = async (clients: any) => {
   return projectsByClients;
 };
 
+/**
+ * @description Displays a list of projects by client
+ * @version 1.0.0
+ */
 const ProjectsByClient = async ({ clients }: ClientsProps) => {
   const projectsByClients = await getpProjectsByClients(clients);
 
@@ -30,14 +38,16 @@ const ProjectsByClient = async ({ clients }: ClientsProps) => {
     <div className="">
       {projectsByClients.map((obj: any) => (
         <div key={obj.clientName} className="my-4">
-          <div className="text-xs text-gray-500">{obj.clientName}</div>
+          <div className="text-xs text-gray-500 mb-1">
+            Pour {obj.clientName}
+          </div>
 
           <div className="flex gap-4 items-center">
             {obj.projects.map((project: any) => (
               <Link
                 key={project.title}
                 href={`/projects/${project.id}`}
-                className="p-1 shadow-md"
+                className="p-2 shadow-sm flex items-center justify-center bg-teal-50 border"
               >
                 <div>{project.title}</div>
               </Link>
