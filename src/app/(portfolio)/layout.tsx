@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
+import Navbar from "@/components/portfolio/navbar";
+import Footer from "@/components/portfolio/footer";
 import Brand from "@/components/brand";
 
 export const seoData = {

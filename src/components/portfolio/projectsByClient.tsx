@@ -37,17 +37,13 @@ const ProjectsByClient = async ({ clients }: ClientsProps) => {
   return (
     <div className="">
       {projectsByClients.map((obj: any) => (
-        <div key={obj.clientName} className="my-4">
-          <div className="text-xs text-gray-500 mb-1">
-            Pour {obj.clientName}
-          </div>
-
-          <div className="flex flex-wrap gap-4 items-center">
+        <div key={obj.clientName} className="">
+          <div className="flex flex-wrap gap-1 items-center">
             {obj.projects.map((project: any) => (
               <Link
                 key={project.title}
                 href={`/projects/${project.id}`}
-                className="p-2 shadow-sm flex items-center justify-center bg-teal-50 border"
+                className="py-2 px-3 shadow-sm flex items-center justify-center bg-teal-600 text-white rounded-md"
               >
                 <div>{project.title}</div>
               </Link>

@@ -1,4 +1,4 @@
-import Projects from "@/components/projects";
+import Projects from "@/components/portfolio/projects";
 
 /**
  * @description Projects page component, renders the projects

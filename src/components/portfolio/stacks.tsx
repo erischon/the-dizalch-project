@@ -1,4 +1,5 @@
 import { stacks } from "@/lib/skills";
+import SectionTitle from "./sectionTitle";
 
 /**
  * @description Stacks components, used in AboutPage
@@ -10,10 +11,10 @@ const Stacks = () => {
   const tertiaire = stacks.filter((stack) => stack.type === "C");
 
   return (
-    <section className="my-10">
-      <h2 className="font-semibold text-2xl my-4 title">Mes Stacks actuels</h2>
+    <section className="my-8">
+      <SectionTitle title="Mes Stacks" />
 
-      <article className="flex flex-col flex-wrap gap-2 my-4">
+      <article className="flex flex-col flex-wrap gap-2 my-4 sm:m-8">
         <h3 className="text-gray-500 font-semibold w-full">
           Les technos que je manie le plus fréquemment pour les productions
           front-end :
@@ -28,7 +29,7 @@ const Stacks = () => {
         </div>
       </article>
 
-      <article className="flex flex-col flex-wrap gap-2 my-4">
+      <article className="flex flex-col flex-wrap gap-2 my-4 sm:m-8">
         <h3 className="text-gray-500 font-semibold w-full">
           Les technos que je manipule pour le façonnage d'application Web
           Fullstack :
@@ -43,7 +44,7 @@ const Stacks = () => {
         </div>
       </article>
 
-      <article className="flex flex-col flex-wrap gap-2 my-4">
+      <article className="flex flex-col flex-wrap gap-2 my-4 sm:m-8">
         <h3 className="text-gray-500 font-semibold">
           D'autres outils que j'utilise :
         </h3>

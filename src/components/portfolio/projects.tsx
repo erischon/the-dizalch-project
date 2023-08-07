@@ -1,6 +1,7 @@
 import { getProjectsMeta } from "@/lib/projects";
 
-import ProjectCard from "@/components/projectCard";
+import ProjectCard from "@/components/portfolio/projectCard";
+import SectionTitle from "./sectionTitle";
 
 /**
  * @description Displays a list of projects
@@ -15,14 +16,9 @@ export default async function Projects() {
 
   return (
     <section className="my-8 mx-auto">
-      <div className="mb-8">
-        <h2 className="text-2xl sm:text-4xl font-semibold mb-1">Projects</h2>
-        <p className="text-gray-500 text-sm sm:text-md">
-          La liste des différents projets
-        </p>
-      </div>
+      <SectionTitle title="Projets" />
 
-      <div className="grid sm:grid-cols-2 gap-3">
+      <div className="grid sm:grid-cols-2 gap-3 my-8">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
