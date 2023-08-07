@@ -9,8 +9,8 @@ import { TAGLINE } from "@/lib/constants";
 export default function PortfolioPage() {
   return (
     <main className="h-full flex justify-center items-center">
-      <section className="sm:grid sm:grid-cols-12 px-4 mx-auto my-4">
-        <div className="flex flex-col sm:col-span-4 items-start justify-between h-full my-2">
+      <section className="flex justify-start flex-wrap px-4 mx-auto my-4">
+        <div className="flex flex-col items-start justify-between h-full my-2 md:basis-1/2">
           <p>Bonjour, je suis</p>
 
           <h2 className="text-3xl font-bold my-2 text-teal-400 lea">
@@ -34,13 +34,18 @@ export default function PortfolioPage() {
           </a>
         </div>
 
-        <div className=" lg:flex lg:justify-center lg:items-center sm:col-span-5">
-          <div className="lg:w-full lg:h-full relative w-[389px] h-[253px]">
-            <Image src="/home-code.png" alt="" fill />
+        <div className="mx-auto md:basis-1/2">
+          <div className="md:w-full md:h-full relative w-[389px] h-[253px] ">
+            <Image
+              src="/home-code.png"
+              alt=""
+              fill
+              className="object-contain"
+            />
           </div>
         </div>
 
-        <div className="flex flex-col justify-around sm:col-span-3 px-6 gap-2">
+        <div className="flex flex-col w-full sm:flex-row gap-2">
           <div className="flex justify-between items-center shadow-md rounded-sm p-4">
             <div className="w-4/5">
               <h3 className="font-semibold mb-1">Confection d'App Web</h3>
