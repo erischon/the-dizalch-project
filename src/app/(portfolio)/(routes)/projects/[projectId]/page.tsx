@@ -9,6 +9,7 @@ import {
   PROJECTS_FOLDER_NAME,
   PROJECTS_IMAGES_FOLDER_NAME,
 } from "@/lib/constants";
+import SectionTitle from "@/components/portfolio/sectionTitle";
 
 export const revalidate = 0;
 
@@ -55,29 +56,32 @@ export default async function Project({ params: { projectId } }: Props) {
   const { meta, content } = project;
 
   const tags = meta.tags.map((tag, i) => (
-    <Link key={i} href={`/tags/${tag}`} className="py-2 px-4 bg-teal-200">
+    <Link key={i} href={`/tags/${tag}`} className="py-2 px-4 bg-teal-300">
       <div className="text-semibold">{tag}</div>
     </Link>
   ));
 
   return (
     <>
-      <section className="flex flex-col-reverse border border-gray-200 shadow-md p-4 w-full sm:grid sm:grid-cols-12">
-        <div className="mt-4 sm:col-span-5 flex flex-col justify-between">
-          <div className="">
-            <p className="text-xl font-bold mb-2 text-gray-500">{meta.title}</p>
+      <section className="flex flex-col-reverse border border-gray-200 shadow-md p-4 w-full sm:grid sm:grid-cols-12 my-8">
+        <div className="sm:col-span-5 flex flex-col justify-between">
+          <div className="mb-4">
+            <SectionTitle title={meta.title} />
+
             {meta.type ? (
               <p className="flex items-baseline gap-4">
                 <span className="text-xs text-gray-500">Type</span>
                 <span className="text-md font-medium">{meta.type}</span>
               </p>
             ) : null}
+
             {meta.role ? (
               <p className="flex items-baseline gap-4">
                 <span className="text-xs text-gray-500">Rôle</span>
                 <span className="text-md font-medium">{meta.role}</span>
               </p>
             ) : null}
+
             {meta.lastUpdated ? (
               <p className="flex items-baseline gap-4">
                 <span className="text-xs text-gray-500">
@@ -89,24 +93,29 @@ export default async function Project({ params: { projectId } }: Props) {
           </div>
 
           <div className="flex gap-4">
-            <Link
-              href={meta.liveUrl}
-              target="_blank"
-              className="border-2 border-teal-500 rounded-md w-14 h-14 flex justify-center items-center hover:bg-teal-500 hover:text-white"
-            >
-              <BsLink45Deg className="text-3xl" />
-            </Link>
-            <Link
-              href={meta.codeUrl}
-              target="_blank"
-              className="border-2 border-teal-500 rounded-md w-14 h-14 flex justify-center items-center hover:bg-teal-500 hover:text-white"
-            >
-              <BsGithub className="text-2xl" />
-            </Link>
+            {!meta.liveUrl ? null : (
+              <Link
+                href={meta.liveUrl}
+                target="_blank"
+                className="border-2 border-teal-500 rounded-md w-14 h-14 flex justify-center items-center hover:bg-teal-500 hover:text-white"
+              >
+                <BsLink45Deg className="text-3xl" />
+              </Link>
+            )}
+
+            {!meta.codeUrl ? null : (
+              <Link
+                href={meta.codeUrl}
+                target="_blank"
+                className="border-2 border-teal-500 rounded-md w-14 h-14 flex justify-center items-center hover:bg-teal-500 hover:text-white"
+              >
+                <BsGithub className="text-2xl" />
+              </Link>
+            )}
           </div>
         </div>
 
-        <div className="relative w-full h-[200px] sm:col-span-7">
+        <div className="relative w-full h-[250px] sm:col-span-7">
           <Image
             src={`${GITHUB_REPO_URL}/${PROJECTS_FOLDER_NAME}/${PROJECTS_IMAGES_FOLDER_NAME}/${meta.image}.webp`}
             alt={meta.title}

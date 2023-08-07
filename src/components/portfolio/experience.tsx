@@ -68,6 +68,11 @@ const Experience = () => {
           <div className="text-lg">@ Eri Schön</div>
         </div>
 
+        <p className="my-4">
+          Comme des exemples de projet valent mieux que de longs discours en
+          voici quelque-uns réalisés durant cette période :
+        </p>
+
         <div className="my-4">
           <div className="mb-4">
             <h3 className="uppercase font-semibold text-xs text-gray-400 tracking-widest mb-1">
@@ -106,6 +111,11 @@ const Experience = () => {
       </article>
 
       <article className="border border-gray-200 shadow-md p-8 my-4">
+        <p className="mb-6">
+          Et j'ai eu une longue expérience dans le domaine du web avant de
+          devenir développeur :
+        </p>
+
         {lastExperience.map((exp) => (
           <LastX key={exp.company} infos={exp} />
         ))}
