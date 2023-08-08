@@ -13,7 +13,7 @@ export default function PortfolioPage() {
         <div className="flex flex-col items-center justify-center h-[calc(100vh-100px)] mb-8 w-full md:max-w-2xl md:mx-auto">
           <div>
             <div className="mb-4 flex flex-col items-center gap-1 ">
-              <div className="text-xs text-gray-500 md:text-sm">
+              <div className="text-xs text-gray-500 md:text-sm dark:text-gray-100">
                 Bonjour, je suis
               </div>
 
@@ -29,9 +29,17 @@ export default function PortfolioPage() {
 
           <h3 className="mb-8 md:text-lg sm:mb-10 text-center">
             Je suis votre solution pour la fabrication d'application Web{" "}
-            <span className="bg-teal-300 font-semibold">fluide</span>,{" "}
-            <span className="bg-teal-300 font-semibold">rapide</span>, et{" "}
-            <span className="bg-teal-300 font-semibold">fiable</span>
+            <span className="bg-teal-300 font-semibold dark:text-gray-700">
+              fluide
+            </span>
+            ,{" "}
+            <span className="bg-teal-300 font-semibold dark:text-gray-700">
+              rapide
+            </span>
+            , et{" "}
+            <span className="bg-teal-300 font-semibold dark:text-gray-700">
+              fiable
+            </span>
           </h3>
 
           <a href="mailto:erischondev@gmail.com" className="my-8">
@@ -41,7 +49,7 @@ export default function PortfolioPage() {
           </a>
         </div>
 
-        <div className="bg-gray-50 shadow-md p-4">
+        <div className="bg-gray-50 dark:bg-gray-700 shadow-md p-4">
           <h2 className="text-2xl font-semibold mb-4 text-center">
             Tout pour la fabrication et l'entretien de votre application web
           </h2>
@@ -49,7 +57,9 @@ export default function PortfolioPage() {
           <div className="flex flex-col w-full sm:flex-row gap-2 mb-8">
             <div className="flex justify-between items-center shadow-md rounded-md p-4 bg-teal-300">
               <div className="w-4/5">
-                <h3 className="font-semibold mb-1">Confection d'App Web</h3>
+                <h3 className="font-semibold mb-1 dark:text-gray-800">
+                  Confection d'App Web
+                </h3>
                 <p className="text-sm text-black/60">
                   Elaboration et fabrication d'application Web.
                 </p>
@@ -60,7 +70,9 @@ export default function PortfolioPage() {
 
             <div className="flex justify-between items-center shadow-md rounded-md p-4 bg-teal-300">
               <div className="w-4/5">
-                <h3 className="font-semibold mb-1">Refonte et Migration</h3>
+                <h3 className="font-semibold mb-1 dark:text-gray-800">
+                  Refonte et Migration
+                </h3>
                 <p className="text-sm text-black/60">
                   Refonte d'application Web et/ou Migration de technologie.
                 </p>
@@ -71,7 +83,9 @@ export default function PortfolioPage() {
 
             <div className="flex justify-between items-center shadow-md rounded-md p-4 bg-teal-300">
               <div className="w-4/5">
-                <h3 className="font-semibold mb-1">Entretien et Mise à jour</h3>
+                <h3 className="font-semibold mb-1 dark:text-gray-800">
+                  Entretien et Mise à jour
+                </h3>
                 <p className="text-sm text-black/60">
                   Entretien, mise à jour et suivi d'une application Web.
                 </p>

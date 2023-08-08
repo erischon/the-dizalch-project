@@ -36,7 +36,7 @@ const LastX = ({
 }) => {
   return (
     <div className="mb-4">
-      <p className="text-xs text-gray-500">{infos.period}</p>
+      <p className="text-xs text-gray-500 dark:text-gray-300">{infos.period}</p>
 
       <div className="flex flex-col sm:flex-row justify-between mb-2">
         <h3 className="text-xl font-semibold">{infos.position}</h3>
@@ -59,7 +59,9 @@ const Experience = () => {
       <SectionTitle title="Expérience" />
 
       <article className="border border-gray-200 shadow-md p-8 my-4">
-        <p className="text-xs text-gray-500 mb-1">Juillet 2020 - aujourd'hui</p>
+        <p className="text-xs text-gray-500 dark:text-gray-300 mb-1">
+          Juillet 2020 - aujourd'hui
+        </p>
 
         <div className="flex flex-col sm:flex-row justify-between gap-2  mb-2 sm:border-r-8 sm:border-l-8 sm:px-2 sm:border-teal-400">
           <h3 className="text-xl font-semibold">

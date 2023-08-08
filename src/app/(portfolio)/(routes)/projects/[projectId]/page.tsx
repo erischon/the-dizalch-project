@@ -56,7 +56,11 @@ export default async function Project({ params: { projectId } }: Props) {
   const { meta, content } = project;
 
   const tags = meta.tags.map((tag, i) => (
-    <Link key={i} href={`/tags/${tag}`} className="py-2 px-4 bg-teal-300">
+    <Link
+      key={i}
+      href={`/tags/${tag}`}
+      className="py-2 px-4 bg-teal-300 dark:text-gray-900"
+    >
       <div className="text-semibold">{tag}</div>
     </Link>
   ));
@@ -70,21 +74,25 @@ export default async function Project({ params: { projectId } }: Props) {
 
             {meta.type ? (
               <p className="flex items-baseline gap-4">
-                <span className="text-xs text-gray-500">Type</span>
+                <span className="text-xs text-gray-500 dark:text-gray-300">
+                  Type
+                </span>
                 <span className="text-md font-medium">{meta.type}</span>
               </p>
             ) : null}
 
             {meta.role ? (
               <p className="flex items-baseline gap-4">
-                <span className="text-xs text-gray-500">Rôle</span>
+                <span className="text-xs text-gray-500 dark:text-gray-300">
+                  Rôle
+                </span>
                 <span className="text-md font-medium">{meta.role}</span>
               </p>
             ) : null}
 
             {meta.lastUpdated ? (
               <p className="flex items-baseline gap-4">
-                <span className="text-xs text-gray-500">
+                <span className="text-xs text-gray-500 dark:text-gray-300">
                   Dernière mise à jour
                 </span>
                 <span className="text-md font-medium">{meta.lastUpdated}</span>
@@ -134,7 +142,9 @@ export default async function Project({ params: { projectId } }: Props) {
       </div>
 
       <div className="my-8">
-        <h2 className="text-2xl font-semibold text-gray-500">L'étude de cas</h2>
+        <h2 className="text-2xl font-semibold text-gray-500 dark:text-gray-300">
+          L'étude de cas
+        </h2>
 
         <article className="w-full my-8 mx-auto prose sm:prose-lg prose-pre:m-4 prose-pre:p-4 prose-p:m-0 prose-teal">
           {content}

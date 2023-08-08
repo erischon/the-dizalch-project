@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import Navbar from "@/components/portfolio/navbar";
 import Footer from "@/components/portfolio/footer";
 import Brand from "@/components/brand";
+import Header from "@/components/portfolio/header";
 
 export const seoData = {
   title: "The Dizalch Project",

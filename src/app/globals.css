@@ -3,39 +3,15 @@
 @tailwind utilities;
 
 @layer components {
-  .mdx-content {
-    @apply prose max-w-3xl mx-auto;
-  }
-
-  .mdx-content > pre {
-    @apply my-4 p-4;
-  }
-
-  .mdx-content > pre > code {
-    @apply block;
+  body {
+    @apply dark:bg-gray-800 bg-white;
+    @apply dark:text-gray-100 text-gray-900;
   }
 }
 
-.title {
-  position: relative;
-
-  margin: 1rem 0;
-
-  &:before {
-    content: "+";
-    margin-right: 0.5rem;
-    color: #14b8a6;
-    font-weight: 700;
-    font-size: 1.75rem;
-  }
-
-  &:after {
-    position: absolute;
-    bottom: 40%;
-    margin-left: 1rem;
-    content: "";
-    width: 120px;
-    height: 0.2rem;
-    background-color: #14b8a6;
+@layer base {
+  body {
+    @apply dark:bg-gray-800 bg-white;
+    @apply dark:text-gray-100 text-gray-900;
   }
 }

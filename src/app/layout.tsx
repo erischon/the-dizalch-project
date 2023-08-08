@@ -1,3 +1,7 @@
+"use client";
+
+import { MyThemeContextProvider } from "@/store/ThemeContext";
+
 import "./globals.css";
 
 /**
@@ -10,8 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="">{children}</body>
-    </html>
+    <MyThemeContextProvider>
+      <html lang="en">
+        <body className="">{children}</body>
+      </html>
+    </MyThemeContextProvider>
   );
 }

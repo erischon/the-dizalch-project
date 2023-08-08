@@ -15,14 +15,17 @@ const Stacks = () => {
       <SectionTitle title="Mes Stacks" />
 
       <article className="flex flex-col flex-wrap gap-2 my-4 sm:m-8">
-        <h3 className="text-gray-500 font-semibold w-full">
+        <h3 className="text-gray-500 dark:text-gray-300 font-semibold w-full">
           Les technos que je manie le plus fréquemment pour les productions
           front-end :
         </h3>
 
         <div className="flex flex-wrap shadow-sm w-fit p-4">
           {primaire.map((stack) => (
-            <div key={stack.name} className="text-teal-600 text-4xl p-2">
+            <div
+              key={stack.name}
+              className="text-teal-600 dark:text-teal-200 text-4xl p-2"
+            >
               <stack.icon />
             </div>
           ))}
@@ -30,14 +33,17 @@ const Stacks = () => {
       </article>
 
       <article className="flex flex-col flex-wrap gap-2 my-4 sm:m-8">
-        <h3 className="text-gray-500 font-semibold w-full">
+        <h3 className="text-gray-500 dark:text-gray-300 font-semibold w-full">
           Les technos que je manipule pour le façonnage d'application Web
           Fullstack :
         </h3>
 
         <div className="flex flex-wrap shadow-sm w-fit p-4">
           {secondaire.map((stack) => (
-            <div key={stack.name} className="text-teal-600 text-4xl p-2">
+            <div
+              key={stack.name}
+              className="text-teal-600 dark:text-teal-200 text-4xl p-2"
+            >
               <stack.icon />
             </div>
           ))}
@@ -45,13 +51,16 @@ const Stacks = () => {
       </article>
 
       <article className="flex flex-col flex-wrap gap-2 my-4 sm:m-8">
-        <h3 className="text-gray-500 font-semibold">
+        <h3 className="text-gray-500 dark:text-gray-300 font-semibold">
           D'autres outils que j'utilise :
         </h3>
 
         <div className="flex flex-wrap shadow-sm w-fit p-4">
           {tertiaire.map((stack) => (
-            <div key={stack.name} className="text-teal-600 text-4xl p-2">
+            <div
+              key={stack.name}
+              className="text-teal-600 dark:text-teal-200 text-4xl p-2"
+            >
               <stack.icon />
             </div>
           ))}
