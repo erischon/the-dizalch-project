@@ -1,8 +1,10 @@
 "use client";
 
-import MyThemeContext from "@/store/ThemeContext";
-
 import { useContext } from "react";
+
+import { MdDarkMode, MdLightMode } from "react-icons/md";
+
+import MyThemeContext from "@/store/ThemeContext";
 
 const Header = () => {
   const themeCtx: { isDarkMode?: boolean; toggleThemeHandler: () => void } =
@@ -15,7 +17,7 @@ const Header = () => {
   return (
     <div>
       <button className="" onClick={toggleThemeHandler}>
-        Toggle {themeCtx.isDarkMode ? "Light" : "Dark"}
+        {themeCtx.isDarkMode ? <MdLightMode /> : <MdDarkMode />}
       </button>
     </div>
   );

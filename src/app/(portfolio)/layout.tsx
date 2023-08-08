@@ -46,9 +46,13 @@ export const metadata: Metadata = {
 const PortfolioLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex flex-col w-full h-screen justify-between">
-      <header className="flex justify-between items-center px-4 lg:px-8">
+      <header className="flex justify-between items-center px-4 lg:px-12">
         <Brand />
-        <Navbar />
+
+        <div className="flex gap-6 items-center">
+          <Navbar />
+          <Header />
+        </div>
       </header>
 
       <main className="px-4 lg:px-8 flex-grow">{children}</main>
