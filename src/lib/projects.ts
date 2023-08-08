@@ -1,4 +1,7 @@
 import { compileMDX } from "next-mdx-remote/rsc";
+import rehypeAutolinkHeadings from "rehype-autolink-headings/lib";
+import rehypeHighlight from "rehype-highlight/lib";
+import rehypeSlug from "rehype-slug";
 
 type Filetree = {
   tree: [
@@ -20,6 +23,7 @@ export async function getProjectByName(
     `https://raw.githubusercontent.com/erischon/docs/master/projects/${fileName}`,
     {
       next: { revalidate: 10 },
+      cache: "no-store",
       headers: {
         Accept: "application/vnd.github+json",
         Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
@@ -54,6 +58,18 @@ export async function getProjectByName(
     source: rawMDX,
     options: {
       parseFrontmatter: true,
+      mdxOptions: {
+        rehypePlugins: [
+          rehypeHighlight,
+          rehypeSlug,
+          [
+            rehypeAutolinkHeadings,
+            {
+              behavior: "wrap",
+            },
+          ],
+        ],
+      },
     },
   });
 
@@ -93,6 +109,7 @@ export async function getProjectsMeta(): Promise<ProjectMeta[] | undefined> {
     "https://api.github.com/repos/erischon/docs/git/trees/master?recursive=1",
     {
       next: { revalidate: 10 },
+      cache: "no-store",
       headers: {
         Accept: "application/vnd.github+json",
         Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,

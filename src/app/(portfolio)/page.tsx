@@ -9,7 +9,7 @@ import { TAGLINE } from "@/lib/constants";
 export default function PortfolioPage() {
   return (
     <div className="h-full flex justify-center items-center">
-      <section className="flex justify-start flex-wrap px-4 mx-auto my-8">
+      <section className="flex justify-start flex-wrap px-4 mx-auto mb-16">
         <div className="flex flex-col items-center justify-center h-[calc(100vh-100px)] mb-8 w-full md:max-w-2xl md:mx-auto">
           <div>
             <div className="mb-4 flex flex-col items-center gap-1 ">
@@ -49,12 +49,12 @@ export default function PortfolioPage() {
           </a>
         </div>
 
-        <div className="bg-gray-50 dark:bg-gray-700 shadow-md p-4">
-          <h2 className="text-2xl font-semibold mb-4 text-center">
+        <div className="bg-gray-50 dark:bg-gray-700 shadow-md p-16 mx-auto">
+          <h2 className="text-2xl font-semibold mb-8 text-center">
             Tout pour la fabrication et l'entretien de votre application web
           </h2>
 
-          <div className="flex flex-col w-full sm:flex-row gap-2 mb-8">
+          <div className="flex flex-col w-full sm:flex-row gap-8">
             <div className="flex justify-between items-center shadow-md rounded-md p-4 bg-teal-300">
               <div className="w-4/5">
                 <h3 className="font-semibold mb-1 dark:text-gray-800">

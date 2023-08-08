@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import "highlight.js/styles/atom-one-dark.css";
 
 import { BsGithub, BsLink45Deg } from "react-icons/bs";
 
@@ -50,7 +51,6 @@ export async function generateMetadata({ params: { projectId } }: Props) {
 export default async function Project({ params: { projectId } }: Props) {
   const project = await getProjectByName(`${projectId}.mdx`); // deduped!
 
-  console.log(project);
   if (!project) return null;
 
   const { meta, content } = project;
