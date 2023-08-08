@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import "highlight.js/styles/atom-one-dark.css";
+import "highlight.js/styles/github-dark.css";
 
 import { BsGithub, BsLink45Deg } from "react-icons/bs";
 
