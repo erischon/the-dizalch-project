@@ -6,7 +6,7 @@ import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
  */
 const Footer = () => {
   return (
-    <div className="flex flex-col-reverse gap-4 py-8 items-end sm:flex-row sm:justify-between sm:items-center">
+    <div className="flex flex-col-reverse gap-4 py-8 items-center sm:flex-row sm:justify-between sm:items-center">
       <div className="text-gray-300 text-xs">
         © 2020-2023 Eri Schön All rights reserved
       </div>

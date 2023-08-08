@@ -1,4 +1,4 @@
-export const TAGLINE = "Je confectionne des apps web";
+export const TAGLINE = "Votre ressource pour une application web sur mesure";
 
 export const GITHUB_REPO_URL =
   "https://raw.githubusercontent.com/erischon/docs/master";
