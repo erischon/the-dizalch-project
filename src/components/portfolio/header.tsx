@@ -15,11 +15,11 @@ const Header = () => {
   }
 
   return (
-    <div>
-      <button className="" onClick={toggleThemeHandler}>
+    <>
+      <button className="text-lg" onClick={toggleThemeHandler}>
         {themeCtx.isDarkMode ? <MdLightMode /> : <MdDarkMode />}
       </button>
-    </div>
+    </>
   );
 };
 export default Header;

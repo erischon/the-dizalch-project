@@ -16,10 +16,8 @@ export default function RootLayout({
   return (
     <MyThemeContextProvider>
       <html lang="en">
-        <body className="h-full">
-          <div className="dark:bg-gray-800 bg-white dark:text-gray-100 text-gray-900">
-            {children}
-          </div>
+        <body>
+          <div className="dark:bg-gray-800 dark:text-gray-100">{children}</div>
         </body>
       </html>
     </MyThemeContextProvider>

@@ -8,7 +8,7 @@ import { TAGLINE } from "@/lib/constants";
 
 export default function PortfolioPage() {
   return (
-    <main className="h-full flex justify-center items-center">
+    <div className="h-full flex justify-center items-center">
       <section className="flex justify-start flex-wrap px-4 mx-auto my-8">
         <div className="flex flex-col items-center justify-center h-[calc(100vh-100px)] mb-8 w-full md:max-w-2xl md:mx-auto">
           <div>
@@ -96,6 +96,6 @@ export default function PortfolioPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
