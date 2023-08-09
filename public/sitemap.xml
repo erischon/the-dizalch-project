@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>http:localhost:3000</loc><lastmod>2023-08-09T14:27:31.417Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/about</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/React.js</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Redux-Toolkit</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/React-Router</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/API REST</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/HTML</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Tailwindcss</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Typescript</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Next.js</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Prisma</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/MongoDB</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/GraphQL</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/CSS</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Python</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Django</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/DjangoRestFramework</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Javascript</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Node.js</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Express.js</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Tailwind CSS</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Figma</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Vercel</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Heroku</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Git</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Github</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/SaSS</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Astro</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Flask</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/PostgreSQL</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Gatsby</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Sanity</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Ant Design</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/Rechart</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/tags/recharts</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/argentbank</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/boc</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/booki</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/bsharpe</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/butterflai</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/dizalch</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/erischon</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/fisheye</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/gameon</loc><lastmod>2023-08-09T14:27:31.419Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/grandpybot</loc><lastmod>2023-08-09T14:27:31.420Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/kambr</loc><lastmod>2023-08-09T14:27:31.420Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/kasa</loc><lastmod>2023-08-09T14:27:31.420Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/lesPetitsPlats</loc><lastmod>2023-08-09T14:27:31.420Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/mycookbook</loc><lastmod>2023-08-09T14:27:31.420Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/netflix-clone</loc><lastmod>2023-08-09T14:27:31.420Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/ohmyfood</loc><lastmod>2023-08-09T14:27:31.420Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/portfolio-1</loc><lastmod>2023-08-09T14:27:31.420Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/portfolio-2</loc><lastmod>2023-08-09T14:27:31.420Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/sextant</loc><lastmod>2023-08-09T14:27:31.420Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/sportsee</loc><lastmod>2023-08-09T14:27:31.420Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http:localhost:3000/projects/thesubstitute</loc><lastmod>2023-08-09T14:27:31.420Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+</urlset>

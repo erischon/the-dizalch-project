@@ -6,6 +6,8 @@ import { MdHomeRepairService } from "react-icons/md";
 
 import { TAGLINE } from "@/lib/constants";
 
+export const revalidate = 86400;
+
 export default function PortfolioPage() {
   return (
     <div className="h-full flex justify-center items-center">

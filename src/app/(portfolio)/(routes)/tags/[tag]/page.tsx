@@ -2,8 +2,9 @@ import { getProjectsMeta } from "@/lib/projects";
 import ProjectCard from "@/components/portfolio/projectCard";
 import Link from "next/link";
 import SectionTitle from "@/components/portfolio/sectionTitle";
+import { get } from "http";
 
-export const revalidate = 0;
+export const revalidate = 86400;
 
 type Props = {
   params: {
@@ -35,6 +36,10 @@ export function generateMetadata({ params: { tag } }: Props) {
   };
 }
 
+/**
+ * @description List the projects with the tag X
+ * @version 1.0.0
+ */
 export default async function TagProjectList({ params: { tag } }: Props) {
   const projects = await getProjectsMeta(); //deduped!
 
@@ -45,15 +50,17 @@ export default async function TagProjectList({ params: { tag } }: Props) {
 
   if (!tagProjects.length) {
     return (
-      <div className="text-center">
-        <p className="mt-10">Sorry, no projects for that keyword.</p>
-        <Link href="/">Back to Home</Link>
-      </div>
+      <section className="mx-auto flex flex-col min-h-[calc(100vh-140px)] justify-center items-center">
+        <p className="text-xl font-semibold mb-4">{`Sorry, no projects for ${tag}.`}</p>
+        <Link href="/" className="underline">
+          Back to Home
+        </Link>
+      </section>
     );
   }
 
   return (
-    <section className="my-8 mx-auto">
+    <section className="my-8 mx-auto flex flex-col min-h-[calc(100vh-200px)]">
       <SectionTitle title={`Avec ${tag}`} />
 
       <div className="grid sm:grid-cols-2 gap-3 my-8">

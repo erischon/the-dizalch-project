@@ -11,8 +11,9 @@ import {
   PROJECTS_IMAGES_FOLDER_NAME,
 } from "@/lib/constants";
 import SectionTitle from "@/components/portfolio/sectionTitle";
+import getFormattedDate from "@/lib/getDateFormatted";
 
-export const revalidate = 0;
+export const revalidate = 86400;
 
 type Props = {
   params: {
@@ -20,15 +21,19 @@ type Props = {
   };
 };
 
-// export async function generateStaticParams() {
-//   const projects = await getProjectsMeta(); // deduped!
+/**
+ * @description
+ * @version 1.0.0
+ */
+export async function generateStaticParams() {
+  const projects = await getProjectsMeta(); // deduped!
 
-//   if (!projects) return [];
+  if (!projects) return [];
 
-//   return projects.map((project) => ({
-//     projectId: project.id,
-//   }));
-// }
+  return projects.map((project) => ({
+    projectId: project.id,
+  }));
+}
 
 /**
  * @description Generates the metadata for the page
@@ -61,7 +66,7 @@ export default async function Project({ params: { projectId } }: Props) {
       href={`/tags/${tag}`}
       className="py-1 px-2 bg-teal-300 dark:text-gray-900 font-semibold"
     >
-      <div className="text-semibold">{tag}</div>
+      <div className="text-semibold capitalize">{tag}</div>
     </Link>
   ));
 
@@ -95,7 +100,9 @@ export default async function Project({ params: { projectId } }: Props) {
                 <span className="text-xs text-gray-500 dark:text-gray-300">
                   Dernière mise à jour
                 </span>
-                <span className="text-md font-medium">{meta.lastUpdated}</span>
+                <span className="text-md font-medium">
+                  {getFormattedDate(meta.lastUpdated)}
+                </span>
               </p>
             ) : null}
           </div>

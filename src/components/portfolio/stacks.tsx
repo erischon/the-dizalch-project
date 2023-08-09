@@ -1,4 +1,6 @@
 import { stacks } from "@/lib/skills";
+
+import SkillCard from "./skillCard";
 import SectionTitle from "./sectionTitle";
 
 /**
@@ -22,12 +24,7 @@ const Stacks = () => {
 
         <div className="flex flex-wrap shadow-sm w-fit p-4">
           {primaire.map((stack) => (
-            <div
-              key={stack.name}
-              className="text-teal-600 dark:text-teal-200 text-4xl p-2"
-            >
-              <stack.icon />
-            </div>
+            <SkillCard skill={stack} key={stack.name} />
           ))}
         </div>
       </article>
@@ -40,12 +37,7 @@ const Stacks = () => {
 
         <div className="flex flex-wrap shadow-sm w-fit p-4">
           {secondaire.map((stack) => (
-            <div
-              key={stack.name}
-              className="text-teal-600 dark:text-teal-200 text-4xl p-2"
-            >
-              <stack.icon />
-            </div>
+            <SkillCard skill={stack} key={stack.name} />
           ))}
         </div>
       </article>
@@ -57,12 +49,7 @@ const Stacks = () => {
 
         <div className="flex flex-wrap shadow-sm w-fit p-4">
           {tertiaire.map((stack) => (
-            <div
-              key={stack.name}
-              className="text-teal-600 dark:text-teal-200 text-4xl p-2"
-            >
-              <stack.icon />
-            </div>
+            <SkillCard skill={stack} key={stack.name} />
           ))}
         </div>
       </article>

@@ -134,8 +134,8 @@ export async function getProjectsMeta(): Promise<ProjectMeta[] | undefined> {
     }
   }
 
-  // return projects.sort((a, b) => (a.date < b.date ? 1 : -1));
-  return projects;
+  return projects.sort((a, b) => (a.lastUpdated < b.lastUpdated ? 1 : -1));
+  // return projects;
 }
 
 /**
