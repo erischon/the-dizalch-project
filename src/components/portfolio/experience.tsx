@@ -98,7 +98,7 @@ const Experience = () => {
 
           <div className="mb-4">
             <h3 className="uppercase font-semibold text-xs text-gray-400 tracking-widest mb-1">
-              Projets Proffessionnels
+              Projets Professionnels
             </h3>
 
             <div className="flex gap-2">
