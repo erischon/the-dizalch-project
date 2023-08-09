@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <>
-      <button className="text-lg" onClick={toggleThemeHandler}>
+      <button className="text-xl" onClick={toggleThemeHandler}>
         {themeCtx.isDarkMode ? <MdLightMode /> : <MdDarkMode />}
       </button>
     </>

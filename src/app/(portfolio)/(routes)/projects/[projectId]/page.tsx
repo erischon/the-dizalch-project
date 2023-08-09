@@ -59,7 +59,7 @@ export default async function Project({ params: { projectId } }: Props) {
     <Link
       key={i}
       href={`/tags/${tag}`}
-      className="py-2 px-4 bg-teal-300 dark:text-gray-900"
+      className="py-1 px-2 bg-teal-300 dark:text-gray-900 font-semibold"
     >
       <div className="text-semibold">{tag}</div>
     </Link>
@@ -67,7 +67,7 @@ export default async function Project({ params: { projectId } }: Props) {
 
   return (
     <>
-      <section className="flex flex-col-reverse border border-gray-200 shadow-md p-4 w-full sm:grid sm:grid-cols-12 my-8">
+      <section className="flex flex-col-reverse w-full sm:grid sm:grid-cols-12 my-10">
         <div className="sm:col-span-5 flex flex-col justify-between">
           <div className="mb-4">
             <SectionTitle title={meta.title} />
@@ -133,15 +133,15 @@ export default async function Project({ params: { projectId } }: Props) {
         </div>
       </section>
 
-      <div className="flex border-l-4 border-teal-200 pl-4 mt-6">
+      <div className="flex border-l-8 border-teal-200 pl-4 my-10">
         <p>{meta.description}</p>
       </div>
 
-      <div className="mt-6">
+      <div className="my-10">
         <div className="flex flex-wrap gap-1">{tags}</div>
       </div>
 
-      <div className="my-8">
+      <div className="my-10">
         <h2 className="text-2xl font-semibold text-gray-500 dark:text-gray-300">
           L'étude de cas
         </h2>
@@ -151,7 +151,7 @@ export default async function Project({ params: { projectId } }: Props) {
         </article>
       </div>
 
-      <p className="mb-10">
+      <p className="my-10">
         <Link href="/">← Back to home</Link>
       </p>
     </>

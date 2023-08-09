@@ -29,6 +29,10 @@ const lastExperience = [
   },
 ];
 
+/**
+ * @description Last experience component
+ * @version 1.0.0
+ */
 const LastX = ({
   infos,
 }: {
@@ -36,9 +40,11 @@ const LastX = ({
 }) => {
   return (
     <div className="mb-4">
-      <p className="text-xs text-gray-500 dark:text-gray-300">{infos.period}</p>
+      <p className="text-xs text-gray-500 dark:text-gray-300 mb-1">
+        {infos.period}
+      </p>
 
-      <div className="flex flex-col sm:flex-row justify-between mb-2">
+      <div className="flex flex-col sm:flex-row justify-between mb-2 sm:border-l-8 sm:pl-2 sm:border-teal-400">
         <h3 className="text-xl font-semibold">{infos.position}</h3>
 
         <div className="text-lg text-teal-500 sm:font-bold">
@@ -58,12 +64,12 @@ const Experience = () => {
     <section className="my-10">
       <SectionTitle title="Expérience" />
 
-      <article className="border border-gray-200 shadow-md p-8 my-4">
+      <article className="border border-gray-200 dark:border-gray-600 shadow-md p-8 my-4">
         <p className="text-xs text-gray-500 dark:text-gray-300 mb-1">
           Juillet 2020 - aujourd'hui
         </p>
 
-        <div className="flex flex-col sm:flex-row justify-between gap-2  mb-2 sm:border-r-8 sm:border-l-8 sm:px-2 sm:border-teal-400">
+        <div className="flex flex-col sm:flex-row justify-between gap-2 mb-2 sm:border-l-8 sm:pl-2 sm:border-teal-400">
           <h3 className="text-xl font-semibold">
             Développeur Web Full-Stack Freelance
           </h3>
@@ -112,7 +118,7 @@ const Experience = () => {
         </div>
       </article>
 
-      <article className="border border-gray-200 shadow-md p-8 my-4">
+      <article className="border border-gray-200 dark:border-gray-600 shadow-md p-8 my-4">
         <p className="mb-6">
           Et j'ai eu une longue expérience dans le domaine du web avant de
           devenir développeur :

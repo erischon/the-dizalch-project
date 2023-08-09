@@ -23,6 +23,8 @@ import {
   SiDigitalocean,
   SiNodedotjs,
   SiExpress,
+  SiJest,
+  SiCypress,
 } from "react-icons/si";
 
 export const stacks = [
@@ -168,6 +170,18 @@ export const stacks = [
     name: "Digital Ocean",
     icon: SiDigitalocean,
     type: "C",
+    frequency: 2,
+  },
+  {
+    name: "Jest",
+    icon: SiJest,
+    type: "B",
+    frequency: 2,
+  },
+  {
+    name: "Cypress",
+    icon: SiCypress,
+    type: "B",
     frequency: 2,
   },
 ];
