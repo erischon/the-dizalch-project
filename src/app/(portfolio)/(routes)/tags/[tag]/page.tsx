@@ -1,6 +1,7 @@
 import { getProjectsMeta } from "@/lib/projects";
-import Projects from "@/components/portfolio/projects";
+import ProjectCard from "@/components/portfolio/projectCard";
 import Link from "next/link";
+import SectionTitle from "@/components/portfolio/sectionTitle";
 
 export const revalidate = 0;
 
@@ -52,15 +53,14 @@ export default async function TagProjectList({ params: { tag } }: Props) {
   }
 
   return (
-    <>
-      <h2 className="text-3xl mt-4 mb-0">Results for: #{tag}</h2>
-      <section className="mt-6 mx-auto max-w-2xl">
-        <ul className="w-full list-none p-0">
-          {tagProjects.map((project) => (
-            <Projects key={project.id} project={project} />
-          ))}
-        </ul>
-      </section>
-    </>
+    <section className="my-8 mx-auto">
+      <SectionTitle title={`Avec ${tag}`} />
+
+      <div className="grid sm:grid-cols-2 gap-3 my-8">
+        {tagProjects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
+      </div>
+    </section>
   );
 }
