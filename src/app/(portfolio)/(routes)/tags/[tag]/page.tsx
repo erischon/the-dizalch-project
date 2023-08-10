@@ -27,12 +27,13 @@ export async function generateStaticParams() {
 }
 
 /**
- * @description
+ * @description Generates the metadata for the page
  * @version 1.0.0
  */
 export function generateMetadata({ params: { tag } }: Props) {
   return {
-    title: `Les projets avec le tag ${tag}`,
+    title: `Les projets avec ${tag}`,
+    description: `Tous les projets où j'ai utilisé ${tag}`,
   };
 }
 

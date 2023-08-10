@@ -50,9 +50,20 @@ export async function generateMetadata({ params: { projectId } }: Props) {
 
   return {
     title: project.meta.title,
+    description: project.meta.description,
+    openGraph: {
+      title: project.meta.title,
+      description: project.meta.description,
+      images: `${GITHUB_REPO_URL}/${PROJECTS_FOLDER_NAME}/${PROJECTS_IMAGES_FOLDER_NAME}/${project.meta.image}.webp`,
+      url: `${process.env.SITE_URL}/projects/${projectId}`,
+    },
   };
 }
 
+/**
+ * @description Generates dynamically the page for a project
+ * @version 1.0.0
+ */
 export default async function Project({ params: { projectId } }: Props) {
   const project = await getProjectByName(`${projectId}.mdx`); // deduped!
 
