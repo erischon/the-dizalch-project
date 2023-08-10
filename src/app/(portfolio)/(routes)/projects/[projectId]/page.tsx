@@ -13,7 +13,7 @@ import {
 import SectionTitle from "@/components/portfolio/sectionTitle";
 import getFormattedDate from "@/lib/getDateFormatted";
 
-export const revalidate = 86400;
+export const revalidate = 0;
 
 type Props = {
   params: {
@@ -159,15 +159,15 @@ export default async function Project({ params: { projectId } }: Props) {
         <div className="flex flex-wrap gap-1">{tags}</div>
       </div>
 
-      <div className="my-10">
+      <section className="my-10 bg-gray-50 p-6 rounded-lg shadow-md dark:shadow-inner">
         <h2 className="text-2xl font-semibold text-gray-500 dark:text-gray-300">
           L'étude de cas
         </h2>
 
-        <article className="w-full my-8 mx-auto prose sm:prose-lg prose-pre:m-4 prose-pre:p-4 prose-p:m-0 prose-teal">
+        <article className="w-full my-8 mx-auto prose sm:prose-md prose-pre:m-4 prose-pre:p-4 prose-p:m-0 prose-teal max-w-none">
           {content}
         </article>
-      </div>
+      </section>
 
       <p className="my-10">
         <Link href="/">← Back to home</Link>
