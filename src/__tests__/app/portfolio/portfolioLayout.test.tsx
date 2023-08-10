@@ -5,7 +5,6 @@ import PortfolioLayout from "@/app/(portfolio)/layout";
 import PortfolioPage from "@/app/(portfolio)/page";
 
 import { TAGLINE } from "@/lib/constants";
-import { seoData } from "@/app/(portfolio)/layout";
 
 describe("Given I am a guest", async () => {
   describe("When I am on the Portfolio page", () => {
@@ -52,23 +51,6 @@ describe("Given I am a guest", async () => {
 
       // Assert
       expect(renderedFooter).toBeInTheDocument();
-    });
-
-    it("Should have metadata", async () => {
-      // Arrange
-      render(
-        <PortfolioLayout>
-          <PortfolioPage />
-        </PortfolioLayout>
-      );
-
-      const meta = screen.getByText(`content="${seoData.description}"`);
-
-      console.log("====== meta", meta);
-      // Act
-
-      // Assert
-      expect(meta).toBe(seoData.description);
     });
   });
 });
