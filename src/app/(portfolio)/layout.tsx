@@ -47,11 +47,12 @@ const PortfolioLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex flex-col w-full justify-between">
       <header className="flex justify-between items-center px-4 lg:px-12">
-        <Brand />
-        <div className="flex gap-6 items-center">
+        <div className="flex gap-2 sm:gap-8 items-center">
+          <Brand />
           <Navbar />
-          <Header />
         </div>
+
+        <Header />
       </header>
 
       <main className="px-4 lg:px-8 flex-grow">{children}</main>

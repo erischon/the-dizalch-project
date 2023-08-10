@@ -12,7 +12,7 @@ const pages = [
  */
 const Navbar = () => {
   return (
-    <nav className="flex gap-2 my-2">
+    <nav className="flex gap-2 my-2 h-full">
       {pages.map((page) => (
         <Link
           key={page.href}

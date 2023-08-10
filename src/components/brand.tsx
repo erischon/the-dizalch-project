@@ -7,7 +7,7 @@ import Link from "next/link";
  */
 const Brand = () => {
   return (
-    <Link href="/">
+    <Link href="/" className="">
       <div className="flex justify-center items-center gap-1">
         <div className="relative w-7 h-7">
           <Image src="/logo-esdev-000-transp-1.png" alt="Eri Schön" fill />
