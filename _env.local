@@ -1,0 +1,7 @@
+MONGODB_URI = (from mongoDB Atlas)
+
+MY_SECRET_TOKEN = (what you want)
+
+GITHUB_TOKEN = (from github)
+
+SITE_URL = (your site url)
