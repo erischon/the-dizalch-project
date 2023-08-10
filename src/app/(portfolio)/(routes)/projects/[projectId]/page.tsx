@@ -13,7 +13,7 @@ import {
 import SectionTitle from "@/components/portfolio/sectionTitle";
 import getFormattedDate from "@/lib/getDateFormatted";
 
-export const revalidate = 0;
+export const revalidate = 86400;
 
 type Props = {
   params: {
