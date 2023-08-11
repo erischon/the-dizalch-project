@@ -159,12 +159,12 @@ export default async function Project({ params: { projectId } }: Props) {
         <div className="flex flex-wrap gap-1">{tags}</div>
       </div>
 
-      <section className="my-10 bg-gray-50 p-6 rounded-lg shadow-md dark:shadow-inner">
+      <section className="my-10 dark:border dark:border-gray-600 p-8 rounded-lg shadow-md dark:shadow-inner">
         <h2 className="text-2xl font-semibold text-gray-500 dark:text-gray-300">
           L'étude de cas
         </h2>
 
-        <article className="w-full my-8 mx-auto prose sm:prose-md prose-pre:m-4 prose-pre:p-4 prose-p:m-0 prose-teal max-w-none">
+        <article className="w-full my-8 mx-auto prose sm:prose-md prose-pre:m-4 prose-pre:p-4 prose-p:m-0 prose-teal max-w-none dark:prose-invert">
           {content}
         </article>
       </section>
