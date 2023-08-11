@@ -8,6 +8,7 @@ import Header from "@/components/portfolio/header";
 export const seoData = {
   title: "The Dizalch Project",
   description: "A project for Freelance Developers",
+  author: [{ name: "Eri Schön", url: "https://www.erischon.dev" }],
   url: "https://dizalch.com",
   image: "https://dizalch.com/images/og-image.png",
   twitter: "@erischon",
@@ -16,6 +17,7 @@ export const seoData = {
 export const metadata: Metadata = {
   title: seoData.title,
   description: seoData.description,
+  authors: seoData.author,
   openGraph: {
     title: seoData.title,
     description: seoData.description,
