@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 
-import ProjectCard from "@/components/portfolio/_ProjectCard";
-import SectionTitle from "@/components/portfolio/_SectionTitle";
-import Pagination from "@/components/portfolio/_Pagination";
+import ProjectCard from "@/components/portfolio/ProjectCard";
+import SectionTitle from "@/components/portfolio/SectionTitle";
+import Pagination from "@/components/portfolio/Pagination";
 
 import { paginate } from "@/lib/paginate";
 import { projectsListPageSize } from "@/lib/constants";

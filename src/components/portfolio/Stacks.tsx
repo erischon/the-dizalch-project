@@ -1,7 +1,7 @@
 import { stacks } from "@/lib/skills";
 
 import SkillCard from "./SkillCard";
-import SectionTitle from "./_SectionTitle";
+import SectionTitle from "./SectionTitle";
 
 /**
  * @description Stacks components, used in AboutPage
