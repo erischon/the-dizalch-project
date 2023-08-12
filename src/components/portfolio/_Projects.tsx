@@ -21,17 +21,17 @@ export default function Projects({ projects }: { projects: ProjectMeta[] }) {
     setCurrentPage(page);
   };
 
-  const paginatedPosts = paginate(projects, currentPage, pageSize);
-
-  console.log(paginatedPosts);
+  const paginatedProjects = paginate(projects, currentPage, pageSize);
 
   return (
     <section className="my-8 mx-auto">
       <SectionTitle title="Projets" />
 
-      {paginatedPosts.map((item: any) => {
-        return <p key={item.id}>{item.title}</p>;
-      })}
+      <div className="grid sm:grid-cols-2 gap-3 my-8">
+        {paginatedProjects.map((project: any) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
+      </div>
 
       <Pagination
         items={projects.length} // 100
@@ -39,12 +39,6 @@ export default function Projects({ projects }: { projects: ProjectMeta[] }) {
         pageSize={pageSize} // 10
         onPageChange={onPageChange}
       />
-
-      <div className="grid sm:grid-cols-2 gap-3 my-8">
-        {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
-      </div>
     </section>
   );
 }

@@ -1,3 +1,5 @@
+import { TbPointFilled, TbPoint } from "react-icons/tb";
+
 interface PaginationProps {
   items: number;
   pageSize: number;
@@ -23,16 +25,16 @@ const Pagination = ({
   console.log(pages);
 
   return (
-    <div>
-      <ul className="flex gap-4">
-        {pages.map((page) => (
-          <li key={page} className={page === currentPage ? "" : ""}>
-            <a className="" onClick={() => onPageChange(page)}>
-              {page}
-            </a>
-          </li>
-        ))}
-      </ul>
+    <div className="flex justify-center items-center gap-4 my-10">
+      {pages.map((page) => (
+        <a
+          key={page}
+          onClick={() => onPageChange(page)}
+          className="text-3xl text-teal-500 cursor-pointer"
+        >
+          {currentPage === page ? <TbPointFilled /> : <TbPoint />}
+        </a>
+      ))}
     </div>
   );
 };
