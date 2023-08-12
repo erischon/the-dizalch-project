@@ -1,10 +1,10 @@
 import { TbPointFilled, TbPoint } from "react-icons/tb";
 
 interface PaginationProps {
-  items: number;
-  pageSize: number;
-  currentPage: number;
-  onPageChange: (page: number) => void;
+  items: number; // Number of items
+  pageSize: number; // Number of items per page
+  currentPage: number; // Current page
+  onPageChange: (page: number) => void; // Function to change page
 }
 
 /**
@@ -17,12 +17,11 @@ const Pagination = ({
   currentPage,
   onPageChange,
 }: PaginationProps) => {
-  const pagesCount = Math.ceil(items / pageSize); // 100/10
+  const pagesCount = Math.ceil(items / pageSize);
 
   if (pagesCount === 1) return null;
 
   const pages = Array.from({ length: pagesCount }, (_, i) => i + 1);
-  console.log(pages);
 
   return (
     <div className="flex justify-center items-center gap-4 my-10">
@@ -30,7 +29,9 @@ const Pagination = ({
         <a
           key={page}
           onClick={() => onPageChange(page)}
-          className="text-3xl text-teal-500 cursor-pointer"
+          className={`text-2xl text-teal-500 cursor-pointer border-b-4 border-gray-50 hover:border-teal-400 transition ${
+            currentPage === page ? "cursor-default hover:border-gray-50" : null
+          }`}
         >
           {currentPage === page ? <TbPointFilled /> : <TbPoint />}
         </a>

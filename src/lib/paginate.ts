@@ -1,3 +1,7 @@
+/**
+ * @description Paginate an array of items
+ * @version 1.0.0
+ */
 export const paginate = (items: any, pageNumber: number, pageSize: number) => {
   const startIndex = (pageNumber - 1) * pageSize;
 

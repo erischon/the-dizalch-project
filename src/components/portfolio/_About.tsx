@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SectionTitle from "./sectionTitle";
+import SectionTitle from "@/components/portfolio/_SectionTitle";
 
 /**
  * @description About component,

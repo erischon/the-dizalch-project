@@ -1,7 +1,7 @@
 import { getProjectsMeta } from "@/lib/projects";
-import ProjectCard from "@/components/portfolio/projectCard";
+import ProjectCard from "@/components/portfolio/_ProjectCard";
 import Link from "next/link";
-import SectionTitle from "@/components/portfolio/sectionTitle";
+import SectionTitle from "@/components/portfolio/_SectionTitle";
 import { get } from "http";
 
 export const revalidate = 86400;

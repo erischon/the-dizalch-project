@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
-import Navbar from "@/components/portfolio/navbar";
-import Footer from "@/components/portfolio/footer";
-import Brand from "@/components/brand";
-import Header from "@/components/portfolio/header";
+import Navbar from "@/components/portfolio/Navbar";
+import Footer from "@/components/portfolio/Footer";
+import Brand from "@/components/Brand";
+import Header from "@/components/portfolio/Header";
 
 export const seoData = {
   title: "The Dizalch Project",

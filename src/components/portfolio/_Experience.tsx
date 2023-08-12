@@ -1,5 +1,5 @@
-import ProjectsByClient from "@/components/portfolio/projectsByClient";
-import SectionTitle from "@/components/portfolio/sectionTitle";
+import ProjectsByClient from "@/components/portfolio/_ProjectsByClient";
+import SectionTitle from "@/components/portfolio/_SectionTitle";
 
 const lastExperience = [
   {

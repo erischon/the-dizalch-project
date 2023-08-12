@@ -10,7 +10,7 @@ import {
   PROJECTS_FOLDER_NAME,
   PROJECTS_IMAGES_FOLDER_NAME,
 } from "@/lib/constants";
-import SectionTitle from "@/components/portfolio/sectionTitle";
+import SectionTitle from "@/components/portfolio/_SectionTitle";
 import getFormattedDate from "@/lib/getDateFormatted";
 
 export const revalidate = 86400;

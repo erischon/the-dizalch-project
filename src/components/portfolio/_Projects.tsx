@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 
-import ProjectCard from "@/components/portfolio/projectCard";
-import SectionTitle from "@/components/portfolio/sectionTitle";
-import Pagination from "@/components/portfolio/Pagination";
+import ProjectCard from "@/components/portfolio/_ProjectCard";
+import SectionTitle from "@/components/portfolio/_SectionTitle";
+import Pagination from "@/components/portfolio/_Pagination";
 
 import { paginate } from "@/lib/paginate";
 import { projectsListPageSize } from "@/lib/constants";
@@ -27,16 +27,16 @@ export default function Projects({ projects }: { projects: ProjectMeta[] }) {
     <section className="my-8 mx-auto">
       <SectionTitle title="Projets" />
 
-      <div className="grid sm:grid-cols-2 gap-3 my-8">
+      <div className="grid sm:grid-cols-2 gap-4 my-8">
         {paginatedProjects.map((project: any) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
 
       <Pagination
-        items={projects.length} // 100
-        currentPage={currentPage} // 1
-        pageSize={pageSize} // 10
+        items={projects.length}
+        currentPage={currentPage}
+        pageSize={pageSize}
         onPageChange={onPageChange}
       />
     </section>

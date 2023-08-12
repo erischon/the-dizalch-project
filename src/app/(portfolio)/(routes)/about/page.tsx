@@ -1,6 +1,6 @@
-import About from "@/components/portfolio/about";
-import Experience from "@/components/portfolio/experience";
-import Stacks from "@/components/portfolio/stacks";
+import About from "@/components/portfolio/About";
+import Experience from "@/components/portfolio/Experience";
+import Stacks from "@/components/portfolio/Stacks";
 
 /**
  * @description About Page
