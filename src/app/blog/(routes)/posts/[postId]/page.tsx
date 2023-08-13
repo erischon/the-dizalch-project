@@ -62,12 +62,14 @@ export default async function Post({ params: { postId } }: Props) {
   ));
 
   return (
-    <div className="my-8">
+    <div className="my-8 mx-0 w-full">
       <h2 className="text-3xl mb-2">{meta.title}</h2>
 
       <p className="mt-0 text-sm">{pubDate}</p>
 
-      <article className="my-8 prose dark:prose-invert">{content}</article>
+      <article className="w-full my-8 mx-auto prose sm:prose-md prose-pre:m-4 prose-pre:p-4 prose-p:m-0 prose-teal max-w-none dark:prose-invert">
+        {content}
+      </article>
 
       <section className="my-8">
         <h3>Related:</h3>
