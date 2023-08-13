@@ -1,10 +1,11 @@
+import Link from "next/link";
+
 import { getProjectsMeta } from "@/lib/projects";
 import ProjectCard from "@/components/portfolio/ProjectCard";
-import Link from "next/link";
 import SectionTitle from "@/components/portfolio/SectionTitle";
-import { get } from "http";
+import { revalidateTime } from "@/lib/constants";
 
-export const revalidate = 86400;
+export const revalidate = revalidateTime.projects;
 
 type Props = {
   params: {

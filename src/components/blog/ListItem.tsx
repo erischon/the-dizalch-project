@@ -11,10 +11,12 @@ export default function ListItem({ post }: Props) {
 
   return (
     <li className="mt-4 text-xl ">
-      <Link className="hover:text-stone-500/90" href={`/blog/posts/${id}`}>
+      <Link className="hover:text-teal-400/90" href={`/blog/posts/${id}`}>
         {title}
       </Link>
+
       <br />
+
       <p className="text-sm mt-1">{formattedDate}</p>
     </li>
   );

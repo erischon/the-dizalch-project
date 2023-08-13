@@ -9,11 +9,12 @@ import {
   GITHUB_REPO_URL,
   PROJECTS_FOLDER_NAME,
   PROJECTS_IMAGES_FOLDER_NAME,
+  revalidateTime,
 } from "@/lib/constants";
 import SectionTitle from "@/components/portfolio/SectionTitle";
 import getFormattedDate from "@/lib/getDateFormatted";
 
-export const revalidate = 86400;
+export const revalidate = revalidateTime.projects;
 
 type Props = {
   params: {

@@ -4,9 +4,9 @@ import { FaHammer } from "react-icons/fa";
 import { BsArrowsMove } from "react-icons/bs";
 import { MdHomeRepairService } from "react-icons/md";
 
-import { TAGLINE } from "@/lib/constants";
+import { TAGLINE, revalidateTime } from "@/lib/constants";
 
-export const revalidate = 86400;
+export const revalidate = revalidateTime.projects;
 
 export default function PortfolioPage() {
   return (

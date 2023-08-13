@@ -4,8 +4,9 @@ import "highlight.js/styles/github-dark.css";
 
 import getFormattedDate from "@/lib/getDateFormatted";
 import { getPostsMeta, getPostByName } from "@/lib/posts";
+import { revalidateTime } from "@/lib/constants";
 
-export const revalidate = 0;
+export const revalidate = revalidateTime.blog;
 
 type Props = {
   params: {
@@ -13,22 +14,22 @@ type Props = {
   };
 };
 
-// export async function generateStaticParams() {
-//   const posts = await getPostsMeta(); //deduped!
+export async function generateStaticParams() {
+  const posts = await getPostsMeta();
 
-//   if (!posts) return [];
+  if (!posts) return [];
 
-//   return posts.map((post) => ({
-//     postId: post.id,
-//   }));
-// }
+  return posts.map((post) => ({
+    postId: post.id,
+  }));
+}
 
 /**
  * @description Generate metadata for the page
  * @version 1.0.0
  */
 export async function generateMetadata({ params: { postId } }: Props) {
-  const post = await getPostByName(`${postId}.mdx`); //deduped!
+  const post = await getPostByName(`${postId}.mdx`);
 
   if (!post) {
     return {

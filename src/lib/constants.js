@@ -16,3 +16,9 @@ export const blogSeoData = {
   image: "https://dizalch.com/images/og-image.png",
   twitter: "@erischon",
 };
+
+// Revalidate times
+export const revalidateTime = {
+  blog: 60 * 60 * 24, // 24 hours
+  projects: 60 * 60 * 24, // 24 hours
+};

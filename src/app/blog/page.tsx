@@ -1,6 +1,7 @@
 import Posts from "@/components/blog/Posts";
+import { revalidateTime } from "@/lib/constants";
 
-export const revalidate = 0;
+export const revalidate = revalidateTime.blog;
 
 export default function BlogPage() {
   return (
