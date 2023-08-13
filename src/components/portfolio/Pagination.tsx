@@ -29,10 +29,10 @@ const Pagination = ({
         <a
           key={page}
           onClick={() => onPageChange(page)}
-          className={`text-2xl text-teal-500 cursor-pointer border-b-4 border-gray-50 dark:border-gray-800 hover:border-teal-400 dark:hover:border-teal-400 transition ${
+          className={`text-2xl text-teal-500 border-b-4 border-gray-50 dark:border-gray-800 ${
             currentPage === page
-              ? "cursor-default hover:border-gray-50 dark:hover:border-gray-800"
-              : null
+              ? "cursor-default"
+              : "cursor-pointer hover:border-teal-400 dark:hover:border-teal-400 transition"
           }`}
         >
           {currentPage === page ? <TbPointFilled /> : <TbPoint />}
