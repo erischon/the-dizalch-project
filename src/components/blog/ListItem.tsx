@@ -1,11 +1,16 @@
 import Link from "next/link";
+
 import getFormattedDate from "@/lib/getDateFormatted";
 
 type Props = {
   post: PostMeta;
 };
 
-export default function ListItem({ post }: Props) {
+/**
+ * @description Displays a list item
+ * @version 1.0.0
+ */
+const ListItem = ({ post }: Props) => {
   const { id, title, date } = post;
   const formattedDate = getFormattedDate(date);
 
@@ -20,4 +25,6 @@ export default function ListItem({ post }: Props) {
       <p className="text-sm mt-1">{formattedDate}</p>
     </li>
   );
-}
+};
+
+export default ListItem;

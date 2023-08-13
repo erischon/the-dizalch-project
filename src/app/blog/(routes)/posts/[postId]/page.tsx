@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
+
 import "highlight.js/styles/github-dark.css";
 
 import getFormattedDate from "@/lib/getDateFormatted";
@@ -49,7 +49,7 @@ export async function generateMetadata({ params: { postId } }: Props) {
 export default async function Post({ params: { postId } }: Props) {
   const post = await getPostByName(`${postId}.mdx`);
 
-  if (!post) notFound();
+  if (!post) return null;
 
   const { meta, content } = post;
 
