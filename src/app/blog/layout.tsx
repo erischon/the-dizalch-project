@@ -51,7 +51,9 @@ const PortfolioLayout = ({ children }: { children: React.ReactNode }) => {
         </div>
       </header>
 
-      <main className="px-4 lg:px-8 flex-grow">{children}</main>
+      <main className="px-4 lg:px-8 flex-grow max-w-3xl mx-auto">
+        {children}
+      </main>
 
       <footer className="bg-stone-900 px-4 lg:px-8">
         <Footer />

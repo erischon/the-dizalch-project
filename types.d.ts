@@ -19,3 +19,16 @@ type Project = {
   meta: ProjectMeta;
   content: ReactElement<any, string | JSXElementConstructor<any>>;
 };
+
+type BlogPost = {
+  meta: Meta;
+  content: ReactElement<any, string | JSXElementConstructor<any>>;
+};
+
+// Type for the blog post metadata
+type PostMeta = {
+  id: string;
+  title: string;
+  date: string;
+  tags: string[];
+};
