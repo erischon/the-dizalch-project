@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import "highlight.js/styles/github-dark.css";
+import "highlight.js/styles/atom-one-dark.css";
 
 import getFormattedDate from "@/lib/getDateFormatted";
 import { getPostsMeta, getPostByName } from "@/lib/posts";
@@ -14,6 +14,10 @@ type Props = {
   };
 };
 
+/**
+ * @description Generate static post pages
+ * @version 1.0.0
+ */
 export async function generateStaticParams() {
   const posts = await getPostsMeta();
 
