@@ -1,13 +1,13 @@
 import Image from "next/image";
 
-import { TAGLINE } from "@/lib/constants";
+import { tagLine } from "@/data/infos";
 
 export default function PortfolioPage() {
   return (
     <main className="h-full flex justify-center items-center">
       <section className="grid grid-cols-12 px-4 mx-auto">
         <div className="flex flex-col col-span-4 items-start justify-between">
-          <h1 className="text-5xl font-bold mb-4">{TAGLINE}</h1>
+          <h1 className="text-5xl font-bold mb-4">{tagLine}</h1>
 
           <h2 className="flex-grow">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit

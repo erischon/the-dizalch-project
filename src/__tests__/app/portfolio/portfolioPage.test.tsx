@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 
 import PortfolioPage from "@/app/(portfolio)/page";
 
-import { TAGLINE } from "@/lib/constants";
+import { tagLine } from "@/data/infos";
 
 describe("Given I am a ", async () => {
   describe("When I am on the Portfolio page", () => {
@@ -12,10 +12,10 @@ describe("Given I am a ", async () => {
 
       // Act
       render(<PortfolioPage />);
-      const renderedTagline = screen.queryByText(TAGLINE);
+      const renderedTagline = screen.queryByText(tagLine);
 
       // Assert
-      expect(renderedTagline?.textContent).toBe(TAGLINE);
+      expect(renderedTagline?.textContent).toBe(tagLine);
     });
   });
 });

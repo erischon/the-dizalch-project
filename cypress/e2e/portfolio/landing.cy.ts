@@ -1,4 +1,4 @@
-import { TAGLINE } from "../../../src/lib/constants";
+import { tagLine } from "../../../src/data/infos";
 
 const siteTitle = "The Dizalch Project";
 const siteAuthor = "Eri Schön";
@@ -11,7 +11,7 @@ describe("Landing page", () => {
 
   it("has UI", () => {
     cy.step("has a Tagline");
-    cy.get("h1").contains(TAGLINE);
+    cy.get("h1").contains(tagLine);
 
     cy.step("has a subtitle");
     cy.get("h3");

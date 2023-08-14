@@ -5,7 +5,7 @@ import Footer from "@/components/portfolio/Footer";
 import Brand from "@/components/Brand";
 import Header from "@/components/portfolio/Header";
 
-import { blogSeoData as seoData } from "@/lib/constants";
+import { blogSeoData as seoData } from "@/data/infos";
 
 export const metadata: Metadata = {
   title: seoData.title,

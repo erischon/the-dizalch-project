@@ -9,10 +9,10 @@ import {
   GITHUB_REPO_URL,
   PROJECTS_FOLDER_NAME,
   PROJECTS_IMAGES_FOLDER_NAME,
-  revalidateTime,
-} from "@/lib/constants";
+} from "@/data/constants";
+import { revalidateTime } from "@/data/infos";
 import SectionTitle from "@/components/portfolio/SectionTitle";
-import getFormattedDate from "@/lib/getDateFormatted";
+import getFormattedDate from "@/lib/getFormattedDate";
 
 export const revalidate = revalidateTime.projects;
 

@@ -4,7 +4,7 @@ import { FaHammer } from "react-icons/fa";
 import { BsArrowsMove } from "react-icons/bs";
 import { MdHomeRepairService } from "react-icons/md";
 
-import { TAGLINE, revalidateTime } from "@/lib/constants";
+import { tagLine, revalidateTime } from "@/data/infos";
 
 export const revalidate = revalidateTime.projects;
 
@@ -25,7 +25,7 @@ export default function PortfolioPage() {
             </div>
 
             <h1 className="text-4xl font-bold mb-8 text-center sm:mb-10 sm:text-5xl md:text-6xl">
-              {TAGLINE}
+              {tagLine}
             </h1>
           </div>
 

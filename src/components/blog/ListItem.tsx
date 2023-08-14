@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import getFormattedDate from "@/lib/getDateFormatted";
+import getFormattedDate from "@/lib/getFormattedDate";
 
 type Props = {
   post: PostMeta;

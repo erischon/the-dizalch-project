@@ -7,7 +7,7 @@ import SectionTitle from "@/components/portfolio/SectionTitle";
 import Pagination from "@/components/portfolio/Pagination";
 
 import { paginate } from "@/lib/paginate";
-import { projectsListPageSize } from "@/lib/constants";
+import { projectsListPageSize } from "@/data/infos";
 
 /**
  * @description Displays a list of projects

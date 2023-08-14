@@ -1,5 +1,5 @@
 import Posts from "@/components/blog/Posts";
-import { revalidateTime } from "@/lib/constants";
+import { revalidateTime } from "@/data/infos";
 
 export const revalidate = revalidateTime.blog;
 

@@ -4,7 +4,7 @@ import {
   GITHUB_REPO_URL,
   PROJECTS_FOLDER_NAME,
   PROJECTS_IMAGES_FOLDER_NAME,
-} from "@/lib/constants";
+} from "@/data/constants";
 
 type Props = {
   project: ProjectMeta;

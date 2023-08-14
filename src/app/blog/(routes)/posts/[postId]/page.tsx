@@ -2,9 +2,9 @@ import Link from "next/link";
 
 import "highlight.js/styles/atom-one-dark.css";
 
-import getFormattedDate from "@/lib/getDateFormatted";
+import getFormattedDate from "@/lib/getFormattedDate";
 import { getPostsMeta, getPostByName } from "@/lib/posts";
-import { revalidateTime } from "@/lib/constants";
+import { revalidateTime } from "@/data/infos";
 
 export const revalidate = revalidateTime.blog;
 

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getProjectsMeta } from "@/lib/projects";
 import ProjectCard from "@/components/portfolio/ProjectCard";
 import SectionTitle from "@/components/portfolio/SectionTitle";
-import { revalidateTime } from "@/lib/constants";
+import { revalidateTime } from "@/data/infos";
 
 export const revalidate = revalidateTime.projects;
 
