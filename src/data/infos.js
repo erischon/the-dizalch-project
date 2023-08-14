@@ -1,10 +1,10 @@
 // SEO data for the blog
 export const blogSeoData = {
-  title: "The Dizalch Project",
-  description: "A freelance web application project.",
+  title: "Eri Schön",
+  description: "Développeur Web Fullstack ",
   author: [{ name: "Eri Schön", url: "https://www.erischon.dev" }],
-  url: "https://thedizalchproject.vercel.app/",
-  image: "https://thedizalchproject.vercel.app/images/og-image.png",
+  url: "https://www.erischon.dev/",
+  image: "https://www.erischon.dev/images/og-image.png",
   twitter: "@erischon",
 };
 
