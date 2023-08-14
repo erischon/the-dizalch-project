@@ -66,22 +66,24 @@ export default async function Post({ params: { postId } }: Props) {
   ));
 
   return (
-    <div className="my-8 mx-0 w-full">
-      <h2 className="text-3xl mb-2">{meta.title}</h2>
+    <div className="my-10 mx-0 w-full">
+      <h2 className="text-4xl sm:text-5xl font-bold mb-2">{meta.title}</h2>
 
-      <p className="mt-0 text-sm">{pubDate}</p>
+      <p className="mt-0 sm:mt-6 text-sm sm:text-md">{pubDate}</p>
 
-      <article className="w-full my-8 mx-auto prose sm:prose-md prose-pre:m-4 prose-pre:p-4 prose-p:m-0 prose-teal max-w-none dark:prose-invert">
+      <article className="w-full my-8 mx-auto prose sm:prose-xl prose-teal max-w-none dark:prose-invert">
         {content}
       </article>
 
-      <section className="my-8">
+      {/* <section className="my-8">
         <h3>Related:</h3>
         <div className="flex flex-row gap-4">{tags}</div>
-      </section>
+      </section> */}
 
-      <p className="mb-10">
-        <Link href="/blog">← Back to blog</Link>
+      <p className="mb-12">
+        <Link href="/blog" className="sm:text-lg sm:font-semibold">
+          ← Back to blog
+        </Link>
       </p>
     </div>
   );

@@ -6,6 +6,7 @@
   :root,
   body,
   html {
-    @apply bg-teal-50;
+    @apply bg-lime-50;
+    font-family: "Nunito Sans", sans-serif;
   }
 }

@@ -51,11 +51,9 @@ const BlogLayout = ({ children }: { children: React.ReactNode }) => {
         </div>
       </header>
 
-      <main className="px-4 lg:px-8 flex-grow max-w-3xl mx-auto">
-        {children}
-      </main>
+      <main className="px-4 flex-grow max-w-2xl sm:mx-auto">{children}</main>
 
-      <footer className="bg-stone-900 px-4 lg:px-8">
+      <footer className="bg-stone-900 px-4 lg:px-12">
         <Footer />
       </footer>
     </div>
