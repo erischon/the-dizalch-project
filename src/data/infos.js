@@ -1,5 +1,5 @@
 // SEO data for the blog
-export const blogSeoData = {
+export const seoData = {
   title: "Eri Schön",
   description: "Développeur Web Fullstack ",
   author: [{ name: "Eri Schön", url: "https://www.erischon.dev" }],

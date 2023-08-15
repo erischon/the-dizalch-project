@@ -5,14 +5,7 @@ import Footer from "@/components/portfolio/Footer";
 import Brand from "@/components/Brand";
 import Header from "@/components/portfolio/Header";
 
-export const seoData = {
-  title: "The Dizalch Project",
-  description: "A project for Freelance Developers",
-  author: [{ name: "Eri Schön", url: "https://www.erischon.dev" }],
-  url: "https://dizalch.com",
-  image: "https://dizalch.com/images/og-image.png",
-  twitter: "@erischon",
-};
+import { seoData } from "@/data/infos";
 
 export const metadata: Metadata = {
   title: seoData.title,
