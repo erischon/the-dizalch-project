@@ -35,5 +35,6 @@ yarn-error.log*
 next-env.d.ts
 
 # Project
+_favicon.ico
 favicon.ico
 _infos.js
