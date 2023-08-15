@@ -10,8 +10,8 @@ export const blogSeoData = {
 
 // Revalidate times
 export const revalidateTime = {
-  blog: 60 * 60 * 24, // 24 hours
-  projects: 60 * 60 * 24, // 24 hours
+  blog: 60,
+  projects: 60,
 };
 
 // Portfolio informations
