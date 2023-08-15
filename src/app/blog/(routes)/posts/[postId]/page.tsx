@@ -6,7 +6,7 @@ import getFormattedDate from "@/lib/getFormattedDate";
 import { getPostsMeta, getPostByName } from "@/lib/posts";
 import { revalidateTime } from "@/data/infos";
 
-import { blogSeoData as seoData } from "@/data/infos";
+import { seoData } from "@/data/infos";
 
 export const revalidate = revalidateTime.blog;
 
