@@ -6,6 +6,8 @@ import getFormattedDate from "@/lib/getFormattedDate";
 import { getPostsMeta, getPostByName } from "@/lib/posts";
 import { revalidateTime } from "@/data/infos";
 
+import { blogSeoData as seoData } from "@/data/infos";
+
 export const revalidate = revalidateTime.blog;
 
 type Props = {
@@ -43,6 +45,18 @@ export async function generateMetadata({ params: { postId } }: Props) {
 
   return {
     title: post.meta.title,
+    description: post.meta.description,
+    authors: seoData.author,
+    openGraph: {
+      title: post.meta.title,
+      description: post.meta.description,
+      url: `${process.env.SITE_URL}/blog/posts/${postId}`,
+    },
+    twitter: {
+      creator: seoData.twitter,
+      title: post.meta.title,
+      description: post.meta.description,
+    },
   };
 }
 

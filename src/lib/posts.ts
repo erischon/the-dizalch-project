@@ -11,6 +11,10 @@ type Filetree = {
   ];
 };
 
+/**
+ * @description
+ * @version 1.0.0
+ */
 export async function getPostByName(
   fileName: string
 ): Promise<BlogPost | undefined> {
@@ -43,16 +47,7 @@ export async function getPostByName(
     options: {
       parseFrontmatter: true,
       mdxOptions: {
-        rehypePlugins: [
-          rehypeHighlight,
-          rehypeSlug,
-          [
-            rehypeAutolinkHeadings,
-            {
-              behavior: "wrap",
-            },
-          ],
-        ],
+        rehypePlugins: [rehypeHighlight],
       },
     },
   });
@@ -73,6 +68,10 @@ export async function getPostByName(
   return blogPostObj;
 }
 
+/**
+ * @description
+ * @version 1.0.0
+ */
 export async function getPostsMeta(): Promise<PostMeta[] | undefined> {
   const res = await fetch(
     "https://api.github.com/repos/erischon/docs/git/trees/master?recursive=1",
