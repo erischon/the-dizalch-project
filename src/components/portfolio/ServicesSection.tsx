@@ -4,13 +4,13 @@ import Link from "next/link";
 const ServicesSection = () => {
   return (
     <section className="max-w-2xl mx-auto p-8 ">
-      <div className="flex gap-6 my-8 p-10 bg-gray-100">
-        <div className="basis-full w-[170px] max-w-[170px] h-[170px] max-h-[170px] relative">
+      <div className="flex flex-col sm:flex-row gap-6 my-8 p-10 bg-gray-100">
+        <div className="basis-full sm:w-[170px] sm:max-w-[170px] h-[170px] max-h-[170px] min-h-[100px] relative">
           <Image
             src="/images/testing.jpg"
             alt="testing"
             fill
-            className="object-cover object-center rounded-tl-[45%] shadow-md"
+            className="object-cover object-center sm:rounded-tl-[45%] shadow-md"
           />
         </div>
 
