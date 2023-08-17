@@ -52,7 +52,7 @@ export default function PortfolioPage() {
           </a>
         </div>
 
-        <div className="bg-gray-50 dark:bg-gray-700 shadow-md p-16 mx-auto">
+        {/* <div className="bg-gray-50 dark:bg-gray-700 shadow-md p-16 mx-auto">
           <h2 className="text-2xl font-semibold mb-8 text-center">
             Tout pour la fabrication et l'entretien de votre application web
           </h2>
@@ -97,10 +97,10 @@ export default function PortfolioPage() {
               <MdHomeRepairService className="text-4xl text-teal-500" />
             </div>
           </div>
-        </div>
-      </section>
+        </div> */}
 
-      <ServicesSection />
+        <ServicesSection />
+      </section>
     </div>
   );
 }
