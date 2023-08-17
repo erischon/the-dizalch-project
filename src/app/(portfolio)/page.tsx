@@ -5,6 +5,7 @@ import { BsArrowsMove } from "react-icons/bs";
 import { MdHomeRepairService } from "react-icons/md";
 
 import { tagLine, revalidateTime } from "@/data/infos";
+import ServicesSection from "@/components/portfolio/ServicesSection";
 
 export const revalidate = revalidateTime.projects;
 
@@ -98,6 +99,8 @@ export default function PortfolioPage() {
           </div>
         </div>
       </section>
+
+      <ServicesSection />
     </div>
   );
 }
