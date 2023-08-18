@@ -41,10 +41,20 @@ const HeroSection = () => {
           </h3>
 
           <a href="mailto:erischondev@gmail.com" className="my-8">
-            <button className="bg-teal-400 text-gray-900 font-semibold px-9 py-3 hover:bg-transparent hover:text-teal-400 hover:border-2 hover:border-teal-400 text-lg md:text-2xl transition duration-500">
+            <button className="bg-teal-400 text-gray-900 font-semibold px-9 py-3 hover:bg-transparent hover:text-teal-400 border border-teal-400 text-lg md:text-2xl transition duration-300">
               Parlons-en !
             </button>
           </a>
+        </div>
+
+        <div>
+          <Image
+            src="/images/hero6.png"
+            alt="hero"
+            width={500}
+            height={500}
+            priority
+          />
         </div>
       </section>
     </>
