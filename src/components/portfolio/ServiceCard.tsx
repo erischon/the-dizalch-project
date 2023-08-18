@@ -21,7 +21,8 @@ const ServiceCard = ({ service }: { service: ServiceCardProps }) => {
           <div className="absolute inset-0">
             <div className="flex flex-col justify-center items-center h-full w-full">
               <div className="text-4xl text-teal-400 mb-4">{icon}</div>
-              <h2 className="text-2xl font-medium">{title}</h2>
+
+              <h2 className="text-2xl text-gray-200 font-medium">{title}</h2>
             </div>
           </div>
 
