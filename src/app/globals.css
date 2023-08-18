@@ -6,7 +6,12 @@
   :root,
   body,
   html {
-    @apply bg-lime-50;
+    @apply bg-gray-900;
     font-family: "Nunito Sans", sans-serif;
+  }
+
+  section {
+    @apply min-h-[calc(100vh-70px)];
+    padding: 6rem 9% 4rem;
   }
 }

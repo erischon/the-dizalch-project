@@ -5,7 +5,7 @@ import SectionTitle from "./SectionTitle";
 
 const ServicesSection = () => {
   return (
-    <section className="my-8 mx-auto text-center">
+    <section className="my-8 mx-auto text-center min-h-screen" id="services">
       <SectionTitle title="Services" />
 
       <div className="grid sm:grid-cols-2 md:grid-cols-3 justify-center mt-8 gap-4">

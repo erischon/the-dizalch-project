@@ -8,7 +8,7 @@ import Stacks from "@/components/portfolio/Stacks";
  */
 const AboutPage = () => {
   return (
-    <div className="my-8">
+    <div className="">
       <About />
 
       <Stacks />
