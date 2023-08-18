@@ -20,7 +20,8 @@ export const revalidateTime = {
 
 // Portfolio informations
 // export const tagLine = "Votre ressource pour une application web sur mesure";
-export const tagLine = "La ressource Qualité pour votre application web React";
+// export const tagLine = "La ressource Qualité pour votre application web React";
+export const tagLine = "L'Artisan Qualité pour votre application web React";
 export const projectsListPageSize = 6;
 
 export const services = [
