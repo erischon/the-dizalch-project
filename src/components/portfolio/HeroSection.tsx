@@ -1,5 +1,6 @@
-import { tagLine } from "@/data/infos";
 import Image from "next/image";
+
+import { tagLine } from "@/data/infos";
 
 /**
  * @description This component is the hero section of the portfolio page
@@ -47,13 +48,12 @@ const HeroSection = () => {
           </a>
         </div>
 
-        <div>
+        <div className="relative w-96 h-96">
           <Image
-            src="/images/hero6.png"
+            src="/images/hero.png"
             alt="hero"
-            width={500}
-            height={500}
-            priority
+            fill
+            className="object-cover"
           />
         </div>
       </section>
