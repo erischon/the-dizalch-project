@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-import { tagLine } from "@/data/infos";
-
 /**
  * @description This component is the hero section of the portfolio page
  */
@@ -14,7 +12,7 @@ const HeroSection = () => {
       >
         <div className="grid lg:grid-cols-12 lg:items-center">
           <div className="max-w-screen-2xl lg:col-span-7 mr-auto place-self-center order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="mb-8 text-3xl md:text-4xl lg:text-6xl font-extrabold lg:leading-tight">
+            <h1 className="mb-8 text-3xl md:text-4xl lg:text-6xl font-extrabold lg:leading-tight sm:max-w-lg mx-auto lg:mx-0">
               La ressource{" "}
               <span className="uppercase text-indigo-500 dark:text-indigo-300">
                 Qualité
