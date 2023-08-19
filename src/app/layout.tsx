@@ -17,7 +17,7 @@ export default function RootLayout({
     <MyThemeContextProvider>
       <html lang="en">
         <body>
-          <div className="dark:bg-gray-800 bg-gray-50 dark:text-gray-100 text-gray-800">
+          <div className=" bg-gray-50 text-gray-800 dark:bg-gray-800 dark:text-gray-100 ">
             {children}
           </div>
         </body>

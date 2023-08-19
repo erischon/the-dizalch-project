@@ -8,53 +8,44 @@ import { tagLine } from "@/data/infos";
 const HeroSection = () => {
   return (
     <>
-      <section className="flex justify-center items-center" id="hero">
-        <div className="flex flex-col justify-center items-center md:max-w-2xl md:mx-auto">
-          <div>
-            <div className="mb-4 flex flex-col items-center gap-1 ">
-              <div className="text-xs text-gray-500 md:text-sm dark:text-gray-100">
-                Bonjour, je suis
-              </div>
-
-              <h2 className="text-2xl font-bold text-teal-400 md:text-4xl">
-                Eri Schön
-              </h2>
-            </div>
-
-            <h1 className="text-4xl font-bold mb-8 text-center sm:mb-10 sm:text-5xl md:text-6xl md:leading-tight">
-              {tagLine}
+      <section
+        className="min-h-[calc(100vh-70px)] lg:pt-[6rem] px-[6%] lg:pb-[4rem] bg-indigo-50 dark:bg-indigo-900"
+        id="hero"
+      >
+        <div className="grid lg:grid-cols-12 lg:items-center">
+          <div className="max-w-screen-2xl lg:col-span-7 mr-auto place-self-center order-2 lg:order-1 text-center lg:text-left">
+            <h1 className="mb-8 text-3xl md:text-4xl lg:text-6xl font-extrabold lg:leading-tight">
+              La ressource{" "}
+              <span className="uppercase text-indigo-500 dark:text-indigo-300">
+                Qualité
+              </span>{" "}
+              de votre appli web{" "}
+              <span className="uppercase text-indigo-500 dark:text-indigo-300">
+                React
+              </span>
             </h1>
+
+            <h3 className="mb-10 lg:text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              in digni ssim euismod purus donec mus vulputate habitant iaculis.
+              Com odo enim ornare turpis tempus enim, nibh nulla. Rhoncus sed.
+            </h3>
+
+            <a href="mailto:erischondev@gmail.com" className="">
+              <button className="bg-indigo-500 text-gray-100 font-semibold px-9 py-3 hover:bg-transparent hover:text-teal-400 border border-teal-400 text-lg md:text-2xl transition duration-300">
+                Parlons-en !
+              </button>
+            </a>
           </div>
 
-          <h3 className="mb-8 md:text-lg sm:mb-10 text-center">
-            Je suis votre solution pour la fabrication d'application Web{" "}
-            <span className="bg-teal-300 font-semibold dark:text-gray-700">
-              fluide
-            </span>
-            ,{" "}
-            <span className="bg-teal-300 font-semibold dark:text-gray-700">
-              rapide
-            </span>
-            , et{" "}
-            <span className="bg-teal-300 font-semibold dark:text-gray-700">
-              fiable
-            </span>
-          </h3>
-
-          <a href="mailto:erischondev@gmail.com" className="my-8">
-            <button className="bg-teal-400 text-gray-900 font-semibold px-9 py-3 hover:bg-transparent hover:text-teal-400 border border-teal-400 text-lg md:text-2xl transition duration-300">
-              Parlons-en !
-            </button>
-          </a>
-        </div>
-
-        <div className="relative w-96 h-96">
-          <Image
-            src="/images/hero.png"
-            alt="hero"
-            fill
-            className="object-cover"
-          />
+          <div className="relative lg:flex lg:col-span-5 lg:mt-0 w-80 h-80 order-1 lg:order-2 mx-auto">
+            <Image
+              src="/images/hero-5.png"
+              alt="hero"
+              fill
+              className="object-contain"
+            />
+          </div>
         </div>
       </section>
     </>

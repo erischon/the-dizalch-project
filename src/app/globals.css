@@ -7,11 +7,12 @@
   body,
   html {
     @apply bg-gray-900;
-    font-family: "Nunito Sans", sans-serif;
+    /* font-family: "Nunito Sans", sans-serif; */
+    font-family: "Poppins", sans-serif;
   }
 
-  section {
+  /* section {
     @apply min-h-[calc(100vh-70px)];
     padding: 6rem 9% 4rem;
-  }
+  } */
 }

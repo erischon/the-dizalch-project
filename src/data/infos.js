@@ -1,6 +1,7 @@
-import { FaHammer } from "react-icons/fa";
+import { FaHammer, FaTools } from "react-icons/fa";
 import { BsGraphUp } from "react-icons/bs";
 import { MdSecurity } from "react-icons/md";
+import { GiTestTubes } from "react-icons/gi";
 
 // SEO data
 export const seoData = {
@@ -21,14 +22,15 @@ export const revalidateTime = {
 // Portfolio informations
 // export const tagLine = "Votre ressource pour une application web sur mesure";
 // export const tagLine = "La ressource Qualité pour votre application web React";
-export const tagLine = "L'Artisan Qualité pour votre application web React";
+// export const tagLine = "L'Artisan Qualité pour votre application web React";
+export const tagLine = "Votre ressource Qualité pour votre appli web React";
 export const projectsListPageSize = 6;
 
 export const services = [
   {
     title: "Testing",
     description: "Tester votre application web",
-    icon: <FaHammer />,
+    icon: <GiTestTubes />,
     image: "/images/services/testing.jpg",
   },
   {
@@ -41,6 +43,18 @@ export const services = [
     title: "Sécurité",
     description: "Sécuriser votre application web",
     icon: <MdSecurity />,
+    image: "/images/services/security.jpg",
+  },
+  {
+    title: "Maintenance",
+    description: "Sécuriser votre application web",
+    icon: <FaTools />,
+    image: "/images/services/security.jpg",
+  },
+  {
+    title: "New feature",
+    description: "Sécuriser votre application web",
+    icon: <FaHammer />,
     image: "/images/services/security.jpg",
   },
 ];
