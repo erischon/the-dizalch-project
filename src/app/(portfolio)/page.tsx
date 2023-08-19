@@ -1,6 +1,8 @@
-import { tagLine, revalidateTime } from "@/data/infos";
-import ServicesSection from "@/components/portfolio/ServicesSection";
-import HeroSection from "@/components/portfolio/HeroSection";
+import { revalidateTime } from "@/data/infos";
+
+import ServicesSection from "@/components/portfolio/sections/ServicesSection";
+import HeroSection from "@/components/portfolio/sections/HeroSection";
+import AboutSection from "@/components/portfolio/sections/AboutSection";
 
 export const revalidate = revalidateTime.projects;
 
@@ -10,6 +12,8 @@ export default function PortfolioPage() {
       <HeroSection />
 
       <ServicesSection />
+
+      <AboutSection />
     </div>
   );
 }

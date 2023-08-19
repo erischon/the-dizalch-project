@@ -15,8 +15,8 @@ export const seoData = {
 
 // Revalidate times
 export const revalidateTime = {
-  blog: 60,
-  projects: 60,
+  blog: 60 * 60 * 24, // 24 hours
+  projects: 60 * 60 * 24, // 24 hours
 };
 
 // Portfolio informations
