@@ -1,5 +1,5 @@
 import { FaHammer, FaTools } from "react-icons/fa";
-import { BsGraphUp } from "react-icons/bs";
+import { BsGraphUp, BsFillBugFill } from "react-icons/bs";
 import { MdSecurity } from "react-icons/md";
 import { GiTestTubes } from "react-icons/gi";
 
@@ -49,6 +49,12 @@ export const services = [
     title: "Maintenance",
     description: "Sécuriser votre application web",
     icon: <FaTools />,
+    image: "/images/services/security.jpg",
+  },
+  {
+    title: "Debugging",
+    description: "Sécuriser votre application web",
+    icon: <BsFillBugFill />,
     image: "/images/services/security.jpg",
   },
   {
