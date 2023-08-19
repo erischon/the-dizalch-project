@@ -55,20 +55,20 @@ const AboutSection = () => {
       <div className="flex w-full flex-wrap justify-center">
         <div className="flex flex-col items-center px-8 md:px-28 py-10 text-gray-100 bg-indigo-700 rounded-lg shadow-md dark:shadow-black/60 m-4 min-w-[200px]">
           <AiOutlineCheckCircle className="text-4xl mb-2" />
-          <p className="text-4xl font-bold mb-0">120</p>
-          <p>projects</p>
+          <p className="text-4xl font-bold mb-0">3+</p>
+          <p>années d'expérience</p>
         </div>
 
         <div className="flex flex-col items-center px-8 md:px-28 py-10 text-gray-100 bg-indigo-700 rounded-lg shadow-md dark:shadow-black/60 m-4 min-w-[200px]">
           <AiOutlineCheckCircle className="text-4xl mb-2" />
-          <p className="text-4xl font-bold mb-0">120</p>
-          <p>projects</p>
+          <p className="text-4xl font-bold mb-0">50+</p>
+          <p>applications optimisées</p>
         </div>
 
         <div className="flex flex-col items-center px-8 md:px-28 py-10 text-gray-100 bg-indigo-700 rounded-lg shadow-md dark:shadow-black/60 m-4 min-w-[200px]">
           <AiOutlineCheckCircle className="text-4xl mb-2" />
-          <p className="text-4xl font-bold mb-0">120</p>
-          <p>projects</p>
+          <p className="text-4xl font-bold mb-0">200+</p>
+          <p>tests effectués</p>
         </div>
       </div>
     </section>
