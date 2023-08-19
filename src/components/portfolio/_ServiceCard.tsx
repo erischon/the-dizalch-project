@@ -20,7 +20,7 @@ const ServiceCard = ({ service }: { service: ServiceCardProps }) => {
         <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] [backface-visibility:hidden] bg-gray-700">
           <div className="absolute inset-0">
             <div className="flex flex-col justify-center items-center h-full w-full">
-              <div className="text-4xl text-teal-400 mb-4">{icon}</div>
+              <div className="text-4xl text-indigo-400 mb-4">{icon}</div>
 
               <h2 className="text-2xl text-gray-200 font-medium">{title}</h2>
             </div>

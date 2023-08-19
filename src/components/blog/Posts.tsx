@@ -15,7 +15,7 @@ const Posts = async () => {
 
   return (
     <section className="my-8 mx-auto">
-      <h2 className="text-sm text-stone-500 dark:text-teal-300 uppercase tracking-widest">
+      <h2 className="text-sm text-stone-500 dark:text-indigo-300 uppercase tracking-widest">
         Récemment publié
       </h2>
       <ul className="w-full">

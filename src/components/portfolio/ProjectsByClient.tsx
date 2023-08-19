@@ -43,7 +43,7 @@ const ProjectsByClient = async ({ clients }: ClientsProps) => {
               <Link
                 key={project.title}
                 href={`/projects/${project.id}`}
-                className="py-2 px-3 shadow-sm flex items-center justify-center bg-teal-500 text-white rounded-md"
+                className="py-2 px-3 shadow-sm flex items-center justify-center bg-indigo-500 text-white rounded-md"
               >
                 <div>{project.title}</div>
               </Link>

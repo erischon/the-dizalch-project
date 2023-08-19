@@ -17,7 +17,7 @@ const Footer = () => {
           href="https://www.linkedin.com/in/ericschonhofen/"
           rel="noopener noreferrer"
         >
-          <BsLinkedin className="text-2xl inline-block mr-2 text-teal-300 hover:text-gray-300" />
+          <BsLinkedin className="text-2xl inline-block mr-2 text-indigo-300 hover:text-gray-300" />
         </a>
 
         <a
@@ -25,7 +25,7 @@ const Footer = () => {
           href="https://github.com/erischon"
           rel="noopener noreferrer"
         >
-          <BsGithub className="text-2xl inline-block mr-2 text-teal-300 hover:text-gray-300" />
+          <BsGithub className="text-2xl inline-block mr-2 text-indigo-300 hover:text-gray-300" />
         </a>
 
         <a
@@ -33,7 +33,7 @@ const Footer = () => {
           href="https://twitter.com/erischon"
           rel="noopener noreferrer"
         >
-          <BsTwitter className="text-2xl inline-block mr-2 text-teal-300 hover:text-gray-300" />
+          <BsTwitter className="text-2xl inline-block mr-2 text-indigo-300 hover:text-gray-300" />
         </a>
       </div>
     </div>

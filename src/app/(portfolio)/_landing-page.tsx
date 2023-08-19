@@ -15,7 +15,7 @@ export default function PortfolioPage() {
             lacinia ex nec, vulputate nunc.{" "}
           </h2>
 
-          <button className="bg-teal-600 rounded-md text-white px-6 py-2">
+          <button className="bg-indigo-600 rounded-md text-white px-6 py-2">
             Contactez-moi
           </button>
         </div>

@@ -14,10 +14,12 @@ const ServicesSection = () => {
           Nos services
         </p>
 
-        <h2 className="text-3xl font-semibold">Ce que nous faisons</h2>
+        <h2 className="text-3xl font-semibold">
+          Ce que nous faisons pour vous
+        </h2>
       </div>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 justify-center gap-1">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 justify-center gap-4">
         {services.map((service) => (
           <ServiceCard service={service} key={service.title} />
         ))}

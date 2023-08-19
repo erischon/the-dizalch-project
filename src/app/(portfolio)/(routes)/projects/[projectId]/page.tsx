@@ -76,7 +76,7 @@ export default async function Project({ params: { projectId } }: Props) {
     <Link
       key={i}
       href={`/tags/${tag}`}
-      className="py-1 px-2 bg-teal-300 dark:text-gray-900 font-semibold"
+      className="py-1 px-2 bg-indigo-300 dark:text-gray-900 font-semibold"
     >
       <div className="text-semibold capitalize">{tag}</div>
     </Link>
@@ -124,7 +124,7 @@ export default async function Project({ params: { projectId } }: Props) {
               <Link
                 href={meta.liveUrl}
                 target="_blank"
-                className="border-2 border-teal-500 rounded-md w-14 h-14 flex justify-center items-center hover:bg-teal-500 hover:text-white"
+                className="border-2 border-indigo-500 rounded-md w-14 h-14 flex justify-center items-center hover:bg-indigo-500 hover:text-white"
               >
                 <BsLink45Deg className="text-3xl" />
               </Link>
@@ -134,7 +134,7 @@ export default async function Project({ params: { projectId } }: Props) {
               <Link
                 href={meta.codeUrl}
                 target="_blank"
-                className="border-2 border-teal-500 rounded-md w-14 h-14 flex justify-center items-center hover:bg-teal-500 hover:text-white"
+                className="border-2 border-indigo-500 rounded-md w-14 h-14 flex justify-center items-center hover:bg-indigo-500 hover:text-white"
               >
                 <BsGithub className="text-2xl" />
               </Link>
@@ -152,7 +152,7 @@ export default async function Project({ params: { projectId } }: Props) {
         </div>
       </section>
 
-      <div className="flex border-l-8 border-teal-200 pl-4 my-10">
+      <div className="flex border-l-8 border-indigo-200 pl-4 my-10">
         <p>{meta.description}</p>
       </div>
 
@@ -165,7 +165,7 @@ export default async function Project({ params: { projectId } }: Props) {
           L'étude de cas
         </h2>
 
-        <article className="w-full my-8 mx-auto prose sm:prose-md prose-pre:m-4 prose-pre:p-4 prose-p:m-0 prose-teal max-w-none dark:prose-invert">
+        <article className="w-full my-8 mx-auto prose sm:prose-md prose-pre:m-4 prose-pre:p-4 prose-p:m-0 prose-indigo max-w-none dark:prose-invert">
           {content}
         </article>
       </section>

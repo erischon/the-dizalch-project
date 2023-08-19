@@ -32,7 +32,7 @@ const HeroSection = () => {
             </h3>
 
             <a href="mailto:erischondev@gmail.com" className="">
-              <button className="bg-indigo-500 text-gray-100 font-semibold px-9 py-3 hover:bg-transparent hover:text-teal-400 border border-teal-400 text-lg md:text-2xl transition duration-300">
+              <button className="bg-indigo-500 text-gray-100 font-semibold px-9 py-3 hover:bg-transparent hover:text-indigo-600 border border-indigo-600 text-lg md:text-2xl transition duration-300">
                 Parlons-en !
               </button>
             </a>

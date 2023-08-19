@@ -28,7 +28,7 @@ export default function ProjectCard({ project }: Props) {
             }}
           ></div>
 
-          <h2 className="absolute top-0 left-0 w-[max-content] py-2 px-8 text-md md:text-lg bg-teal-400/95 shadow-md font-semibold text-gray-900">
+          <h2 className="absolute top-0 left-0 w-[max-content] py-2 px-8 text-md md:text-lg bg-indigo-400/95 shadow-md font-semibold text-gray-900">
             {title}
           </h2>
         </article>

@@ -44,10 +44,10 @@ const LastX = ({
         {infos.period}
       </p>
 
-      <div className="flex flex-col sm:flex-row justify-between mb-2 sm:border-l-8 sm:pl-2 sm:border-teal-400">
+      <div className="flex flex-col sm:flex-row justify-between mb-2 sm:border-l-8 sm:pl-2 sm:border-indigo-400">
         <h3 className="text-xl font-semibold">{infos.position}</h3>
 
-        <div className="text-lg text-teal-500 sm:font-bold">
+        <div className="text-lg text-indigo-500 sm:font-bold">
           @ {infos.company}
         </div>
       </div>
@@ -69,7 +69,7 @@ const Experience = () => {
           Juillet 2020 - aujourd'hui
         </p>
 
-        <div className="flex flex-col sm:flex-row justify-between gap-2 mb-2 sm:border-l-8 sm:pl-2 sm:border-teal-400">
+        <div className="flex flex-col sm:flex-row justify-between gap-2 mb-2 sm:border-l-8 sm:pl-2 sm:border-indigo-400">
           <h3 className="text-xl font-semibold">
             Développeur Web Full-Stack Freelance
           </h3>

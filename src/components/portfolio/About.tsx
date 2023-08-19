@@ -28,7 +28,7 @@ const About = () => {
           </div>
 
           <div className="relative w-[250px] h-[250px] hidden sm:col-span-4 sm:flex">
-            <Image src="/erischon_a.png" alt="Eri Schön" fill />
+            <Image src="/erischon_indigo.png" alt="Eri Schön" fill />
           </div>
         </div>
       </article>

@@ -16,7 +16,7 @@ const ListItem = ({ post }: Props) => {
 
   return (
     <li className="mt-4 text-xl ">
-      <Link className="hover:text-teal-400/90" href={`/blog/posts/${id}`}>
+      <Link className="hover:text-indigo-400/90" href={`/blog/posts/${id}`}>
         {title}
       </Link>
 

@@ -7,7 +7,7 @@ import Link from "next/link";
 const SkillCard = ({ skill }: { skill: any }) => {
   return (
     <Link href={`/tags/${skill.name}`} key={skill.name}>
-      <div className="text-teal-600 dark:text-teal-200 text-4xl p-2">
+      <div className="text-indigo-600 dark:text-indigo-200 text-4xl p-2">
         <skill.icon />
       </div>
     </Link>
