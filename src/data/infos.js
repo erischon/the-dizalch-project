@@ -29,37 +29,43 @@ export const projectsListPageSize = 6;
 export const services = [
   {
     title: "Testing",
-    description: "Tester votre application web",
+    description:
+      "Nous mettons en place des tests unitaires ainsi que des tests end to end afin que votre application web soit robuste et fiable",
     icon: <GiTestTubes />,
     image: "/images/services/testing.jpg",
   },
   {
     title: "Performance",
-    description: "Améliorer les performances de votre application web",
+    description:
+      "Nous annalysons, optimisons et améliorons les performances de votre application web pour qu'elle soit rapide et efficace.",
     icon: <BsGraphUp />,
     image: "/images/services/performance.jpg",
   },
   {
     title: "Sécurité",
-    description: "Sécuriser votre application web",
+    description:
+      "Nous sécurisons votre application web grâce à des tests de sécurité et des audits afin de vous protéger contre les attaques malveillantes.",
     icon: <MdSecurity />,
     image: "/images/services/security.jpg",
   },
   {
     title: "Maintenance",
-    description: "Sécuriser votre application web",
+    description:
+      "Nous effectuons la maintenance de votre application web ainsi que les mises à jour nécessaires pour qu'elle reste fonctionnelle.",
     icon: <FaTools />,
     image: "/images/services/security.jpg",
   },
   {
     title: "Debugging",
-    description: "Sécuriser votre application web",
+    description:
+      "Nous aidons à résoudre les bugs pour que votre application web fonctionne correctement et sans erreurs.",
     icon: <BsFillBugFill />,
     image: "/images/services/security.jpg",
   },
   {
     title: "New feature",
-    description: "Sécuriser votre application web",
+    description:
+      "Nous ajoutons de nouvelles fonctionnalités à votre application web en suivant vos besoins afin qu'elle corresponde à vos attentes.",
     icon: <FaHammer />,
     image: "/images/services/security.jpg",
   },
