@@ -2,6 +2,7 @@ import { FaHammer, FaTools } from "react-icons/fa";
 import { BsGraphUp, BsFillBugFill } from "react-icons/bs";
 import { MdSecurity } from "react-icons/md";
 import { GiTestTubes } from "react-icons/gi";
+import { HiOutlineDocumentText } from "react-icons/hi";
 
 // SEO data
 export const seoData = {
@@ -63,11 +64,55 @@ export const services = [
     image: "/images/services/security.jpg",
   },
   {
-    title: "New feature",
+    title: "Documentation",
     description:
-      "Nous ajoutons de nouvelles fonctionnalités à votre application web en suivant vos besoins afin qu'elle corresponde à vos attentes.",
-    icon: <FaHammer />,
+      "Nous documentons votre application web afin que vous puissiez la maintenir et la faire évoluer facilement.",
+    icon: <HiOutlineDocumentText />,
     image: "/images/services/security.jpg",
+  },
+];
+
+export const metrics = [
+  {
+    title: "Tests créés",
+    value: "100+",
+    icon: <GiTestTubes />,
+  },
+  {
+    title: "Appli. optimisées",
+    value: "30+",
+    icon: <BsGraphUp />,
+  },
+  {
+    title: "Années d'expériences",
+    value: "3+",
+    icon: <FaTools />,
+  },
+];
+
+export const testimonials = [
+  {
+    name: "Julien D.",
+    title: "CTO",
+    company: "B-Sharpe",
+    image: "/images/testimonials/b-sharpe.jpg",
+    quote:
+      "Approche rigoureuse et centrée sur les tests. Très bon relationnel pour s'intégrer efficacement dans l'équipe.",
+  },
+  {
+    name: "Thomas C.",
+    title: "CEO",
+    company: "Butterfl.ai",
+    image: "/images/testimonials/butterflai.png",
+    quote:
+      "Eri a développé pour nous une super API REST sous Django, je le recommande vivement !",
+  },
+  {
+    name: "Michel S.",
+    title: "DA",
+    company: "Terre d'avance",
+    image: "/images/testimonials/terre-davance.png",
+    quote: "",
   },
 ];
 

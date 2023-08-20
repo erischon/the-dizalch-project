@@ -18,7 +18,7 @@ const ServiceCard = ({ service }: { service: ServiceCardProps }) => {
     <>
       <div className="group mx-auto rounded-md shadow-md dark:shadow-black/60 p-5 w-full">
         <div className="text-5xl text-indigo-500 mb-5 w-fit">
-          <div className="p-4 bg-gray-100 rounded-full">{icon}</div>
+          <div className="p-4 bg-indigo-50 rounded-full">{icon}</div>
         </div>
         <div className="text-lg font-light mb-4 uppercase">{title}</div>
         <div className="">{description}</div>

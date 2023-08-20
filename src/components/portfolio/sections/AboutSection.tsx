@@ -1,14 +1,15 @@
 import Image from "next/image";
-import { AiOutlineCheckCircle } from "react-icons/ai";
+
+import { metrics } from "@/data/infos";
 
 /**
- * @description About component,
+ * @description About Section component
  * @version 1.0.0
  */
 const AboutSection = () => {
   return (
     <section
-      className="min-h-screen pt-[4rem] lg:pt-[6rem] px-[6%] pb-[2rem] lg:pb-[4rem] bg-indigo-50 dark:bg-indigo-900"
+      className="min-h-screen py-[4rem] lg:py-[6rem] px-[6%] bg-indigo-50 dark:bg-indigo-900"
       id="about"
     >
       <div className="grid md:grid-cols-12 mx-auto mb-8">
@@ -18,31 +19,22 @@ const AboutSection = () => {
               A propos
             </p>
 
-            <h2 className="text-3xl font-semibold">
-              Améliorer la qualité de votre application React avec un Freelance
+            <h2 className="text-3xl font-semibold capitalize">
+              Améliorer la Qualité sans épuiser vos ressources
             </h2>
           </div>
 
-          <div className="my-6">
-            <p>
-              Bonjour, je suis Eri, je suis tombé dans l'univers du Web en 1995
-              et depuis je ne l'ai pas quitté.
-            </p>
-            <p>
-              Aujourd'hui je suis développeur web Full-stack Freelance en full
-              remote.
-            </p>
-            <p>
-              J'ai une expertise en création, modification et entretien de site
-              et d'application Web.
-            </p>
-          </div>
-
-          <div className="my-6">
+          <p className="my-6">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nam
             fugit eaque quia commodi dolore pariatur qui aliquam placeat nemo,
             tenetur, esse exercitationem!
-          </div>
+          </p>
+
+          <p className="my-6">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nam
+            fugit eaque quia commodi dolore pariatur qui aliquam placeat nemo,
+            tenetur, esse exercitationem!
+          </p>
         </div>
 
         <div className="md:col-span-6 mx-auto my-auto order-1 md:order-2">
@@ -52,24 +44,19 @@ const AboutSection = () => {
         </div>
       </div>
 
-      <div className="flex w-full flex-wrap justify-center">
-        <div className="flex flex-col items-center px-8 md:px-28 py-10 text-gray-100 bg-indigo-700 rounded-lg shadow-md dark:shadow-black/60 m-4 min-w-[200px]">
-          <AiOutlineCheckCircle className="text-4xl mb-2" />
-          <p className="text-4xl font-bold mb-0">3+</p>
-          <p>années d'expérience</p>
-        </div>
+      <div className="grid md:grid-cols-12 w-full justify-center gap-4">
+        {metrics.map((metric) => (
+          <div
+            key={metric.title}
+            className="flex flex-col items-center px-8 md:px-28 py-10 text-gray-100 bg-indigo-700 rounded-lg shadow-md dark:shadow-black/60 min-w-[200px] max-w-3xl md:col-span-4"
+          >
+            <div className="text-4xl mb-2">{metric.icon}</div>
 
-        <div className="flex flex-col items-center px-8 md:px-28 py-10 text-gray-100 bg-indigo-700 rounded-lg shadow-md dark:shadow-black/60 m-4 min-w-[200px]">
-          <AiOutlineCheckCircle className="text-4xl mb-2" />
-          <p className="text-4xl font-bold mb-0">50+</p>
-          <p>applications optimisées</p>
-        </div>
+            <p className="text-4xl font-bold mb-0">{metric.value}</p>
 
-        <div className="flex flex-col items-center px-8 md:px-28 py-10 text-gray-100 bg-indigo-700 rounded-lg shadow-md dark:shadow-black/60 m-4 min-w-[200px]">
-          <AiOutlineCheckCircle className="text-4xl mb-2" />
-          <p className="text-4xl font-bold mb-0">200+</p>
-          <p>tests effectués</p>
-        </div>
+            <p className="text-center">{metric.title}</p>
+          </div>
+        ))}
       </div>
     </section>
   );

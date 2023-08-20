@@ -1,12 +1,15 @@
 import { services } from "@/data/infos";
 
 import ServiceCard from "@/components/portfolio//ServiceCard";
-import SectionTitle from "../SectionTitle";
 
+/**
+ * @description Services Section component,
+ * @version 1.0.0
+ */
 const ServicesSection = () => {
   return (
     <section
-      className="min-h-screen pt-[4rem] lg:pt-[6rem] px-[6%] pb-[2rem] lg:pb-[4rem] max-w-screen-xl mx-auto"
+      className="min-h-screen py-[4rem] lg:py-[6rem] px-[6%] max-w-screen-xl mx-auto"
       id="services"
     >
       <div className="flex flex-col items-center mb-8">
