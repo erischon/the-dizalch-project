@@ -36,18 +36,18 @@ export const services = [
     image: "/images/services/testing.jpg",
   },
   {
+    title: "Documentation",
+    description:
+      "Nous documentons votre application web afin que vous puissiez la maintenir et la faire évoluer facilement.",
+    icon: <HiOutlineDocumentText />,
+    image: "/images/services/security.jpg",
+  },
+  {
     title: "Performance",
     description:
       "Nous annalysons, optimisons et améliorons les performances de votre application web pour qu'elle soit rapide et efficace.",
     icon: <BsGraphUp />,
     image: "/images/services/performance.jpg",
-  },
-  {
-    title: "Sécurité",
-    description:
-      "Nous sécurisons votre application web grâce à des tests de sécurité et des audits afin de vous protéger contre les attaques malveillantes.",
-    icon: <MdSecurity />,
-    image: "/images/services/security.jpg",
   },
   {
     title: "Maintenance",
@@ -64,10 +64,10 @@ export const services = [
     image: "/images/services/security.jpg",
   },
   {
-    title: "Documentation",
+    title: "Sécurité",
     description:
-      "Nous documentons votre application web afin que vous puissiez la maintenir et la faire évoluer facilement.",
-    icon: <HiOutlineDocumentText />,
+      "Nous sécurisons votre application web grâce à des tests de sécurité et des audits afin de vous protéger contre les attaques malveillantes.",
+    icon: <MdSecurity />,
     image: "/images/services/security.jpg",
   },
 ];
