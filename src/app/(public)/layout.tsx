@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
-import Navbar from "@/components/portfolio/Navbar";
-import Footer from "@/components/portfolio/Footer";
-import Brand from "@/components/Brand";
-import Header from "@/components/portfolio/Header";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import Brand from "@/components/layout/Brand";
+import Header from "@/components/layout/Header";
 
 import { seoData } from "@/data/infos";
 

@@ -1,9 +1,9 @@
 import { revalidateTime } from "@/data/infos";
 
-import ServicesSection from "@/components/portfolio/sections/ServicesSection";
-import HeroSection from "@/components/portfolio/sections/HeroSection";
-import AboutSection from "@/components/portfolio/sections/AboutSection";
-import TestimonialsSection from "@/components/portfolio/sections/TestimonialsSection";
+import ServicesSection from "@/components/public/sections/ServicesSection";
+import HeroSection from "@/components/public/sections/HeroSection";
+import AboutSection from "@/components/public/sections/AboutSection";
+import TestimonialsSection from "@/components/public/sections/TestimonialsSection";
 
 export const revalidate = revalidateTime.projects;
 

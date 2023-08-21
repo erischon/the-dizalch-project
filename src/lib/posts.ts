@@ -1,7 +1,5 @@
 import { compileMDX } from "next-mdx-remote/rsc";
-import rehypeAutolinkHeadings from "rehype-autolink-headings/lib";
 import rehypeHighlight from "rehype-highlight/lib";
-import rehypeSlug from "rehype-slug";
 
 type Filetree = {
   tree: [
@@ -20,7 +18,7 @@ export async function getPostByName(
 ): Promise<BlogPost | undefined> {
   //  Fetches the raw MDX file from GitHub
   const res = await fetch(
-    `https://raw.githubusercontent.com/erischon/docs/master/posts/${fileName}`,
+    `https://raw.githubusercontent.com/erischon/erischondev-blog/master/posts/${fileName}`,
     {
       headers: {
         Accept: "application/vnd.github+json",
@@ -74,7 +72,7 @@ export async function getPostByName(
  */
 export async function getPostsMeta(): Promise<PostMeta[] | undefined> {
   const res = await fetch(
-    "https://api.github.com/repos/erischon/docs/git/trees/master?recursive=1",
+    "https://api.github.com/repos/erischon/erischondev-blog/git/trees/master?recursive=1",
     {
       headers: {
         Accept: "application/vnd.github+json",

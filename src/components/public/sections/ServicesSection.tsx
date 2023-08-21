@@ -1,6 +1,6 @@
 import { services } from "@/data/infos";
 
-import ServiceCard from "@/components/portfolio//ServiceCard";
+import ServiceCard from "@/components/public//ServiceCard";
 
 /**
  * @description Services Section component,
