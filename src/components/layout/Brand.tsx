@@ -5,7 +5,7 @@ import Link from "next/link";
  * @description Brand Component, logo and name
  * @version 1.0.0
  */
-const Brand = () => {
+export default function Brand() {
   return (
     <Link href="/" className="">
       <div className="flex justify-center items-center gap-1">
@@ -17,6 +17,4 @@ const Brand = () => {
       </div>
     </Link>
   );
-};
-
-export default Brand;
+}

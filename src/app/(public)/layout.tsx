@@ -3,7 +3,6 @@ import { Metadata } from "next";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Brand from "@/components/layout/Brand";
-import Header from "@/components/layout/Header";
 
 import { seoData } from "@/data/infos";
 
@@ -38,7 +37,11 @@ export const metadata: Metadata = {
  * @description Portfolio Layout, this is the layout for the portfolio pages
  * @version 1.0.0
  */
-const PortfolioLayout = ({ children }: { children: React.ReactNode }) => {
+export default function PortfolioLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <div className="flex flex-col w-full justify-between">
       <header className="px-4 lg:px-8 flex justify-between items-center min-h-[70px]">
@@ -46,8 +49,6 @@ const PortfolioLayout = ({ children }: { children: React.ReactNode }) => {
 
         <div className="flex gap-2 sm:gap-8 items-center">
           <Navbar />
-
-          <Header />
         </div>
       </header>
 
@@ -58,5 +59,4 @@ const PortfolioLayout = ({ children }: { children: React.ReactNode }) => {
       </footer>
     </div>
   );
-};
-export default PortfolioLayout;
+}

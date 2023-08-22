@@ -1,4 +1,3 @@
-const MetricsSection = () => {
+export default function MetricsSection() {
   return <div>MetricsSection</div>;
-};
-export default MetricsSection;
+}

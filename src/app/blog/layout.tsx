@@ -38,7 +38,11 @@ export const metadata: Metadata = {
  * @description Portfolio Layout, this is the layout for the portfolio pages
  * @version 1.0.0
  */
-const BlogLayout = ({ children }: { children: React.ReactNode }) => {
+export default function BlogLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <div className="flex flex-col w-full justify-between">
       <header className="flex justify-between items-center px-4 lg:px-12">
@@ -58,5 +62,4 @@ const BlogLayout = ({ children }: { children: React.ReactNode }) => {
       </footer>
     </div>
   );
-};
-export default BlogLayout;
+}

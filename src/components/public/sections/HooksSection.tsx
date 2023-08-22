@@ -4,10 +4,10 @@ import Image from "next/image";
  * @description Services Section component,
  * @version 1.0.0
  */
-const HooksSection = () => {
+export default function HooksSection() {
   return (
     <section
-      className="min-h-screen py-[4rem] lg:py-[6rem] px-[6%] max-w-screen-2xl mx-auto"
+      className="min-h-screen py-[4rem] lg:py-[6rem] px-[3%] lg:px-[6%] mx-auto"
       id="hook"
     >
       <div className="flex flex-col items-start mb-20">
@@ -21,7 +21,7 @@ const HooksSection = () => {
       </div>
 
       <div className="grid md:grid-cols-12 mb-10">
-        <div className="md:col-span-7 order-1 md:order-2 md:pl-8">
+        <div className="md:col-span-7 order-1 md:order-2 md:pl-14 animate-slideMeBottomToTop">
           <p className="md:text-lg lg:text-xl mb-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et
             consequuntur cum harum. Debitis veritatis quaerat dolor ratione
@@ -39,11 +39,10 @@ const HooksSection = () => {
           </p>
         </div>
 
-        <div className="relative w-[20rem] lg:w-[25rem] h-[20rem] lg:h-[25rem] mx-auto mt-4 md:my-auto md:col-span-5 order-2 md:order-1">
+        <div className="relative w-[20rem] lg:w-[25rem] h-[20rem] lg:h-[25rem] mx-auto mt-4 md:my-auto md:col-span-5 order-2 md:order-1 animate-slideMeTopToBottom">
           <Image src="/images/stress.png" alt="" fill className="" />
         </div>
       </div>
     </section>
   );
-};
-export default HooksSection;
+}

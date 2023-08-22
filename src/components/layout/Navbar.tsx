@@ -11,7 +11,7 @@ const pages = [
  * @description Navbar component
  * @version 1.0.0
  */
-const Navbar = () => {
+export default function Navbar() {
   return (
     <nav className="flex gap-2 my-2 h-full">
       {pages.map((page) => (
@@ -25,5 +25,4 @@ const Navbar = () => {
       ))}
     </nav>
   );
-};
-export default Navbar;
+}

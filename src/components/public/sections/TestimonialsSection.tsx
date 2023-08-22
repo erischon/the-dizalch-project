@@ -8,7 +8,7 @@ import { testimonials } from "@/data/infos";
  * @description Testimonials Section component
  * @version 1.0.0
  */
-const TestimonialsSection = () => {
+export default function TestimonialsSection() {
   return (
     <section className="min-h-screen py-[4rem] lg:py-[6rem] px-[6%]" id="about">
       <div className="flex flex-col items-center mb-8">
@@ -25,11 +25,9 @@ const TestimonialsSection = () => {
         {testimonials.map((testimonial) => (
           <div
             key={testimonial.title}
-            className="flex flex-col justify-between md:col-span-4 rounded-lg bg-indigo-50 p-6 shadow-md dark:shadow-black/60"
+            className="flex flex-col justify-between md:col-span-4 rounded-lg bg-gray-50 p-6 shadow-md shadow-black/90"
           >
-            <p className="mb-4 flex-grow dark:text-gray-800">
-              {testimonial.quote}
-            </p>
+            <p className="mb-4 flex-grow text-gray-800">{testimonial.quote}</p>
 
             <div className="grid grid-cols-12 justify-between">
               <div className="col-span-8 flex ">
@@ -46,7 +44,7 @@ const TestimonialsSection = () => {
                   <p className="text-lg text-indigo-600 font-semibold">
                     {testimonial.name}
                   </p>
-                  <p className="text-sm font-light dark:text-gray-800">
+                  <p className="text-sm font-light text-gray-800">
                     {testimonial.title} / {testimonial.company}
                   </p>
                 </div>
@@ -61,5 +59,4 @@ const TestimonialsSection = () => {
       </div>
     </section>
   );
-};
-export default TestimonialsSection;
+}

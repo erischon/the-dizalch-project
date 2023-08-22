@@ -4,7 +4,7 @@ import Link from "next/link";
 /**
  * @description This component is the hero section of the portfolio page
  */
-const HeroSection = () => {
+export default function HeroSection() {
   return (
     <>
       <section
@@ -12,7 +12,7 @@ const HeroSection = () => {
         id="hero"
       >
         <div className="grid lg:grid-cols-12 lg:items-center p-2">
-          <div className="max-w-xl lg:max-w-screen-2xl h-full lg:col-span-6 mx-auto place-self-center order-2 lg:order-1 text-center lg:text-left lg:flex lg:flex-col lg:gap-4">
+          <div className="max-w-xl lg:max-w-screen-2xl h-full lg:col-span-6 mx-auto place-self-center order-2 lg:order-1 text-center lg:text-left lg:flex lg:flex-col lg:gap-4 animate-slideMeLeftToRight">
             <h1 className="mb-8 mt-2 text-3xl md:text-4xl lg:text-6xl font-semibold lg:leading-tight sm:max-w-lg mx-auto lg:mx-0 text-gray-100 tracking-wide">
               Réduisez votre Dette Technique
             </h1>
@@ -30,7 +30,7 @@ const HeroSection = () => {
             </Link>
           </div>
 
-          <div className="relative lg:flex lg:col-span-6 lg:mb-0 w-[20rem] lg:w-[30rem] h-[20rem] lg:h-[30rem] order-1 lg:order-2 mx-auto">
+          <div className="relative lg:flex lg:col-span-6 lg:mb-0 w-[20rem] lg:w-[30rem] h-[20rem] lg:h-[30rem] order-1 lg:order-2 mx-auto animate-slideMeRightToLeft">
             <Image
               src="/images/hero-14.png"
               alt="hero"
@@ -42,5 +42,4 @@ const HeroSection = () => {
       </section>
     </>
   );
-};
-export default HeroSection;
+}

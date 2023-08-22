@@ -6,7 +6,7 @@ import ListItem from "@/components/blog/ListItem";
  * @description
  * @version 1.0.0
  */
-const Posts = async () => {
+export default async function Posts() {
   const posts = await getPostsMeta();
 
   if (!posts) {
@@ -25,6 +25,4 @@ const Posts = async () => {
       </ul>
     </section>
   );
-};
-
-export default Posts;
+}

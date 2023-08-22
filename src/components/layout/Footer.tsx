@@ -4,7 +4,7 @@ import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
  * @description Footer component
  * @version 1.0.0
  */
-const Footer = () => {
+export default function Footer() {
   return (
     <div className="flex flex-col-reverse gap-4 py-8 items-center sm:flex-row sm:justify-between sm:items-center">
       <div className="text-gray-300 text-xs">
@@ -38,5 +38,4 @@ const Footer = () => {
       </div>
     </div>
   );
-};
-export default Footer;
+}

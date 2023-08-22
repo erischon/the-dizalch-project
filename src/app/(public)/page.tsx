@@ -8,7 +8,11 @@ import HooksSection from "@/components/public/sections/HooksSection";
 
 export const revalidate = revalidateTime.projects;
 
-export default function PortfolioPage() {
+/**
+ * @description Landing Page
+ * @version 1.0.0
+ */
+export default function LandingPage() {
   return (
     <div className="">
       <HeroSection />
@@ -16,8 +20,6 @@ export default function PortfolioPage() {
       <HooksSection />
 
       <ServicesSection />
-
-      <AboutSection />
 
       <TestimonialsSection />
     </div>

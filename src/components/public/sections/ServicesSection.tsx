@@ -6,10 +6,10 @@ import ServiceCard from "@/components/public//ServiceCard";
  * @description Services Section component,
  * @version 1.0.0
  */
-const ServicesSection = () => {
+export default function ServicesSection() {
   return (
     <section
-      className="min-h-screen py-[4rem] lg:py-[6rem] px-[6%] max-w-screen-xl mx-auto bg-indigo-50"
+      className="min-h-screen py-[4rem] lg:py-[6rem] px-[3%] lg:px-[6%] mx-auto bg-indigo-50"
       id="services"
     >
       <div className="flex flex-col items-center mb-8">
@@ -29,5 +29,4 @@ const ServicesSection = () => {
       </div>
     </section>
   );
-};
-export default ServicesSection;
+}

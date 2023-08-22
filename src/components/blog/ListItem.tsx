@@ -10,7 +10,7 @@ type Props = {
  * @description Displays a list item
  * @version 1.0.0
  */
-const ListItem = ({ post }: Props) => {
+export default function ListItem({ post }: Props) {
   const { id, title, date } = post;
   const formattedDate = getFormattedDate(date);
 
@@ -25,6 +25,4 @@ const ListItem = ({ post }: Props) => {
       <p className="text-sm mt-1">{formattedDate}</p>
     </li>
   );
-};
-
-export default ListItem;
+}

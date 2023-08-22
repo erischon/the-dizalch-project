@@ -11,7 +11,11 @@ interface ServiceCardProps {
  * @description
  * @version 1.0
  */
-const ServiceCard = ({ service }: { service: ServiceCardProps }) => {
+export default function ServiceCard({
+  service,
+}: {
+  service: ServiceCardProps;
+}) {
   const { title, description, icon, image } = service;
 
   return (
@@ -27,5 +31,4 @@ const ServiceCard = ({ service }: { service: ServiceCardProps }) => {
       </div>
     </>
   );
-};
-export default ServiceCard;
+}

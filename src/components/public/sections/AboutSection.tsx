@@ -6,7 +6,7 @@ import { metrics } from "@/data/infos";
  * @description About Section component
  * @version 1.0.0
  */
-const AboutSection = () => {
+export default function AboutSection() {
   return (
     <section
       className="min-h-screen py-[4rem] lg:py-[6rem] px-[6%] bg-indigo-50 dark:bg-indigo-900"
@@ -60,5 +60,4 @@ const AboutSection = () => {
       </div>
     </section>
   );
-};
-export default AboutSection;
+}
