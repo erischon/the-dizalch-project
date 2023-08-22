@@ -21,6 +21,7 @@
     "cypress-plugin-steps": "^1.1.1",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
+    "framer-motion": "^10.16.1",
     "highlight.js": "^11.8.0",
     "mongoose": "^7.4.1",
     "next": "13.4.12",

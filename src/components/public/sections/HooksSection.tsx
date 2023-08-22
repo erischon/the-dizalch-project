@@ -1,4 +1,12 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+import {
+  slideBottomToTopVariants,
+  slideTopToBottomVariants,
+} from "@/lib/motionVariants";
 
 /**
  * @description Services Section component,
@@ -21,7 +29,13 @@ export default function HooksSection() {
       </div>
 
       <div className="grid md:grid-cols-12 mb-10">
-        <div className="md:col-span-7 order-1 md:order-2 md:pl-14 animate-slideMeBottomToTop">
+        <motion.div
+          className="md:col-span-7 order-1 md:order-2 md:pl-14"
+          variants={slideBottomToTopVariants}
+          initial="initial"
+          whileInView="animate"
+          transition={{ ease: "easeIn", duration: 0.5 }}
+        >
           <p className="md:text-lg lg:text-xl mb-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et
             consequuntur cum harum. Debitis veritatis quaerat dolor ratione
@@ -37,11 +51,17 @@ export default function HooksSection() {
             adipisicing elit. Porro dolor ullam laborum doloribus maxime!
             Deleniti nesciunt nostrum corporis accusamus iure?
           </p>
-        </div>
+        </motion.div>
 
-        <div className="relative w-[20rem] lg:w-[25rem] h-[20rem] lg:h-[25rem] mx-auto mt-4 md:my-auto md:col-span-5 order-2 md:order-1 animate-slideMeTopToBottom">
+        <motion.div
+          className="relative w-[20rem] lg:w-[25rem] h-[20rem] lg:h-[25rem] mx-auto mt-4 md:my-auto md:col-span-5 order-2 md:order-1"
+          variants={slideTopToBottomVariants}
+          initial="initial"
+          whileInView="animate"
+          transition={{ ease: "easeIn", duration: 0.5 }}
+        >
           <Image src="/images/stress.png" alt="" fill className="" />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
