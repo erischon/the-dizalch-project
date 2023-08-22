@@ -12,7 +12,7 @@ const HooksSection = () => {
     >
       <div className="flex flex-col items-start mb-20">
         <p className="mb-3 text-indigo-500 dark:text-indigo-300 relative after:inline-block after:w-20 after:h-[0.1rem] after:bg-indigo-300 after:bottom-[50%] after:right-[-6rem] after:absolute">
-          A propos
+          Vous manquez de ressources ?
         </p>
 
         <h2 className="text-3xl font-semibold capitalize">

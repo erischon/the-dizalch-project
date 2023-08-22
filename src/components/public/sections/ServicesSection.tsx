@@ -17,7 +17,7 @@ const ServicesSection = () => {
           Nos services
         </p>
 
-        <h2 className="text-3xl font-semibold">
+        <h2 className="text-3xl font-semibold text-gray-900">
           Ce que nous faisons pour vous
         </h2>
       </div>
