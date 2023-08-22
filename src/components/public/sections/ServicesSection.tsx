@@ -9,7 +9,7 @@ import ServiceCard from "@/components/public//ServiceCard";
 const ServicesSection = () => {
   return (
     <section
-      className="min-h-screen py-[4rem] lg:py-[6rem] px-[6%] max-w-screen-xl mx-auto"
+      className="min-h-screen py-[4rem] lg:py-[6rem] px-[6%] max-w-screen-xl mx-auto bg-indigo-50"
       id="services"
     >
       <div className="flex flex-col items-center mb-8">

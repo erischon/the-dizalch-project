@@ -6,6 +6,9 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      serif: ["Kalam", "cursive"],
+    },
     extend: {},
   },
   darkMode: "class",
