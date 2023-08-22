@@ -3,7 +3,6 @@ import { Metadata } from "next";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Brand from "@/components/layout/Brand";
-import Header from "@/components/layout/Header";
 
 import { seoData } from "@/data/infos";
 
@@ -50,8 +49,6 @@ export default function BlogLayout({
 
         <div className="flex gap-2 sm:gap-8 items-center">
           <Navbar />
-
-          <Header />
         </div>
       </header>
 
