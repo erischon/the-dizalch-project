@@ -31,10 +31,11 @@ export default function HooksSection() {
       <div className="grid md:grid-cols-12 mb-10">
         <motion.div
           className="md:col-span-7 order-1 md:order-2 md:pl-14"
-          variants={slideBottomToTopVariants}
+          variants={slideTopToBottomVariants}
           initial="initial"
           whileInView="animate"
           transition={{ ease: "easeIn", duration: 0.5 }}
+          viewport={{ once: true }}
         >
           <p className="md:text-lg lg:text-xl mb-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et
@@ -55,7 +56,7 @@ export default function HooksSection() {
 
         <motion.div
           className="relative w-[20rem] lg:w-[25rem] h-[20rem] lg:h-[25rem] mx-auto mt-4 md:my-auto md:col-span-5 order-2 md:order-1"
-          variants={slideTopToBottomVariants}
+          variants={slideBottomToTopVariants}
           initial="initial"
           whileInView="animate"
           transition={{ ease: "easeIn", duration: 0.5 }}
