@@ -3,6 +3,8 @@ import { BsGraphUp, BsFillBugFill } from "react-icons/bs";
 import { MdSecurity } from "react-icons/md";
 import { GiTestTubes } from "react-icons/gi";
 import { HiOutlineDocumentText } from "react-icons/hi";
+import { TiPlus } from "react-icons/ti";
+import { ImArrowUpRight, ImArrowDownRight } from "react-icons/im";
 
 // SEO data
 export const seoData = {
@@ -113,6 +115,21 @@ export const testimonials = [
     company: "Terre d'avance",
     image: "/images/testimonials/terre-davance.png",
     quote: "",
+  },
+];
+
+export const gains = [
+  {
+    icon: <ImArrowUpRight />,
+    title: "Satisfaction utilisateurs",
+  },
+  {
+    icon: <ImArrowDownRight />,
+    title: "Bugs en production",
+  },
+  {
+    icon: <ImArrowUpRight />,
+    title: "Possibilité d'évolution",
   },
 ];
 
