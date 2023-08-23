@@ -30,7 +30,7 @@ export default function SolutionSection() {
       </div>
 
       <div className="grid md:grid-cols-12 mb-10">
-        <div className="text-gray-800 md:col-span-7 md:pr-14 mb-5 max-w-3xl">
+        <div className="text-gray-800 md:col-span-7 md:pr-14 mb-5 max-w-3xl flex flex-col justify-between">
           <motion.p
             className="md:text-lg lg:text-xl mb-10"
             variants={slideLeftToRightVariants}
