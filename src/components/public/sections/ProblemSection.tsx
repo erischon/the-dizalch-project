@@ -4,15 +4,15 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 import {
-  slideBottomToTopVariants,
-  slideTopToBottomVariants,
+  slideLeftToRightVariants,
+  slideRightToLeftVariants,
 } from "@/lib/motionVariants";
 
 /**
  * @description Services Section component,
  * @version 1.0.0
  */
-export default function HooksSection() {
+export default function ProblemSection() {
   return (
     <section
       className="min-h-screen py-[4rem] lg:py-[6rem] px-[3%] lg:px-[6%] mx-auto"
@@ -31,7 +31,7 @@ export default function HooksSection() {
       <div className="grid md:grid-cols-12 mb-10">
         <motion.div
           className="md:col-span-7 order-1 md:order-2 md:pl-14"
-          variants={slideTopToBottomVariants}
+          variants={slideRightToLeftVariants}
           initial="initial"
           whileInView="animate"
           transition={{ ease: "easeIn", duration: 0.5 }}
@@ -56,7 +56,7 @@ export default function HooksSection() {
 
         <motion.div
           className="relative w-[20rem] lg:w-[25rem] h-[20rem] lg:h-[25rem] mx-auto mt-4 md:my-auto md:col-span-5 order-2 md:order-1"
-          variants={slideBottomToTopVariants}
+          variants={slideLeftToRightVariants}
           initial="initial"
           whileInView="animate"
           transition={{ ease: "easeIn", duration: 0.5 }}

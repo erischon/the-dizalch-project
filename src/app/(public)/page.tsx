@@ -4,7 +4,8 @@ import ServicesSection from "@/components/public/sections/ServicesSection";
 import HeroSection from "@/components/public/sections/HeroSection";
 import AboutSection from "@/components/public/sections/AboutSection";
 import TestimonialsSection from "@/components/public/sections/TestimonialsSection";
-import HooksSection from "@/components/public/sections/HooksSection";
+import ProblemSection from "@/components/public/sections/ProblemSection";
+import SolutionSection from "@/components/public/sections/SolutionSection";
 
 export const revalidate = revalidateTime.projects;
 
@@ -17,7 +18,8 @@ export default function LandingPage() {
     <div className="">
       <HeroSection />
 
-      <HooksSection />
+      <ProblemSection />
+      <SolutionSection />
 
       <ServicesSection />
 
