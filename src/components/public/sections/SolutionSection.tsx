@@ -35,7 +35,7 @@ export default function SolutionSection() {
 
       <div className="grid lg:grid-cols-12 grow">
         <div className="text-gray-800 lg:col-span-7 md:pr-14 max-w-3xl flex flex-col">
-          <div className="mb-5">
+          <div className="mb-5 lg:mb-14">
             <motion.p
               className="text-center md:text-left md:text-lg lg:text-2xl mb-5"
               variants={slideLeftToRightVariants}

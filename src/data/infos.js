@@ -122,14 +122,17 @@ export const gains = [
   {
     icon: <ImArrowUpRight />,
     title: "Satisfaction utilisateurs",
+    color: "indigo-500",
   },
   {
     icon: <ImArrowDownRight />,
     title: "Bugs en production",
+    color: "amber-500",
   },
   {
     icon: <ImArrowUpRight />,
     title: "Possibilité d'évolution",
+    color: "indigo-500",
   },
 ];
 
