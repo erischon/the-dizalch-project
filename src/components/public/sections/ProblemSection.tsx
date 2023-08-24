@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import {
   slideLeftToRightVariants,
   slideRightToLeftVariants,
-} from "@/lib/motionVariants";
+} from "@/utils/motionVariants";
 
 /**
  * @description Services Section component,

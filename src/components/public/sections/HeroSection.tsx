@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import {
   slideLeftToRightVariants,
   slideRightToLeftVariants,
-} from "@/lib/motionVariants";
+} from "@/utils/motionVariants";
 
 /**
  * @description This component is the hero section of the portfolio page
