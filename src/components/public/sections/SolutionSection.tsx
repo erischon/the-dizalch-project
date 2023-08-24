@@ -34,7 +34,7 @@ export default function SolutionSection() {
       </div>
 
       <div className="grid lg:grid-cols-12 grow">
-        <div className="text-gray-800 lg:col-span-7 md:pr-14 max-w-3xl flex flex-col">
+        <div className="text-gray-800 lg:col-span-7 lg:pr-14 max-w-3xl flex flex-col md:mb-10 lg:mb-0">
           <div className="mb-5 lg:mb-14">
             <motion.p
               className="text-center md:text-left md:text-lg lg:text-2xl mb-5"
@@ -63,7 +63,7 @@ export default function SolutionSection() {
             </motion.p>
           </div>
 
-          <div className="grid md:grid-cols-3 lg:grid-cols-12 sm:justify-center gap-4 grow">
+          <div className="grid md:grid-cols-3 lg:grid-cols-12 sm:justify-center gap-4 grow items-center">
             {!media ? (
               <>
                 {gains.map((gain) => (
@@ -81,11 +81,12 @@ export default function SolutionSection() {
         </div>
 
         <motion.div
-          className="relative w-[20rem] lg:w-[25rem] h-[20rem] lg:h-[25rem] mx-auto mt-4 lg:col-span-5 hidden lg:block"
+          className="relative w-[20rem] h-[20rem] lg:w-[25rem] lg:h-[25rem] mx-auto my-auto lg:col-span-5 hidden md:block"
           variants={slideRightToLeftVariants}
           initial="initial"
           whileInView="animate"
           transition={{ ease: "easeOut", duration: 0.5 }}
+          viewport={{ once: true }}
         >
           <Image src="/images/solution.png" alt="" fill className="" />
         </motion.div>
