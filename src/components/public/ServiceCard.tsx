@@ -20,12 +20,12 @@ export default function ServiceCard({
 
   return (
     <>
-      <div className="group mx-auto rounded-md shadow-xl shadow-black/20 p-5 w-52 md:w-full bg-indigo-50 flex flex-col items-center">
+      <div className="group mx-auto rounded-md shadow-xl shadow-black/20 p-5 w-52 md:w-full bg-indigo-900 flex flex-col items-center">
         <div className="text-4xl text-indigo-500 mb-2 w-fit">
           <div className="p-4 bg-indigo-100 rounded-full">{icon}</div>
         </div>
 
-        <div className="text-lg font-semibold text-gray-900 uppercase">
+        <div className="text-lg font-semibold text-gray-100 uppercase">
           {title}
         </div>
 
