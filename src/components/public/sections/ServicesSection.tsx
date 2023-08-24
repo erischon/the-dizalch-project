@@ -33,7 +33,7 @@ export default function ServicesSection() {
           <Image src="/images/services.png" alt="" fill className="" />
         </div>
 
-        <div className="lg:col-span-7 grid md:grid-cols-3 lg:grid-cols-3 md:gap-5">
+        <div className="lg:col-span-7 grid md:grid-cols-3 lg:grid-cols-3 md:gap-1 md:h-fit lg:gap-5">
           {!media ? (
             <>
               {services.map((service) => (

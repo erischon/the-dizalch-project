@@ -1,10 +1,10 @@
 import { FaHammer, FaTools } from "react-icons/fa";
 import { BsGraphUp, BsFillBugFill } from "react-icons/bs";
 import { MdSecurity } from "react-icons/md";
-import { GiTestTubes } from "react-icons/gi";
+import { GiTestTubes, GiCycle } from "react-icons/gi";
 import { HiOutlineDocumentText } from "react-icons/hi";
-import { TiPlus } from "react-icons/ti";
 import { ImArrowUpRight, ImArrowDownRight } from "react-icons/im";
+import { LuFileSearch } from "react-icons/lu";
 
 // SEO data
 export const seoData = {
@@ -31,6 +31,12 @@ export const projectsListPageSize = 6;
 
 export const services = [
   {
+    title: "Analyse",
+    description: "Analyse d'application",
+    icon: <LuFileSearch />,
+    image: "/images/services/security.jpg",
+  },
+  {
     title: "Testing",
     description: "Tests fonctionnels et E2E",
     icon: <GiTestTubes />,
@@ -49,21 +55,27 @@ export const services = [
     image: "/images/services/performance.jpg",
   },
   {
+    title: "Sécurité",
+    description: "Analyse et correction",
+    icon: <MdSecurity />,
+    image: "/images/services/security.jpg",
+  },
+  {
     title: "Mise à jour",
     description: "Mise à jour des dépendances",
     icon: <FaTools />,
     image: "/images/services/security.jpg",
   },
   {
-    title: "Debugging",
-    description: "Correction de bugs",
-    icon: <BsFillBugFill />,
+    title: "Processus",
+    description: "Création de process QA",
+    icon: <GiCycle />,
     image: "/images/services/security.jpg",
   },
   {
-    title: "Sécurité",
-    description: "Analyse et correction",
-    icon: <MdSecurity />,
+    title: "Debugging",
+    description: "Correction de bugs",
+    icon: <BsFillBugFill />,
     image: "/images/services/security.jpg",
   },
 ];
