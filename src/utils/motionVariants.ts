@@ -29,3 +29,18 @@ export const slideLeftToRightVariants = {
   },
   animate: { opacity: 1, transform: "translateX(0)" },
 };
+
+export const fadeInVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.2 * index,
+      duration: 0.5,
+    },
+  }),
+};

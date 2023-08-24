@@ -12,6 +12,7 @@ import Slideshow from "@/components/public/Slideshow";
 import {
   slideRightToLeftVariants,
   slideLeftToRightVariants,
+  fadeInVariants,
 } from "@/utils/motionVariants";
 
 /**
@@ -89,8 +90,17 @@ export default function SolutionSection() {
           <div className="grid md:grid-cols-3 lg:grid-cols-12 sm:justify-center gap-4 grow items-center">
             {!media ? (
               <>
-                {gains.map((gain) => (
-                  <GainCard gain={gain} key={gain.title} />
+                {gains.map((gain, index) => (
+                  <motion.div
+                    key={index}
+                    variants={fadeInVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    custom={index}
+                  >
+                    <GainCard gain={gain} />
+                  </motion.div>
                 ))}
               </>
             ) : (
