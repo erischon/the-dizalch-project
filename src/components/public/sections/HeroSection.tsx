@@ -1,16 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import Section from "@/components/public/Section";
+
 /**
  * @description This component is the hero section of the portfolio page
  */
 export default function HeroSection() {
   return (
     <>
-      <section
-        className="min-h-[calc(100vh-70px)] py-[4rem] px-[3%] md:flex md:flex-col md:justify-center lg:py-[6rem] lg:px-[6%] bg-indigo-800"
-        id="hero"
-      >
+      <Section background="bg-indigo-800" id="hero">
         <div className="grid lg:grid-cols-12 lg:items-center p-2">
           <div className="max-w-xl lg:max-w-screen-2xl h-full lg:col-span-6 mx-auto place-self-center order-2 lg:order-1 text-center lg:text-left lg:flex lg:flex-col lg:gap-4">
             <h1 className="mb-8 mt-2 text-3xl md:text-4xl lg:text-6xl font-semibold lg:leading-tight sm:max-w-lg mx-auto lg:mx-0 text-gray-100 tracking-wide">
@@ -39,7 +38,7 @@ export default function HeroSection() {
             />
           </div>
         </div>
-      </section>
+      </Section>
     </>
   );
 }

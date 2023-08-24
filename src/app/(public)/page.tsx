@@ -20,6 +20,7 @@ export default function LandingPage() {
 
       <ProblemSection />
       <SolutionSection />
+      <ServicesSection />
     </div>
   );
 }

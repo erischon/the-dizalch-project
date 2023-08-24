@@ -6,6 +6,7 @@ import Image from "next/image";
 import { gains } from "@/data/infos";
 import GainCard from "@/components/public/GainCard";
 import Slideshow from "@/components/public/Slideshow";
+import Section from "@/components/public/Section";
 
 /**
  * @descriptionSolution Section
@@ -15,10 +16,7 @@ export default function SolutionSection() {
   const media = useMediaQuery("(max-width: 768px)");
 
   return (
-    <section
-      className="min-h-screen py-[4rem] lg:py-[6rem] px-[3%] lg:px-[6%] mx-auto bg-indigo-50 flex flex-col"
-      id="solution"
-    >
+    <Section id="solution" background="bg-indigo-50">
       <div className="flex flex-col md:items-start mb-10 max-w-3xl text-center md:text-left">
         <p className="text-md text-gray-500 mb-5">La solution</p>
 
@@ -66,6 +64,6 @@ export default function SolutionSection() {
           <Image src="/images/solution.png" alt="" fill className="" />
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

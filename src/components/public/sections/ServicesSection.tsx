@@ -1,6 +1,7 @@
 import { services } from "@/data/infos";
 
 import ServiceCard from "@/components/public//ServiceCard";
+import Section from "@/components/public/Section";
 
 /**
  * @description Services Section component,
@@ -8,10 +9,7 @@ import ServiceCard from "@/components/public//ServiceCard";
  */
 export default function ServicesSection() {
   return (
-    <section
-      className="min-h-screen py-[4rem] lg:py-[6rem] px-[3%] lg:px-[6%] mx-auto"
-      id="services"
-    >
+    <Section id="services">
       <div className="flex flex-col items-center mb-8">
         <p className="mb-2 text-indigo-500 dark:text-indigo-300 relative before:inline-block before:w-20 before:h-[0.1rem] before:bg-indigo-300 before:bottom-[50%] before:left-[-6rem] before:absolute after:inline-block after:w-20 after:h-[0.1rem] after:bg-indigo-300 after:bottom-[50%] after:right-[-6rem] after:absolute">
           Nos services
@@ -27,6 +25,6 @@ export default function ServicesSection() {
           <ServiceCard service={service} key={service.title} />
         ))}
       </div>
-    </section>
+    </Section>
   );
 }
