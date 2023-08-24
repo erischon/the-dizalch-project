@@ -92,11 +92,11 @@ export default function SolutionSection() {
               <>
                 {gains.map((gain, index) => (
                   <motion.div
+                    className="lg:col-span-4"
                     key={index}
                     variants={fadeInVariants}
                     initial="initial"
                     whileInView="animate"
-                    viewport={{ once: true }}
                     custom={index}
                   >
                     <GainCard gain={gain} />
