@@ -8,7 +8,7 @@ export default function HeroSection() {
   return (
     <>
       <section
-        className="min-h-[calc(100vh-70px)] lg:py-[4rem] px-[3%] lg:px-[6%] bg-indigo-800"
+        className="min-h-[calc(100vh-70px)] py-[4rem] px-[3%] md:flex md:flex-col md:justify-center lg:py-[6rem] lg:px-[6%] bg-indigo-800"
         id="hero"
       >
         <div className="grid lg:grid-cols-12 lg:items-center p-2">

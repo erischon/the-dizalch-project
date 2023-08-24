@@ -1,19 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { useMediaQuery } from "usehooks-ts";
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 import { gains } from "@/data/infos";
 import GainCard from "@/components/public/GainCard";
 import Slideshow from "@/components/public/Slideshow";
-
-import {
-  slideRightToLeftVariants,
-  slideLeftToRightVariants,
-  fadeInVariants,
-} from "@/utils/motionVariants";
 
 /**
  * @descriptionSolution Section

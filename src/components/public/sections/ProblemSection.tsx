@@ -7,16 +7,14 @@ import Image from "next/image";
 export default function ProblemSection() {
   return (
     <section
-      className="min-h-screen py-[4rem] lg:py-[6rem] px-[3%] lg:px-[6%] mx-auto"
+      className="min-h-screen py-[4rem] px-[3%] md:flex md:flex-col md:justify-center lg:py-[6rem] lg:px-[6%] mx-auto"
       id="hook"
     >
-      <div className="flex flex-col items-start mb-20">
-        <p className="mb-3 text-indigo-500 dark:text-indigo-300 relative after:inline-block after:w-20 after:h-[0.1rem] after:bg-indigo-300 after:bottom-[50%] after:right-[-6rem] after:absolute">
-          Vous manquez de ressources ?
-        </p>
+      <div className="flex flex-col md:items-start mb-10 max-w-3xl text-center md:text-left">
+        <p className="text-md text-gray-300 mb-5">Le soucis</p>
 
-        <h2 className="text-3xl font-semibold capitalize">
-          Améliorer la Qualité sans épuiser vos ressources
+        <h2 className="text-4xl font-semibold">
+          Augmenter la Qualité et optimiser le process de développement
         </h2>
       </div>
 
