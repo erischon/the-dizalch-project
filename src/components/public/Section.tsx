@@ -11,7 +11,7 @@ export default function Section({
 
   return (
     <section
-      className={`min-h-screen py-[4rem] lg:py-[6rem] px-[3%] lg:px-[6%] mx-auto ${style} flex flex-col`}
+      className={`min-h-screen py-[4rem] lg:py-[6rem] px-[3%] lg:px-[6%] mx-auto ${style} flex flex-col md:justify-center`}
       id={id}
     >
       {children}
