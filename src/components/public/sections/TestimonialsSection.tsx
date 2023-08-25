@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ImQuotesRight } from "react-icons/im";
 
 import { testimonials } from "@/data/infos";
+import Section from "@/components/public/Section";
 
 /**
  * @description Testimonials Section component
@@ -10,13 +11,11 @@ import { testimonials } from "@/data/infos";
  */
 export default function TestimonialsSection() {
   return (
-    <section className="min-h-screen py-[4rem] lg:py-[6rem] px-[6%]" id="about">
-      <div className="flex flex-col items-center mb-8">
-        <p className="mb-2 text-indigo-500 dark:text-indigo-300 relative before:inline-block before:w-20 before:h-[0.1rem] before:bg-indigo-300 before:bottom-[50%] before:left-[-6rem] before:absolute after:inline-block after:w-20 after:h-[0.1rem] after:bg-indigo-300 after:bottom-[50%] after:right-[-6rem] after:absolute">
-          Testimonials
-        </p>
+    <Section id="testimonials">
+      <div className="flex flex-col mb-10 max-w-3xl">
+        <p className="text-md text-gray-400 mb-5">Testimmonials</p>
 
-        <h2 className="text-3xl font-semibold">
+        <h2 className="text-4xl text-gray-100 font-semibold">
           Ce que nos clients disent de nous
         </h2>
       </div>
@@ -57,6 +56,6 @@ export default function TestimonialsSection() {
           </div>
         ))}
       </div>
-    </section>
+    </Section>
   );
 }

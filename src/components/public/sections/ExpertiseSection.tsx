@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function ExpertiseSection() {
   return (
     <>
-      <Section id="expertise">
-        <div className="grid lg:grid-cols-12 lg:gap-6 py-20">
+      <Section id="expertise" background="bg-gray-700">
+        <div className="grid lg:grid-cols-12 lg:gap-6">
           <div className="bg-gray-900 rounded-3xl p-10 lg:p-20 shadow-lg shadow-black/20 lg:col-span-7">
             <div className="flex flex-col mb-10 max-w-3xl">
               <p className="text-md text-gray-400 mb-5">Notre expertise</p>
