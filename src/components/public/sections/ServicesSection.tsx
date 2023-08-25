@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useMediaQuery } from "usehooks-ts";
 
 import { services } from "@/data/infos";
