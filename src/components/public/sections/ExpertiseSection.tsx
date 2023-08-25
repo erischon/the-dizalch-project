@@ -15,16 +15,23 @@ export default function ExpertiseSection() {
               </h2>
             </div>
 
-            <div>
-              <p className="text-lg mb-5">
+            <div className="flex flex-col gap-5 text-lg lg:text-xl">
+              <p className="">
                 Nous sommes spécialisé dans les applications web Javascript et
                 React.
               </p>
 
-              <p className="text-lg mb-5">
+              <p className="">
                 Notre expérience nous permet de vous aider à analyser votre
                 application, réparer votre code et à mettre en place des process
                 pour rendre robuste et fiable votre application web.
+              </p>
+
+              <p className="">
+                Nous utilisons les librairies de test les plus populaires :{" "}
+                <strong>Jest</strong>, <strong>Vitest</strong>,{" "}
+                <strong>React Testing Library</strong>, <strong>Cypress</strong>
+                .
               </p>
             </div>
           </div>
