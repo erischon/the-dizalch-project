@@ -142,4 +142,12 @@ export const gains = [
   },
 ];
 
+export const sections = {
+  problem: {
+    header: "Le soucis",
+    title:
+      "Une dette technique bloquante et pas assez de ressources pour la gérer",
+  },
+};
+
 // Blog Informations

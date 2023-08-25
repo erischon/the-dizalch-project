@@ -1,23 +1,22 @@
 import Image from "next/image";
 
 import Section from "@/components/public/Section";
+import Container from "@/components/public/Container";
+import SectionHeader from "@/components/public/SectionHeader";
+
+import { sections } from "@/data/infos";
 
 /**
  * @description Services Section component,
  * @version 1.0.0
  */
 export default function ProblemSection() {
+  const { header, title } = sections.problem;
+
   return (
     <Section id="problem">
-      <div className="bg-gray-800 rounded-3xl p-10 lg:p-20 shadow-lg shadow-black/20">
-        <div className="flex flex-col md:items-start mb-10 max-w-3xl text-center md:text-left">
-          <p className="text-md text-gray-300 mb-5">Le soucis</p>
-
-          <h2 className="text-4xl font-semibold">
-            Une dette technique bloquante et pas assez de ressources pour la
-            gérer
-          </h2>
-        </div>
+      <Container background="bg-gray-800">
+        <SectionHeader header={header} title={title} />
 
         <div className="grid md:grid-cols-12 mb-10">
           <div className="md:col-span-7 order-1 md:order-2 md:pl-14 text-lg lg:text-xl flex flex-col gap-5">
@@ -42,7 +41,7 @@ export default function ProblemSection() {
             <Image src="/images/stress.png" alt="" fill className="" />
           </div>
         </div>
-      </div>
+      </Container>
     </Section>
   );
 }
