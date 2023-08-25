@@ -17,7 +17,7 @@ export default function ServicesSection() {
 
   return (
     <Section id="services" background="bg-gray-900">
-      <div className="bg-gray-700 rounded-3xl p-10 lg:p-20 shadow-lg shadow-black/20">
+      <div className="bg-gray-800 rounded-3xl p-10 lg:p-20 shadow-lg shadow-black/20">
         <div className="flex flex-col md:items-center mb-10 text-center md:text-left w-full">
           <p className="text-md text-gray-300 mb-5">
             Ce que nous faisons pour vous

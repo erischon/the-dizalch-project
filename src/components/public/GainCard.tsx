@@ -13,12 +13,12 @@ export default function GainCard({ gain }: { gain: GainCardProps }) {
 
   return (
     <>
-      <div className="group min-w-fit mx-auto w-64 h-64 md:w-full md:h-fit rounded-lg shadow-md p-5 bg-indigo-100 flex justify-center flex-col lg:col-span-4">
-        <div className="text-3xl text-gray-100 mb-5 w-fit mx-auto">
-          <div className="p-4 bg-amber-500 rounded-full">{icon}</div>
+      <div className="group min-w-fit mx-auto w-64 h-64 md:w-full md:h-fit rounded-lg shadow-md p-5 bg-indigo-700 flex justify-center flex-col lg:col-span-4">
+        <div className="text-3xl mb-5 w-fit mx-auto text-indigo-900">
+          <div className="p-4 bg-indigo-100 rounded-full">{icon}</div>
         </div>
 
-        <div className="text-lg font-semibold text-gray-800 mb-4 uppercase text-center">
+        <div className="text-lg font-semibold mb-4 uppercase text-center">
           {title}
         </div>
       </div>

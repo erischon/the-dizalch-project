@@ -12,8 +12,8 @@ import Section from "@/components/public/Section";
 export default function TestimonialsSection() {
   return (
     <Section id="testimonials">
-      <div className="flex flex-col mb-10 max-w-3xl">
-        <p className="text-md text-gray-400 mb-5">Testimmonials</p>
+      <div className="flex flex-col items-center mb-10">
+        <p className="text-md text-gray-300 mb-5">Testimmonials</p>
 
         <h2 className="text-4xl text-gray-100 font-semibold">
           Ce que nos clients disent de nous

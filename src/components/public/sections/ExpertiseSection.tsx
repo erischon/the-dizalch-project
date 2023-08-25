@@ -4,11 +4,11 @@ import Image from "next/image";
 export default function ExpertiseSection() {
   return (
     <>
-      <Section id="expertise" background="bg-gray-700">
+      <Section id="expertise" background="bg-gray-800">
         <div className="grid lg:grid-cols-12 lg:gap-6">
           <div className="bg-gray-900 rounded-3xl p-10 lg:p-20 shadow-lg shadow-black/20 lg:col-span-7">
             <div className="flex flex-col mb-10 max-w-3xl">
-              <p className="text-md text-gray-400 mb-5">Notre expertise</p>
+              <p className="text-md text-gray-300 mb-5">Notre expertise</p>
 
               <h2 className="text-4xl text-gray-100 font-semibold">
                 Nous avons choisi le Front-end
