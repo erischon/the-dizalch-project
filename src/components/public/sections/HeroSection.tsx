@@ -29,7 +29,7 @@ export default function HeroSection() {
             </Link>
           </div>
 
-          <div className="relative lg:flex lg:col-span-6 lg:mb-0 w-[20rem] lg:w-[30rem] h-[20rem] lg:h-[30rem] order-1 lg:order-2 mx-auto">
+          <div className="relative lg:flex lg:col-span-6 lg:mb-0 w-[14rem] lg:w-[30rem] h-[20rem] lg:h-[30rem] order-1 lg:order-2 mx-auto">
             <Image
               src="/images/hero-14.png"
               alt="hero"
