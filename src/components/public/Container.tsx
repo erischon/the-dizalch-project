@@ -11,7 +11,7 @@ export default function Container({ children, background }: ContainerProps) {
   return (
     <>
       <div
-        className={`${background} rounded-3xl p-[3%] lg:p-20 shadow-lg shadow-black/20`}
+        className={`${background} rounded-3xl p-5 lg:p-20 shadow-lg shadow-black/20`}
       >
         {children}
       </div>
