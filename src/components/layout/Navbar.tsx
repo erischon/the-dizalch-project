@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const pages = [
   // { name: "Accueil", href: "/" },
-  { name: "Services", href: "/#services" },
-  { name: "About", href: "/#about" },
+  // { name: "Services", href: "/#services" },
+  // { name: "About", href: "/#about" },
   { name: "Blog", href: "/blog" },
 ];
 
