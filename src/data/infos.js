@@ -160,6 +160,10 @@ export const sections = {
     header: "Notre expertise",
     title: "Le Front-end React.js",
   },
+  testimonials: {
+    header: "Testimonials",
+    title: "Ce que nos clients disent de nous",
+  },
 };
 
 // Blog Informations

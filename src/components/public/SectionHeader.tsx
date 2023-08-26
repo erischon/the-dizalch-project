@@ -16,7 +16,7 @@ export default function SectionHeader({
   return (
     <>
       {style === "center" ? (
-        <div className="flex flex-col mb-10 max-w-3xl items-center">
+        <div className="flex flex-col mb-10 max-w-3xl items-center mx-auto">
           <p className="text-md text-gray-300 mb-5">{header}</p>
 
           <h2 className="text-2xl lg:text-4xl font-semibold text-center">
