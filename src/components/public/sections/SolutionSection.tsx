@@ -7,6 +7,10 @@ import { gains } from "@/data/infos";
 import GainCard from "@/components/public/GainCard";
 import Slideshow from "@/components/public/Slideshow";
 import Section from "@/components/public/Section";
+import Container from "../Container";
+
+import { sections } from "@/data/infos";
+import SectionHeader from "../SectionHeader";
 
 /**
  * @descriptionSolution Section
@@ -14,17 +18,12 @@ import Section from "@/components/public/Section";
  */
 export default function SolutionSection() {
   const media = useMediaQuery("(max-width: 768px)");
+  const { header, title } = sections.solution;
 
   return (
     <Section id="solution" background="bg-gray-800">
-      <div className="bg-gray-900 rounded-3xl p-10 lg:p-20 shadow-lg shadow-black/20">
-        <div className="flex flex-col md:items-start mb-10 max-w-3xl text-center md:text-left">
-          <p className="text-md text-gray-300 mb-5">La solution</p>
-
-          <h2 className="text-4xl font-semibold">
-            Augmenter la Qualité et optimiser le process de développement
-          </h2>
-        </div>
+      <Container background="bg-gray-900">
+        <SectionHeader header={header} title={title} style="center" />
 
         <div className="grid lg:grid-cols-12 grow">
           <div className="lg:col-span-7 lg:pr-14 max-w-3xl flex flex-col md:mb-10 lg:mb-0">
@@ -65,7 +64,7 @@ export default function SolutionSection() {
             <Image src="/images/solution.png" alt="" fill className="" />
           </div>
         </div>
-      </div>
+      </Container>
     </Section>
   );
 }

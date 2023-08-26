@@ -19,7 +19,7 @@ export default function ProblemSection() {
         <SectionHeader header={header} title={title} />
 
         <div className="grid md:grid-cols-12">
-          <div className="md:col-span-7 order-1 md:order-2 md:pl-14 text-lg lg:text-xl flex flex-col gap-5">
+          <div className="md:col-span-6 order-1 md:order-2 md:pl-5 text-lg lg:text-xl flex flex-col gap-5">
             <p className="">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et
               consequuntur cum harum. Debitis veritatis quaerat dolor ratione
@@ -37,7 +37,7 @@ export default function ProblemSection() {
             </p>
           </div>
 
-          <div className="relative w-[14rem] h-[14rem] lg:w-[25rem] lg:h-[25rem] mx-auto mt-4 md:my-auto md:col-span-5 order-2 md:order-1">
+          <div className="relative w-[14rem] h-[14rem] lg:w-[22rem] lg:h-[22rem] mx-auto mt-5 lg:mt-0 md:col-span-6 order-2 md:order-1">
             <Image src="/images/stress.png" alt="" fill className="" />
           </div>
         </div>

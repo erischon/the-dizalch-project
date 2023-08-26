@@ -148,6 +148,10 @@ export const sections = {
     title:
       "Une dette technique bloquante et pas assez de ressources pour la gérer",
   },
+  solution: {
+    header: "La solution",
+    title: "Une ressource Qualité pour votre application web React",
+  }
 };
 
 // Blog Informations
