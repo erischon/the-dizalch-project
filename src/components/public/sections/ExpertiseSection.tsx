@@ -40,9 +40,12 @@ export default function ExpertiseSection() {
             </div>
           </Container>
 
-          <Container background="bg-indigo-900" otherClass="md:col-span-4">
-            <div className="flex md:grid md:grid-rows-2 justify-around items-center">
-              <div className="relative w-[6.5rem] h-[6.5rem] lg:w-[12rem] md:h-[12rem] ">
+          <Container
+            background="bg-indigo-900"
+            otherClass="md:col-span-4 md:mx-auto"
+          >
+            <div className="flex md:grid md:grid-rows-2 justify-around items-center md:justify-normal md:h-full">
+              <div className="relative w-[6.5rem] h-[6.5rem] lg:w-[10rem] md:h-[10rem] ">
                 <Image
                   src="/images/logos/javascript.png"
                   alt="Javascript"
@@ -51,7 +54,7 @@ export default function ExpertiseSection() {
                 />
               </div>
 
-              <div className="relative w-[6.5rem] h-[5.5rem] lg:w-[12rem] lg:h-[10rem] ">
+              <div className="relative w-[6.5rem] h-[5.5rem] lg:w-[10rem] lg:h-[8rem] ">
                 <Image src="/images/logos/react.png" alt="React" fill />
               </div>
             </div>
