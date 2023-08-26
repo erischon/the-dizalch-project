@@ -2,23 +2,26 @@ import Image from "next/image";
 
 import { metrics } from "@/data/infos";
 import Section from "@/components/public/Section";
+import Container from "@/components/public/Container";
+import SectionHeader from "@/components/public/SectionHeader";
+
+import { sections } from "@/data/infos";
 
 /**
  * @description About Section component
  * @version 1.0.0
  */
 export default function AboutSection() {
+  const { header, title } = sections.about;
+
   return (
     <Section id="about" background="bg-gray-800">
-      <div className="grid md:grid-cols-12 mx-auto bg-gray-900 rounded-3xl p-10 lg:p-20 shadow-lg shadow-black/20">
-        <div className="md:col-span-8 order-2 md:order-1">
-          <div className="flex flex-col md:items-start mb-10 max-w-3xl text-center md:text-left">
-            <p className="text-md text-gray-300 mb-5">A propos</p>
-
-            <h2 className="text-4xl font-semibold">
-              Augmenter la Qualité et optimiser le process de développement
-            </h2>
-          </div>
+      <Container
+        background="bg-gray-900"
+        otherClass="flex flex-col-reverse items-center md:flex-row"
+      >
+        <div className="">
+          <SectionHeader header={header} title={title} />
 
           <div className="text:lg lg:text-xl flex flex-col gap-5">
             <p className="">
@@ -34,12 +37,13 @@ export default function AboutSection() {
             </p>
           </div>
         </div>
-        <div className="md:col-span-4 order-1 md:order-2 justify-self-end">
-          <div className="w-80 h-80 relative">
+
+        <div className="">
+          <div className="w-60 h-60 lg:w-80 lg:h-80 relative">
             <Image src="/erischon_indigo.png" alt="Eri Schön" fill />
           </div>
         </div>
-      </div>
+      </Container>
 
       {/* <div className="grid md:grid-cols-12 w-full justify-center gap-4 bg-indigo-900 rounded-3xl p-10 lg:p-20 shadow-lg shadow-black/20">
         {metrics.map((metric) => (

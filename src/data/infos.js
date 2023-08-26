@@ -164,6 +164,10 @@ export const sections = {
     header: "Testimonials",
     title: "Ce que nos clients disent de nous",
   },
+  about: {
+    header: "A propos",
+    title: "Qui sommes-nous ?",
+  },
 };
 
 // Blog Informations
