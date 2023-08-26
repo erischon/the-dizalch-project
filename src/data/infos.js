@@ -151,7 +151,11 @@ export const sections = {
   solution: {
     header: "La solution",
     title: "Une ressource Qualité pour votre application web React",
-  }
+  },
+  services: {
+    header: "Ce que nous faisons pour vous",
+    title: "Augmenter la Qualité et optimiser le processus",
+  },
 };
 
 // Blog Informations

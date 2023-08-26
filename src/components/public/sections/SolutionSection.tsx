@@ -7,10 +7,10 @@ import { gains } from "@/data/infos";
 import GainCard from "@/components/public/GainCard";
 import Slideshow from "@/components/public/Slideshow";
 import Section from "@/components/public/Section";
+import SectionHeader from "@/components/public/SectionHeader";
 import Container from "../Container";
 
 import { sections } from "@/data/infos";
-import SectionHeader from "../SectionHeader";
 
 /**
  * @descriptionSolution Section
