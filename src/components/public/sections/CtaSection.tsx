@@ -23,7 +23,7 @@ export default function CtaSection() {
         </div>
 
         <div className="flex justify-center items-center md:w-1/3">
-          <button className="text-2xl font-semibold py-3 px-9 rounded-xl shadow-lg shadow-black/20 bg-amber-500 text-gray-900 uppercase">
+          <button className="text-xl md:text-2xl font-semibold py-3 px-9 rounded-xl shadow-lg shadow-black/20 bg-amber-500 text-gray-900 uppercase">
             Réserver
           </button>
         </div>
