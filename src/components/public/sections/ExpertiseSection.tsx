@@ -11,7 +11,7 @@ export default function ExpertiseSection() {
 
   return (
     <>
-      <Section id="expertise" background="bg-gray-800">
+      <Section id="expertise">
         <div className="grid md:grid-cols-12 md:gap-4 lg:gap-6">
           <Container
             background="bg-gray-900"

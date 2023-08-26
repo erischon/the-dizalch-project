@@ -26,7 +26,7 @@ export default function LandingPage() {
       <ExpertiseSection />
       <TestimonialsSection />
       <AboutSection />
-      <FaqSection />
+
       <CtaSection />
     </div>
   );

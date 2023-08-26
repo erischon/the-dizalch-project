@@ -21,7 +21,7 @@ export default function SolutionSection() {
   const { header, title } = sections.solution;
 
   return (
-    <Section id="solution" background="bg-gray-800">
+    <Section id="solution" background="bg-gray-900">
       <Container background="bg-gray-900">
         <SectionHeader header={header} title={title} />
 

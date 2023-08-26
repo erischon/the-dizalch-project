@@ -15,9 +15,9 @@ export default function AboutSection() {
   const { header, title } = sections.about;
 
   return (
-    <Section id="about" background="bg-gray-800">
+    <Section id="about">
       <Container
-        background="bg-gray-900"
+        background="bg-gray-800"
         otherClass="flex flex-col-reverse items-center md:flex-row"
       >
         <div className="">
