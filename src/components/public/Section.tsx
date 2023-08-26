@@ -1,12 +1,14 @@
-export default function Section({
-  children,
-  background,
-  id,
-}: {
+type SectionProps = {
   children: React.ReactNode;
   background?: string;
   id?: string;
-}) {
+};
+
+/**
+ * @description Section component
+ * @version 1.0.0
+ */
+export default function Section({ children, background, id }: SectionProps) {
   const style = background ? background : "bg-gray-900";
 
   return (

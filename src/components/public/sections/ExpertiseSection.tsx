@@ -1,19 +1,23 @@
 import Section from "@/components/public/Section";
 import Image from "next/image";
 
+import { sections } from "@/data/infos";
+
+import Container from "@/components/public/Container";
+import SectionHeader from "@/components/public/SectionHeader";
+
 export default function ExpertiseSection() {
+  const { header, title } = sections.expertise;
+
   return (
     <>
       <Section id="expertise" background="bg-gray-800">
-        <div className="grid lg:grid-cols-12 lg:gap-6">
-          <div className="bg-gray-900 rounded-3xl p-10 lg:p-20 shadow-lg shadow-black/20 lg:col-span-7">
-            <div className="flex flex-col mb-10 max-w-3xl">
-              <p className="text-md text-gray-300 mb-5">Notre expertise</p>
-
-              <h2 className="text-4xl text-gray-100 font-semibold">
-                Nous avons choisi le Front-end
-              </h2>
-            </div>
+        <div className="grid md:grid-cols-12 md:gap-4 lg:gap-6">
+          <Container
+            background="bg-gray-900"
+            otherClass="md:col-span-8 mb-5 md:mb-0"
+          >
+            <SectionHeader header={header} title={title} />
 
             <div className="flex flex-col gap-5 text-lg lg:text-xl">
               <p className="">
@@ -34,24 +38,24 @@ export default function ExpertiseSection() {
                 .
               </p>
             </div>
-          </div>
+          </Container>
 
-          <div className="bg-indigo-900 rounded-3xl p-10 lg:p-20 shadow-lg shadow-black/20 lg:col-span-5">
-            <div className="flex lg:grid lg:grid-rows-2 justify-around items-center lg:justify-normal">
-              <div className="relative w-[6.5rem] h-[6.5rem] lg:w-[12rem] lg:h-[12rem] lg:justify-self-start">
+          <Container background="bg-indigo-900" otherClass="md:col-span-4">
+            <div className="flex md:grid md:grid-rows-2 justify-around items-center">
+              <div className="relative w-[6.5rem] h-[6.5rem] lg:w-[12rem] md:h-[12rem] ">
                 <Image
                   src="/images/logos/javascript.png"
                   alt="Javascript"
                   fill
-                  className=""
+                  className="object-contain"
                 />
               </div>
 
-              <div className="relative w-[6.5rem] h-[5.5rem] lg:w-[12rem] lg:h-[10rem] lg:justify-self-end lg:self-end">
+              <div className="relative w-[6.5rem] h-[5.5rem] lg:w-[12rem] lg:h-[10rem] ">
                 <Image src="/images/logos/react.png" alt="React" fill />
               </div>
             </div>
-          </div>
+          </Container>
         </div>
       </Section>
     </>

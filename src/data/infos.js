@@ -156,6 +156,10 @@ export const sections = {
     header: "Ce que nous faisons pour vous",
     title: "Augmenter la Qualité et optimiser le processus",
   },
+  expertise: {
+    header: "Notre expertise",
+    title: "Le Front-end React.js",
+  },
 };
 
 // Blog Informations
