@@ -1,5 +1,6 @@
 import Section from "@/components/public/Section";
 import Container from "../Container";
+import ContactForm from "../ContactForm";
 
 /**
  * @description CTA Section component
@@ -23,9 +24,11 @@ export default function CtaSection() {
         </div>
 
         <div className="flex justify-center items-center md:w-1/3">
-          <button className="text-xl md:text-2xl font-semibold py-3 px-9 rounded-xl shadow-lg shadow-black/20 bg-amber-500 text-gray-900 uppercase">
-            Réserver
-          </button>
+          <a href="https://calendly.com/erischon/contact" target="_blank">
+            <button className="text-xl md:text-2xl font-semibold py-3 px-9 rounded-xl shadow-lg shadow-black/20 bg-amber-400 text-gray-800">
+              Réserver un rdv
+            </button>
+          </a>
         </div>
       </Container>
     </Section>
