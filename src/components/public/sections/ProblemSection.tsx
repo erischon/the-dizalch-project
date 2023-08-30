@@ -37,7 +37,7 @@ export default function ProblemSection() {
             </p>
           </div>
 
-          <div className="relative w-[14rem] h-[14rem] lg:w-[22rem] lg:h-[22rem] mx-auto mt-5 lg:mt-0 md:col-span-6 order-2 md:order-1">
+          <div className="relative w-[14rem] h-[14rem] lg:w-[20rem] lg:h-[20rem] mx-auto mt-5 lg:mt-0 md:col-span-6 order-2 md:order-1">
             <Image src="/images/stress.png" alt="" fill className="" />
           </div>
         </div>
