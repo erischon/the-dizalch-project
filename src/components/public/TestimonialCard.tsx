@@ -27,11 +27,11 @@ export default function TestimonialCard({
       key={title}
       className="flex flex-col justify-between md:col-span-4 rounded-lg bg-gray-50 p-6 shadow-md shadow-black/90"
     >
-      <p className="mb-4 flex-grow text-gray-800">{quote}</p>
+      <p className="text-sm md:text-md mb-4 flex-grow text-gray-800">{quote}</p>
 
       <div className="grid md:grid-cols-12 md:justify-between">
         <div className="col-span-8 flex ">
-          <div className="relative w-12 h-12 mr-4">
+          <div className="relative w-8 h-8 md:w-12 md:h-12 mr-4">
             <Image
               src={image}
               alt={name}
@@ -41,9 +41,11 @@ export default function TestimonialCard({
           </div>
 
           <div>
-            <p className="text-indigo-600 font-semibold">{name}</p>
+            <p className="text-indigo-600 font-semibold text-sm md:text-md">
+              {name}
+            </p>
 
-            <p className="text-sm font-light text-gray-800">
+            <p className="text-xs md:text-sm font-light text-gray-800">
               {title} / {company}
             </p>
           </div>
