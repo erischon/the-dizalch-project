@@ -11,15 +11,15 @@ export default function HeroSection() {
     <>
       <Section background="bg-indigo-900" id="hero">
         <div className="grid lg:grid-cols-12 lg:items-center p-2">
-          <div className="max-w-xl lg:max-w-screen-2xl h-full lg:col-span-6 mx-auto place-self-center order-2 lg:order-1 text-center lg:text-left lg:flex lg:flex-col lg:gap-4">
-            <h1 className="mb-8 mt-2 text-3xl md:text-4xl lg:text-6xl font-semibold lg:leading-tight sm:max-w-lg mx-auto lg:mx-0 text-gray-100 tracking-wide">
-              Réduisez votre Dette Technique
+          <div className="max-w-xl lg:max-w-screen-2xl h-full lg:col-span-8 mx-auto place-self-center order-2 lg:order-1 text-center lg:text-left lg:flex lg:flex-col lg:gap-4">
+            <h1 className="mb-8 mt-2 text-3xl md:text-4xl lg:text-6xl font-semibold mx-auto lg:mx-0 text-gray-100 tracking-wide">
+              Une aide sur mesure pour réduire votre dette technique
             </h1>
 
             <h3 className="mb-10 md:text-lg lg:text-xl text-gray-100">
-              Un service sur mesure pour votre code React.js, Next.js et Node.js
-              pour diminuer votre dette technique et augmenter la qualité de
-              votre application.
+              Nous sommes une ressource externe qui vous épaule dans l'analyse
+              de votre code, dans la mise en place de tests automatisés, ou le
+              debugging.
             </h3>
 
             <Link href="/#offre" className="animate-bounce">
@@ -29,7 +29,7 @@ export default function HeroSection() {
             </Link>
           </div>
 
-          <div className="relative lg:flex lg:col-span-6 lg:mb-0 w-[14rem] h-[14rem] lg:h-[30rem] lg:w-[30rem] order-1 lg:order-2 mx-auto">
+          <div className="relative lg:flex lg:col-span-4 lg:mb-0 w-[14rem] h-[14rem] lg:h-[24rem] lg:w-[24rem] order-1 lg:order-2 mx-auto">
             <Image
               src="/images/hero-14.png"
               alt="hero"

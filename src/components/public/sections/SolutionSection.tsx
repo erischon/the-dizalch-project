@@ -51,7 +51,7 @@ export default function SolutionSection() {
           {!media ? (
             <>
               {gains.map((gain, index) => (
-                <div className="lg:col-span-4" key={index}>
+                <div className="md:col-span-4" key={index}>
                   <GainCard gain={gain} />
                 </div>
               ))}
