@@ -154,7 +154,7 @@ export const sections = {
   },
   services: {
     header: "Ce que nous faisons pour vous",
-    title: "Augmenter la Qualité et optimiser le processus",
+    title: "Augmenter la Qualité et Optimiser le Processus",
   },
   expertise: {
     header: "Notre expertise",
