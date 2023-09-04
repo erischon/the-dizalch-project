@@ -144,12 +144,11 @@ export const gains = [
 
 export const sections = {
   problem: {
-    header: "Le soucis",
-    title:
-      "Une dette technique bloquante et pas assez de ressources pour la gérer",
+    header: "Un problème",
+    title: "Bloqué et pas assez de ressources pour avancer ?!",
   },
   solution: {
-    header: "La solution",
+    header: "Une solution",
     title: "Une ressource Qualité pour votre application web React",
   },
   services: {
