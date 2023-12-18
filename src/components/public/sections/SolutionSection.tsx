@@ -42,7 +42,7 @@ export default function SolutionSection() {
             </div>
           </div>
 
-          <div className="relative w-[14rem] h-[14rem] lg:w-[22rem] lg:h-[22rem] mx-auto lg:col-span-5 hidden md:block">
+          <div className="relative w-[14rem] h-[14rem] lg:w-[20rem] lg:h-[20rem] mx-auto lg:col-span-5 hidden md:block">
             <Image src="/images/solution.png" alt="" fill className="" />
           </div>
         </div>

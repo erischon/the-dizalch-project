@@ -21,23 +21,26 @@ export default function ProblemSection() {
         <div className="grid md:grid-cols-12">
           <div className="md:col-span-6 order-1 md:order-2 md:pl-5 text-lg lg:text-xl flex flex-col gap-5">
             <p className="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et
-              consequuntur cum harum. Debitis veritatis quaerat dolor ratione
-              voluptatibus repellat! Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Porro dolor ullam laborum doloribus maxime!
-              Deleniti nesciunt nostrum corporis accusamus iure?
+              Vous devez fournir un code rapidement mais vous n’arrivez pas à
+              tout faire : développer de nouvelles fonctionnalités et coder des
+              tests robustes.
             </p>
 
             <p className="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et
-              consequuntur cum harum. Debitis veritatis quaerat dolor ratione
-              voluptatibus repellat! Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Porro dolor ullam laborum doloribus maxime!
-              Deleniti nesciunt nostrum corporis accusamus iure?
+              Vous avez remis à demain la création des tests, quand vous aurez
+              plus de temps et de ressources à leur accorder. Malheureusement ce
+              demain n’arrive jamais et votre code grossi à vue d’oeil sans
+              tests convenables.
+            </p>
+
+            <p className="">
+              Vous avez du mal à <strong>maintenir votre code</strong> et le{" "}
+              <strong>développement est ralenti</strong>, résultat des courses
+              vous n’arrivez pas à faire évoluer votre application.
             </p>
           </div>
 
-          <div className="relative w-[14rem] h-[14rem] lg:w-[22rem] lg:h-[22rem] mx-auto mt-5 lg:mt-0 md:col-span-6 order-2 md:order-1">
+          <div className="relative w-[14rem] h-[14rem] lg:w-[20rem] lg:h-[20rem] mx-auto mt-5 lg:mt-0 md:col-span-6 order-2 md:order-1">
             <Image src="/images/stress.png" alt="" fill className="" />
           </div>
         </div>
